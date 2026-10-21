@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"cool-light-grey":"#F2F5F4","status-critical-bg":"#FDE8E8","surface-container":"#ebeeed","on-surface":"#181c1c","status-critical":"#B42828","surface-dim":"#d7dbda","canvas-clean":"#F8FAFC","inverse-primary":"#a5ced2","surface-container-highest":"#e0e3e2","primary-fixed-dim":"#a5ced2","renewal-green-dark":"#8FA619","on-error":"#ffffff","outline-variant":"#c0c8c9","primary":"#00181a","tertiary-fixed-dim":"#c8c6c5","graphite-industrial":"#1C1C1C","on-surface-variant":"#414849","outline":"#717879","graphite-teal-deep":"#002E32","surface-container-low":"#f1f4f3","secondary-container":"#d1ec4c","error":"#ba1a1a","surface-container-high":"#e6e9e8","on-background":"#181c1c","primary-container":"#002e32","surface-tint":"#3e6469","inverse-surface":"#2d3131","on-tertiary":"#ffffff","on-secondary-fixed-variant":"#404c00","on-tertiary-fixed":"#1b1b1b","secondary-fixed-dim":"#b8d233","inverse-on-surface":"#eef1f0","renewal-green":"#BAD435","on-error-container":"#93000a","surface-variant":"#e0e3e2","border-subtle":"#D7DBDA","error-container":"#ffdad6","on-tertiary-fixed-variant":"#474746","on-tertiary-container":"#91908f","surface":"#f7faf9","on-secondary-fixed":"#181e00","background":"#f7faf9","tertiary-container":"#292929","tertiary":"#151515","on-secondary":"#ffffff","pure-white":"#FFFFFF","on-primary-fixed":"#002023","on-primary-fixed-variant":"#254d51","on-secondary-container":"#5a6900","tertiary-fixed":"#e5e2e1","secondary":"#566500","on-primary":"#ffffff","graphite-teal-surface":"#00383D","surface-container-lowest":"#ffffff","secondary-fixed":"#d4ef4f","primary-fixed":"#c1eaef","surface-bright":"#f7faf9","on-primary-container":"#70979b"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-lg":"1.5rem","space-sm":"0.5rem","margin-mobile":"1rem",gutter:"1.5rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-md":"1rem","space-xl":"2.5rem",margin:"3rem"},fontFamily:{"body-md":["Inter"],"label-md":["Inter"],"technical-code":["Inter"],"headline-lg":["Montserrat"],"body-lg":["Inter"],"body-sm":["Inter"],"display-lg":["Montserrat"],"headline-xl":["Montserrat"],"label-sm":["Inter"],"display-lg-mobile":["Montserrat"],"headline-xl-mobile":["Montserrat"],"headline-sm":["Montserrat"],"headline-md":["Montserrat"],"title-md":["Montserrat"]},fontSize:{"body-md":["1rem",{lineHeight:"1.5rem",fontWeight:"400"}],"label-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.02em",fontWeight:"600"}],"technical-code":["0.8125rem",{lineHeight:"1.25rem",letterSpacing:"0.04em",fontWeight:"500"}],"headline-lg":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.015em",fontWeight:"700"}],"body-lg":["1.125rem",{lineHeight:"1.75rem",fontWeight:"400"}],"body-sm":["0.875rem",{lineHeight:"1.375rem",fontWeight:"400"}],"display-lg":["3.5rem",{lineHeight:"4.25rem",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-xl":["2.5rem",{lineHeight:"3rem",letterSpacing:"-0.02em",fontWeight:"700"}],"label-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.06em",fontWeight:"700"}],"display-lg-mobile":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-xl-mobile":["1.75rem",{lineHeight:"2.25rem",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["1.25rem",{lineHeight:"1.75rem",fontWeight:"600"}],"headline-md":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.01em",fontWeight:"600"}],"title-md":["1.125rem",{lineHeight:"1.5rem",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-pure-white shadow-[0_1px_8px_rgba(0,46,50,0.06)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VXrlbjdFzVtCcnXF7yrvvMWtaqqtMrKL6OzUjd0lqYVSypdAUvvDIeWVGuLTpvaIgYUi4iMAUkr5HFNbur18YHAyeiq_vHImYzbE_amLqxFOz6R7hqZ9W8N7ZhAQQZmwT9WT_pCUq-spXJyw4tDL8Z-Ndc7fKjTp8uI9oDe0LcRjSYIrE5sqoLvxXF8-74Xfd_X-gn9ikW_j97c1b1gFd7UhLxKa9VKjjkFYP17SEezF2V2qthbRDJL1i9eWh4JhVAfosyI7DT0A"/><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm uppercase text-graphite-teal-deep font-bold tracking-tight">CTDDCFN</span><span class="font-label-sm text-label-sm uppercase px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold tracking-wider">● A PRONTIDÃO COMEÇA AQUI!</span></div><span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline-block">Comando do Treinamento e do Desenvolvimento Doutrinário do CFN</span></div></div><div class="flex items-center gap-space-md"><div class="relative hidden lg:block w-80"><span class="material-symbols-outlined absolute left-3 top-2.5 text-graphite-teal-deep opacity-70 text-base">search</span><input class="w-full pl-9 pr-4 py-1.5 text-body-sm font-body-sm rounded-full bg-cool-light-grey text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-renewal-green" placeholder="Pesquisar doutrinas, diretrizes, ordens..." type="text"/></div><button class="relative p-space-xs text-graphite-teal-deep hover:bg-cool-light-grey rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-renewal-green"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-graphite-teal-surface text-pure-white flex items-center justify-center font-technical-code text-technical-code font-bold">SG</div><div class="hidden md:flex flex-col text-left"><span class="font-label-sm text-label-sm text-graphite-teal-deep uppercase font-bold leading-none">1º SG-FN / OPERADOR</span><span class="font-label-sm text-label-sm text-renewal-green-dark leading-tight">AUTENTICADO MB</span></div></div></div></div><nav class="h-12 w-full bg-graphite-teal-deep px-gutter flex items-center justify-between text-pure-white" data-active-classes="bg-graphite-teal-surface text-renewal-green font-bold"><div class="flex items-center gap-space-lg overflow-x-auto whitespace-nowrap"><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="inicio" href="#">Início</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="departamentos" href="#">Departamentos</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="sites" href="#">Sites</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="sistemas" href="#">Sistemas</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="om" href="#">OM</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="bono" href="#">BONO</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="plano-do-dia" href="#">Plano do Dia</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="catalogo" href="#">Catálogo</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="pedido-de-ti" href="#">Pedido de TI</a></div><div class="flex items-center gap-space-sm shrink-0 pl-space-md"><a class="flex items-center gap-space-xs px-space-md py-1 bg-graphite-teal-surface text-pure-white hover:bg-cool-light-grey hover:text-graphite-teal-deep rounded transition-colors text-label-sm font-label-sm font-bold uppercase" data-path="intranet-auth" href="#"><span class="w-2 h-2 rounded-full bg-renewal-green"></span>INTRANET AUTH</a></div></nav></header><div class="pt-32 flex-1 w-full flex"><aside class="w-72 shrink-0 bg-surface-container-lowest flex flex-col p-space-md gap-space-md"><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">Institucional</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="historico" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">history</span>Histórico CTDDCFN</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="missao-e-visao" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">shield</span>Missão &amp; Visão</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="organograma" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">account_tree</span>Cadeia de Comando</a></nav></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">Produtos Doutrinários</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="manuais-cfn" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">menu_book</span>Manuais CFN</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="notas-doutrinarias" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">description</span>Notas Doutrinárias</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="licoes-aprendidas" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">psychology</span>Lições Aprendidas</a></nav></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">SECOM</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="noticias" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">newspaper</span>Notícias &amp; Mídia</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="revista-ancora" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">auto_stories</span>Revista Âncora</a></nav></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">Ensino &amp; Treinamento</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="cursos-e-estagios" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">school</span>Cursos &amp; Estágios</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="simuladores" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">terminal</span>Simuladores Táticos</a></nav></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">Navegação &amp; Admin</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="bono-interno" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">assignment</span>BONO Interno</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="escalas-de-servico" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">calendar_month</span>Escalas de Serviço</a></nav></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">Divisão de Informática</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="chamados-ti" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">support_agent</span>Abertura de Chamados</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="ativos-de-rede" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">lan</span>Ativos de Rede</a></nav></div><div class="mt-auto p-space-sm bg-cool-light-grey rounded-lg flex flex-col gap-space-xs shadow-[0_1px_3px_rgba(0,46,50,0.05)]"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-base text-graphite-teal-deep">explore</span><span class="font-label-sm text-label-sm uppercase font-bold text-graphite-teal-deep">Bússola Interna</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Acesso indexado a publicações militares e diretrizes vigentes.</p><div class="flex items-center justify-between text-graphite-teal-deep font-label-sm text-label-sm font-semibold"><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-renewal-green"></span>ONLINE</span><span>v3.4.1</span></div></div></aside><main class="flex-1 min-w-0 bg-surface p-space-lg"><div class="flex flex-col w-full">
+<!-- Interactive Script to Sync Shell Navigation & Provide Interactive Search/Filter -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Set active state in aside navigation for "Suboficial-Mor"
+      const navLinks = document.querySelectorAll("aside a");
+      navLinks.forEach((link) => {
+        if (link.textContent.includes("Missão & Visão") || link.getAttribute("data-path") === "missao-e-visao") {
+          const parentNav = link.closest("nav");
+          if (parentNav && !document.getElementById("aside-suboficial-mor-link")) {
+            const soLink = document.createElement("a");
+            soLink.id = "aside-suboficial-mor-link";
+            soLink.href = "#";
+            soLink.setAttribute("data-path", "suboficial-mor");
+            soLink.className = "px-space-sm py-1.5 rounded text-label-md font-label-md bg-graphite-teal-surface text-pure-white font-bold flex items-center gap-space-sm shadow-sm";
+            soLink.innerHTML = `<span class="material-symbols-outlined text-lg text-renewal-green">military_tech</span>Suboficial-Mor`;
+            link.insertAdjacentElement("afterend", soLink);
+          }
+        }
+      });
+    });
+
+    function printMilitaryCurriculum() {
+      window.print();
+    }
+  </script>
+<!-- Top Action & Breadcrumb Strip -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+<nav aria-label="Navegação Estrutural" class="flex items-center gap-space-xs text-label-sm font-label-sm uppercase tracking-wider text-on-surface-variant">
+<a class="hover:text-graphite-teal-deep transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-base">home</span>Início
+      </a>
+<span class="text-outline-variant font-bold">/</span>
+<span class="text-on-surface-variant font-medium">Institucional</span>
+<span class="text-outline-variant font-bold">/</span>
+<span class="text-graphite-teal-deep font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-renewal-green"></span>Suboficial-Mor
+      </span>
+</nav>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-technical-code text-technical-code font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-graphite-teal-deep">verified</span>
+        REGISTRO OFICIAL MB: 86.0491.31
+      </span>
+<button class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container hover:bg-surface-container-high text-graphite-teal-deep rounded font-label-sm text-label-sm font-semibold transition-all shadow-sm" onclick="printMilitaryCurriculum()" title="Imprimir Biografia Oficial" type="button">
+<span class="material-symbols-outlined text-base">print</span>
+<span class="hidden sm:inline">Imprimir Ficha</span>
+</button>
+</div>
+</div>
+<!-- Hero Profile Banner: Asymmetric high-impact tactical card -->
+<section class="w-full bg-pure-white rounded-xl shadow-sm p-space-lg md:p-space-xl mb-space-xl relative overflow-hidden">
+<!-- Top Tactical Accent Edge -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-graphite-teal-deep via-graphite-teal-surface to-renewal-green"></div>
+<div class="flex flex-col lg:flex-row items-center lg:items-start gap-space-xl relative z-10">
+<!-- Military Portrait with Ceremonial Frame -->
+<div class="relative shrink-0 group">
+<div class="w-44 h-56 sm:w-52 sm:h-64 rounded-lg overflow-hidden bg-cool-light-grey shadow-md relative">
+<img class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" data-alt="Official formal military portrait of Brazilian Navy Marine Corps Master Chief Petty Officer Claudio de Oliveira wearing dress uniform with officer visor cap, navy rank epaulets, decorated with ribbons and badges, solemn confident posture, soft studio lighting against neutral architectural background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-w1cQniqgfHLMf-RvP1zSJoG68NMiWBgMPUifRpmdkIaCmOjFaa2YiwCHzv23m8LcllstIKZSsKK_1M77JN3C-QsSmKH6Z4WvSM_OqcVzyVB_Lrj28So6T9rthkJDO001bihEeXRa6MxZtgHegraZU0ZwWy--MiJ3MQWr3m6e4_QJhjcb1jzljtKKPegZdQjEkzbxdzDYFik_l8ds0BcJv16p84616OKsbvihRB7ub_Ot7ajH4l5U"/>
+<div class="absolute inset-0 bg-gradient-to-t from-graphite-teal-deep/80 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-2 left-2 right-2 text-center">
+<span class="inline-block px-2 py-0.5 rounded bg-graphite-industrial/90 text-pure-white font-technical-code text-label-sm font-semibold uppercase tracking-wider backdrop-blur-sm">
+              MB / CTDDCFN
+            </span>
+</div>
+</div>
+<!-- Nautical Emblem Badge Float -->
+<div class="absolute -bottom-3 -right-3 w-12 h-12 rounded-full bg-graphite-teal-deep shadow-lg flex items-center justify-center text-renewal-green">
+<span class="material-symbols-outlined text-2xl" title="Suboficial-Mor">military_tech</span>
+</div>
+</div>
+<!-- Identity & Command Authority Metadata -->
+<div class="flex-1 flex flex-col justify-center text-center lg:text-left">
+<div class="flex flex-wrap items-center justify-center lg:justify-start gap-space-xs mb-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container text-graphite-teal-deep font-label-sm text-label-sm font-bold uppercase tracking-wider">
+            Quadro de Infantaria de Fuzileiros Navais
+          </span>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-renewal-green-dark"></span>
+            Prontidão Operativa
+          </span>
+<span class="px-space-sm py-0.5 rounded-full bg-cool-light-grey text-on-surface-variant font-technical-code text-technical-code font-bold uppercase">
+            39 ANOS DE EFETIVO SERVIÇO
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg uppercase text-graphite-teal-deep font-extrabold tracking-tight mb-space-xs">
+          SO-FN-IF Claudio de Oliveira
+        </h1>
+<p class="font-title-md text-title-md font-semibold text-on-surface-variant mb-space-md">
+          Suboficial-Mor do Comando do Treinamento e do Desenvolvimento Doutrinário do CFN
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl leading-relaxed mb-space-lg">
+          Líder da praça naval e elo fundamental na preservação dos valores, tradições, disciplina e eficiência operacional do Corpo de Fuzileiros Navais. Assessora diretamente o Comando nas diretrizes relativas ao moral, aperfeiçoamento e bem-estar do corpo de praças na gestão doutrinária.
+        </p>
+<!-- Rapid Metric Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-sm bg-canvas-clean p-space-md rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase font-bold text-outline">Posto / Graduação</span>
+<span class="font-headline-sm text-headline-sm font-bold text-graphite-teal-deep">Suboficial</span>
+<span class="font-technical-code text-technical-code text-on-surface-variant">Promovido em 2009</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase font-bold text-outline">Ingresso no CFN</span>
+<span class="font-headline-sm text-headline-sm font-bold text-graphite-teal-deep">1986</span>
+<span class="font-technical-code text-technical-code text-on-surface-variant">09 de Junho</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase font-bold text-outline">Missões no Exterior</span>
+<span class="font-headline-sm text-headline-sm font-bold text-graphite-teal-deep">MINUSTAH</span>
+<span class="font-technical-code text-technical-code text-renewal-green-dark font-semibold">Paz ONU (Haiti)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase font-bold text-outline">Gabinete Atual</span>
+<span class="font-headline-sm text-headline-sm font-bold text-graphite-teal-deep">CTDDCFN</span>
+<span class="font-technical-code text-technical-code text-on-surface-variant">Ilha do Governador</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Curricular Structural Content: Modular Dossier Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Column Left: Dossier Data (Dados Pessoais & Carreira) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Section 1: Dados Pessoais -->
+<section class="bg-pure-white rounded-xl p-space-lg shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-canvas-clean -mx-space-lg -mt-space-lg p-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-graphite-teal-surface text-pure-white flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">badge</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-graphite-teal-deep font-bold uppercase tracking-tight">
+              1. Dados Pessoais
+            </h2>
+</div>
+<span class="font-technical-code text-technical-code text-outline font-semibold uppercase">REG-PERS</span>
+</div>
+<dl class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between py-space-xs px-space-sm rounded bg-cool-light-grey/60">
+<dt class="font-label-md text-label-md text-on-surface-variant font-medium">Nascimento</dt>
+<dd class="font-headline-sm text-headline-sm text-graphite-teal-deep font-bold text-right">20 JAN 1967</dd>
+</div>
+<div class="flex items-center justify-between py-space-xs px-space-sm rounded">
+<dt class="font-label-md text-label-md text-on-surface-variant font-medium">Naturalidade</dt>
+<dd class="font-body-md text-body-md text-on-surface font-semibold text-right">Rio de Janeiro - RJ</dd>
+</div>
+<div class="flex items-center justify-between py-space-xs px-space-sm rounded bg-cool-light-grey/60">
+<dt class="font-label-md text-label-md text-on-surface-variant font-medium">Nacionalidade</dt>
+<dd class="font-body-md text-body-md text-on-surface font-semibold text-right">Brasileira</dd>
+</div>
+<div class="flex items-center justify-between py-space-xs px-space-sm rounded">
+<dt class="font-label-md text-label-md text-on-surface-variant font-medium">Estado Civil</dt>
+<dd class="font-body-md text-body-md text-on-surface font-semibold text-right">Casado</dd>
+</div>
+<div class="flex flex-col py-space-xs px-space-sm rounded bg-cool-light-grey/60">
+<dt class="font-label-md text-label-md text-on-surface-variant font-medium">Cônjuge</dt>
+<dd class="font-body-md text-body-md text-graphite-teal-deep font-bold mt-0.5">Dra. Rosa Helena da Silva de Oliveira</dd>
+</div>
+</dl>
+</section>
+<!-- Section 2: Carreira Militar (Timeline Ascensão) -->
+<section class="bg-pure-white rounded-xl p-space-lg shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-canvas-clean -mx-space-lg -mt-space-lg p-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-graphite-teal-surface text-pure-white flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">trending_up</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-graphite-teal-deep font-bold uppercase tracking-tight">
+              2. Carreira Militar
+            </h2>
+</div>
+<span class="font-technical-code text-technical-code text-renewal-green-dark font-bold uppercase">HIERARQUIA MB</span>
+</div>
+<div class="relative pl-6 space-y-4 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-highest">
+<!-- Incorporação -->
+<div class="relative group">
+<div class="absolute -left-[1.65rem] top-1.5 w-3 h-3 rounded-full bg-outline"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 p-space-xs rounded hover:bg-cool-light-grey transition-colors">
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep">Incorporação</span>
+<span class="font-technical-code text-technical-code font-bold text-on-surface-variant">09 JUN 1986</span>
+</div>
+</div>
+<!-- Soldado -->
+<div class="relative group">
+<div class="absolute -left-[1.65rem] top-1.5 w-3 h-3 rounded-full bg-outline"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 p-space-xs rounded hover:bg-cool-light-grey transition-colors">
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep">Soldado Fuzileiro Naval</span>
+<span class="font-technical-code text-technical-code font-bold text-on-surface-variant">01 NOV 1986</span>
+</div>
+</div>
+<!-- Cabo -->
+<div class="relative group">
+<div class="absolute -left-[1.65rem] top-1.5 w-3 h-3 rounded-full bg-outline"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 p-space-xs rounded hover:bg-cool-light-grey transition-colors">
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep">Cabo</span>
+<span class="font-technical-code text-technical-code font-bold text-on-surface-variant">16 DEZ 1988</span>
+</div>
+</div>
+<!-- Terceiro-Sargento -->
+<div class="relative group">
+<div class="absolute -left-[1.65rem] top-1.5 w-3 h-3 rounded-full bg-graphite-teal-deep"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 p-space-xs rounded hover:bg-cool-light-grey transition-colors">
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep">Terceiro-Sargento</span>
+<span class="font-technical-code text-technical-code font-bold text-on-surface-variant">28 AGO 1992</span>
+</div>
+</div>
+<!-- Segundo-Sargento -->
+<div class="relative group">
+<div class="absolute -left-[1.65rem] top-1.5 w-3 h-3 rounded-full bg-graphite-teal-deep"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 p-space-xs rounded hover:bg-cool-light-grey transition-colors">
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep">Segundo-Sargento</span>
+<span class="font-technical-code text-technical-code font-bold text-on-surface-variant">11 JUN 1997</span>
+</div>
+</div>
+<!-- Primeiro-Sargento -->
+<div class="relative group">
+<div class="absolute -left-[1.65rem] top-1.5 w-3 h-3 rounded-full bg-graphite-teal-deep"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 p-space-xs rounded hover:bg-cool-light-grey transition-colors">
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep">Primeiro-Sargento</span>
+<span class="font-technical-code text-technical-code font-bold text-on-surface-variant">13 DEZ 2001</span>
+</div>
+</div>
+<!-- Suboficial (Culminância) -->
+<div class="relative group">
+<div class="absolute -left-[1.75rem] top-1 w-4 h-4 rounded-full bg-renewal-green ring-4 ring-pure-white"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 p-space-xs rounded bg-surface-container-high/80">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-extrabold text-graphite-teal-deep">Suboficial</span>
+<span class="material-symbols-outlined text-base text-renewal-green-dark">stars</span>
+</div>
+<span class="font-technical-code text-technical-code font-extrabold text-graphite-teal-deep">11 JUN 2009</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Institutional Card: Doctrine Leadership Quote -->
+<section class="bg-graphite-teal-deep text-pure-white rounded-xl p-space-lg shadow-md relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 text-white/5 pointer-events-none">
+<span class="material-symbols-outlined text-[8rem]">military_tech</span>
+</div>
+<div class="relative z-10 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-renewal-green font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-base">format_quote</span>
+            Doutrina e Disciplina
+          </div>
+<p class="font-body-md text-body-md italic text-surface-container-highest">
+            "A liderança militar é exercida pelo exemplo diário no convoo e no terreno operacional. O aprimoramento contínuo das nossas praças é a garantia da letalidade e prontidão do Fuzileiro Naval."
+          </p>
+<div class="pt-space-xs text-right">
+<span class="font-label-sm text-label-sm uppercase font-bold text-renewal-green">SO-FN-IF Claudio de Oliveira</span>
+<span class="block font-technical-code text-technical-code text-outline-variant">Suboficial-Mor CTDDCFN</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Column Right: Operational History, Courses & Medals -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Section 3: Comissões (Histórico de Unidades Operacionais) -->
+<section class="bg-pure-white rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-canvas-clean -mx-space-lg -mt-space-lg p-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-graphite-teal-surface text-pure-white flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">flag</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-graphite-teal-deep font-bold uppercase tracking-tight">
+              3. Comissões
+            </h2>
+</div>
+<span class="px-space-sm py-0.5 rounded bg-surface-container text-on-surface-variant font-technical-code text-technical-code font-bold uppercase">
+            9 Organizações Militares
+          </span>
+</div>
+<ul class="flex flex-col divide-y divide-surface-container-high/60">
+<!-- Item CTDDCFN -->
+<li class="py-space-sm flex items-start gap-space-md group">
+<span class="shrink-0 w-2.5 h-2.5 rounded-full bg-renewal-green mt-2 ring-2 ring-renewal-green/30"></span>
+<div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<div>
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep group-hover:text-renewal-green-dark transition-colors">
+                  Comando do Treinamento e do Desenvolvimento Doutrinário do CFN
+                </span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Exercício da função de Suboficial-Mor</span>
+</div>
+<span class="shrink-0 px-space-sm py-0.5 rounded bg-secondary-container text-on-secondary-container font-technical-code text-technical-code font-bold">
+                2025 - Atual
+              </span>
+</div>
+</li>
+<!-- Item CIASC -->
+<li class="py-space-sm flex items-start gap-space-md group">
+<span class="shrink-0 w-2 h-2 rounded-full bg-graphite-teal-deep mt-2"></span>
+<div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Centro de Instrução Almirante Sylvio de Camargo (CIASC)</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Divisão de Ensino e Apoio à Doutrina Anfíbia</span>
+</div>
+<span class="shrink-0 font-technical-code text-technical-code text-on-surface-variant font-medium">
+                2013 - 2025
+              </span>
+</div>
+</li>
+<!-- Item GptFNBe -->
+<li class="py-space-sm flex items-start gap-space-md group">
+<span class="shrink-0 w-2 h-2 rounded-full bg-graphite-teal-deep mt-2"></span>
+<div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Grupamento de Fuzileiros Navais de Belém (GptFNBe)</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Operações Ribeirinhas na Amazônia Oriental</span>
+</div>
+<span class="shrink-0 font-technical-code text-technical-code text-on-surface-variant font-medium">
+                2009 - 2012
+              </span>
+</div>
+</li>
+<!-- Item MINUSTAH -->
+<li class="py-space-sm flex items-start gap-space-md group bg-cool-light-grey/60 px-space-sm rounded">
+<span class="shrink-0 w-2 h-2 rounded-full bg-status-critical mt-2"></span>
+<div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep">Grupamento Operativo de Fuzileiros Navais - Haiti (MINUSTAH)</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-graphite-teal-deep font-technical-code text-label-sm font-bold">ONU</span>
+</div>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Missão de Estabilização e Paz Internacional</span>
+</div>
+<span class="shrink-0 font-technical-code text-technical-code font-bold text-graphite-teal-deep">
+                2008
+              </span>
+</div>
+</li>
+<!-- Item Btl Humaitá -->
+<li class="py-space-sm flex items-start gap-space-md group">
+<span class="shrink-0 w-2 h-2 rounded-full bg-graphite-teal-deep mt-2"></span>
+<div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">1º Batalhão de Operações Ribeirinhas (Batalhão Humaitá)</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Companhia de Fuzileiros de Selva</span>
+</div>
+<span class="shrink-0 font-technical-code text-technical-code text-on-surface-variant font-medium">
+                2006 - 2008
+              </span>
+</div>
+</li>
+<!-- Item CIASC 96-06 -->
+<li class="py-space-sm flex items-start gap-space-md group">
+<span class="shrink-0 w-2 h-2 rounded-full bg-graphite-teal-deep mt-2"></span>
+<div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Centro de Instrução Almirante Sylvio de Camargo</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Corpo de Alunos e Coordenação Pedagógica</span>
+</div>
+<span class="shrink-0 font-technical-code text-technical-code text-on-surface-variant font-medium">
+                1996 - 2006
+              </span>
+</div>
+</li>
+<!-- Item Btl Riachuelo 92-96 -->
+<li class="py-space-sm flex items-start gap-space-md group">
+<span class="shrink-0 w-2 h-2 rounded-full bg-graphite-teal-deep mt-2"></span>
+<div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">1º Batalhão de Infantaria de Fuzileiros Navais (Batalhão Riachuelo)</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Operações de Desembarque Anfíbio</span>
+</div>
+<span class="shrink-0 font-technical-code text-technical-code text-on-surface-variant font-medium">
+                1992 - 1996
+              </span>
+</div>
+</li>
+<!-- Item CIASC 92 -->
+<li class="py-space-sm flex items-start gap-space-md group">
+<span class="shrink-0 w-2 h-2 rounded-full bg-graphite-teal-deep mt-2"></span>
+<div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Centro de Instrução Almirante Sylvio de Camargo</span>
+<span class="shrink-0 font-technical-code text-technical-code text-on-surface-variant font-medium">1992</span>
+</div>
+</li>
+<!-- Item Btl Riachuelo 88-92 -->
+<li class="py-space-sm flex items-start gap-space-md group">
+<span class="shrink-0 w-2 h-2 rounded-full bg-graphite-teal-deep mt-2"></span>
+<div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">1º Batalhão de Infantaria de Fuzileiros Navais (Batalhão Riachuelo)</span>
+<span class="shrink-0 font-technical-code text-technical-code text-on-surface-variant font-medium">1988 - 1992</span>
+</div>
+</li>
+<!-- Item CIASC 88 -->
+<li class="py-space-sm flex items-start gap-space-md group">
+<span class="shrink-0 w-2 h-2 rounded-full bg-graphite-teal-deep mt-2"></span>
+<div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Centro de Instrução Almirante Sylvio de Camargo</span>
+<span class="shrink-0 font-technical-code text-technical-code text-on-surface-variant font-medium">1988</span>
+</div>
+</li>
+<!-- Item Btl Cmdo DivAnf -->
+<li class="py-space-sm flex items-start gap-space-md group">
+<span class="shrink-0 w-2 h-2 rounded-full bg-graphite-teal-deep mt-2"></span>
+<div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Batalhão de Comando da Divisão Anfíbia</span>
+<span class="shrink-0 font-technical-code text-technical-code text-on-surface-variant font-medium">1987</span>
+</div>
+</li>
+<!-- Item Recrutas -->
+<li class="py-space-sm flex items-start gap-space-md group">
+<span class="shrink-0 w-2 h-2 rounded-full bg-outline mt-2"></span>
+<div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Centro de Instrução e Adestramento de Recrutas do CFN</span>
+<span class="shrink-0 font-technical-code text-technical-code text-on-surface-variant font-medium">1986</span>
+</div>
+</li>
+</ul>
+</section>
+<!-- Section 4: Cursos e Qualificações Militares -->
+<section class="bg-pure-white rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-canvas-clean -mx-space-lg -mt-space-lg p-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-graphite-teal-surface text-pure-white flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">school</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-graphite-teal-deep font-bold uppercase tracking-tight">
+              4. Cursos e Qualificações
+            </h2>
+</div>
+<span class="font-technical-code text-technical-code text-outline font-semibold uppercase">FORMAÇÃO PROFISSIONAL</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded bg-canvas-clean flex items-start gap-space-sm hover:bg-cool-light-grey transition-colors">
+<span class="material-symbols-outlined text-graphite-teal-deep text-lg mt-0.5">military_tech</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep block">Curso Especial de Habilitação a Suboficial (C-Esp-HabSO)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Alta liderança, gestão e doutrina naval</span>
+</div>
+</div>
+<div class="p-space-sm rounded bg-canvas-clean flex items-start gap-space-sm hover:bg-cool-light-grey transition-colors">
+<span class="material-symbols-outlined text-graphite-teal-deep text-lg mt-0.5">shield</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep block">Curso de Aperfeiçoamento de Infantaria (C-Ap-IF)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Táticas avançadas de fuzilaria e emprego anfíbio</span>
+</div>
+</div>
+<div class="p-space-sm rounded bg-canvas-clean flex items-start gap-space-sm hover:bg-cool-light-grey transition-colors">
+<span class="material-symbols-outlined text-graphite-teal-deep text-lg mt-0.5">verified_user</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep block">Curso de Formação de Sargentos (C-FSG-FN)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Liderança de frações de tropa e combate</span>
+</div>
+</div>
+<div class="p-space-sm rounded bg-canvas-clean flex items-start gap-space-sm hover:bg-cool-light-grey transition-colors">
+<span class="material-symbols-outlined text-graphite-teal-deep text-lg mt-0.5">co_present</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep block">Curso Expedito de Técnica de Ensino (MB)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Metodologias pedagógicas de instrução militar</span>
+</div>
+</div>
+<div class="p-space-sm rounded bg-canvas-clean flex items-start gap-space-sm hover:bg-cool-light-grey transition-colors">
+<span class="material-symbols-outlined text-graphite-teal-deep text-lg mt-0.5">science</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep block">Defesa Química, Biológica e Nuclear (C-Def-QBN - EB)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Exército Brasileiro - Escola de Instrução Especializada</span>
+</div>
+</div>
+<div class="p-space-sm rounded bg-canvas-clean flex items-start gap-space-sm hover:bg-cool-light-grey transition-colors">
+<span class="material-symbols-outlined text-graphite-teal-deep text-lg mt-0.5">target</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep block">Curso de Especialização de Infantaria (C-Espc-IF)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Especialização técnica de combatente anfíbio</span>
+</div>
+</div>
+<div class="p-space-sm rounded bg-canvas-clean flex items-start gap-space-sm hover:bg-cool-light-grey transition-colors sm:col-span-2">
+<span class="material-symbols-outlined text-graphite-teal-deep text-lg mt-0.5">flag</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep block">Curso de Formação de Soldados Fuzileiros Navais (C-FSD-FN)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ingresso na Marinha do Brasil e fundamentos do CFN</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Condecorações e Medalhas -->
+<section class="bg-pure-white rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-canvas-clean -mx-space-lg -mt-space-lg p-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-graphite-teal-surface text-pure-white flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">workspace_premium</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-graphite-teal-deep font-bold uppercase tracking-tight">
+              5. Condecorações
+            </h2>
+</div>
+<span class="font-technical-code text-technical-code text-renewal-green-dark font-bold uppercase">HONRARIAS NAVAIS</span>
+</div>
+<!-- Visual Medal Gallery Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-sm mb-space-md">
+<!-- Medalha Militar de Ouro -->
+<div class="p-space-sm rounded bg-canvas-clean flex flex-col justify-between hover:bg-cool-light-grey transition-all group">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-graphite-teal-deep flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-base">military_tech</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-outline">30 Anos</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep block">Medalha Militar de Ouro</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Passador de Ouro (Bons Serviços)</span>
+</div>
+</div>
+<!-- Medalha Mérito Anfíbio -->
+<div class="p-space-sm rounded bg-canvas-clean flex flex-col justify-between hover:bg-cool-light-grey transition-all group">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<div class="w-7 h-7 rounded-full bg-graphite-teal-surface text-renewal-green flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-base">anchor</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-renewal-green-dark">Três Âncoras</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep block">Medalha Mérito Anfíbio</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Distinção de Operações Anfíbias</span>
+</div>
+</div>
+<!-- Ordem do Mérito Naval -->
+<div class="p-space-sm rounded bg-canvas-clean flex flex-col justify-between hover:bg-cool-light-grey transition-all group">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<div class="w-7 h-7 rounded-full bg-graphite-teal-deep text-pure-white flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-base">star</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-outline">Cavaleiro</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep block">Ordem do Mérito Naval</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Grau de Cavaleiro</span>
+</div>
+</div>
+<!-- Medalha Mérito Tamandaré -->
+<div class="p-space-sm rounded bg-canvas-clean flex flex-col justify-between hover:bg-cool-light-grey transition-all group">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<div class="w-7 h-7 rounded-full bg-cool-light-grey text-graphite-teal-deep flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-base">shield</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-outline">Patrono MB</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep block">Medalha Mérito Tamandaré</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Relevantes Serviços à Marinha</span>
+</div>
+</div>
+<!-- Medalha ONU - Haiti -->
+<div class="p-space-sm rounded bg-canvas-clean flex flex-col justify-between hover:bg-cool-light-grey transition-all group">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<div class="w-7 h-7 rounded-full bg-primary-fixed text-graphite-teal-deep flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-base">public</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-outline">Nações Unidas</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep block">Medalha da ONU (MINUSTAH)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Missão de Estabilização no Haiti</span>
+</div>
+</div>
+<!-- Medalha Mantenedores da Paz OEA -->
+<div class="p-space-sm rounded bg-canvas-clean flex flex-col justify-between hover:bg-cool-light-grey transition-all group">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<div class="w-7 h-7 rounded-full bg-cool-light-grey text-graphite-teal-deep flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-base">handshake</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-outline">Internacional</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep block">Medalha Mantenedores da Paz</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Organização dos Estados Americanos</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Formal Protocol Endorsement & Signature -->
+<div class="bg-pure-white rounded-xl p-space-lg shadow-sm flex flex-col items-end text-right">
+<div class="w-full sm:w-80 flex flex-col items-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Rio de Janeiro, RJ
+          </span>
+<!-- Stylized Tactical Signature Bar -->
+<div class="w-48 h-0.5 bg-graphite-teal-deep/30 mb-space-xs"></div>
+<span class="font-label-md text-label-md uppercase font-extrabold text-graphite-teal-deep tracking-wider">
+            CLAUDIO DE OLIVEIRA
+          </span>
+<span class="font-technical-code text-technical-code font-bold text-on-surface-variant">
+            SO-FN-IF | Suboficial-Mor
+          </span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider mt-0.5">
+            Comando do Treinamento e do Desenvolvimento Doutrinário do CFN
+          </span>
+</div>
+</div>
+</div>
+</div>
+</div></main></div><footer class="w-full bg-graphite-teal-deep text-pure-white"><div class="h-1 w-full bg-renewal-green"></div><div class="w-full px-gutter py-space-xl flex flex-col md:flex-row justify-between items-start gap-space-xl"><div class="flex items-start gap-space-md max-w-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VXrlbjdFzVtCcnXF7yrvvMWtaqqtMrKL6OzUjd0lqYVSypdAUvvDIeWVGuLTpvaIgYUi4iMAUkr5HFNbur18YHAyeiq_vHImYzbE_amLqxFOz6R7hqZ9W8N7ZhAQQZmwT9WT_pCUq-spXJyw4tDL8Z-Ndc7fKjTp8uI9oDe0LcRjSYIrE5sqoLvxXF8-74Xfd_X-gn9ikW_j97c1b1gFd7UhLxKa9VKjjkFYP17SEezF2V2qthbRDJL1i9eWh4JhVAfosyI7DT0A"/><div class="flex flex-col"><span class="font-title-md text-title-md font-bold uppercase tracking-wide">CTDDCFN</span><span class="font-body-sm text-body-sm text-surface-container-highest">Comando do Treinamento e do Desenvolvimento Doutrinário do Corpo de Fuzileiros Navais</span><p class="font-body-sm text-body-sm text-outline-variant mt-space-sm">Complexo Naval da Ilha do Governador, Rio de Janeiro - RJ, CEP 21911-000</p></div></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase font-bold text-renewal-green">Comunicação Social (SECOM)</span><div class="flex items-center gap-space-xs text-body-sm font-body-sm text-pure-white"><span class="material-symbols-outlined text-base text-renewal-green">call</span>(21) 3386-4399</div><div class="flex items-center gap-space-xs text-body-sm font-body-sm text-pure-white"><span class="material-symbols-outlined text-base text-renewal-green">mail</span>ctddcfn.secom@marinha.mil.br</div><div class="flex items-center gap-space-xs text-body-sm font-body-sm text-surface-container-highest mt-space-xs"><span class="material-symbols-outlined text-base text-renewal-green">shield</span>Rede RITMAR: Ramal 8399</div></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase font-bold text-renewal-green">Acesso Direto</span><nav class="flex flex-col gap-1"><a class="font-body-sm text-body-sm text-surface-container-highest hover:text-renewal-green transition-colors" data-path="inicio" href="#">Portal MB</a><a class="font-body-sm text-body-sm text-surface-container-highest hover:text-renewal-green transition-colors" data-path="sistemas" href="#">Doutrina Naval Digital</a><a class="font-body-sm text-body-sm text-surface-container-highest hover:text-renewal-green transition-colors" data-path="bono" href="#">Boletim de Ordens e Notícias</a></nav></div></div><div class="w-full bg-graphite-industrial py-space-sm px-gutter flex items-center justify-between text-technical-code font-technical-code text-surface-container-highest"><div class="flex items-center gap-space-sm"><span class="text-renewal-green">●</span><span>SISTEMA OPERACIONAL SEGURO | CLASSIFICAÇÃO: RESERVADO</span></div><div><span>CTDDCFN © 2025 - TODOS OS DIREITOS RESERVADOS</span></div></div></footer></body></html>

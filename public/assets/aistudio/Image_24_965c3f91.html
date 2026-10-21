@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"cool-light-grey":"#F2F5F4","status-critical-bg":"#FDE8E8","surface-container":"#ebeeed","on-surface":"#181c1c","status-critical":"#B42828","surface-dim":"#d7dbda","canvas-clean":"#F8FAFC","inverse-primary":"#a5ced2","surface-container-highest":"#e0e3e2","primary-fixed-dim":"#a5ced2","renewal-green-dark":"#8FA619","on-error":"#ffffff","outline-variant":"#c0c8c9","primary":"#00181a","tertiary-fixed-dim":"#c8c6c5","graphite-industrial":"#1C1C1C","on-surface-variant":"#414849","outline":"#717879","graphite-teal-deep":"#002E32","surface-container-low":"#f1f4f3","secondary-container":"#d1ec4c","error":"#ba1a1a","surface-container-high":"#e6e9e8","on-background":"#181c1c","primary-container":"#002e32","surface-tint":"#3e6469","inverse-surface":"#2d3131","on-tertiary":"#ffffff","on-secondary-fixed-variant":"#404c00","on-tertiary-fixed":"#1b1b1b","secondary-fixed-dim":"#b8d233","inverse-on-surface":"#eef1f0","renewal-green":"#BAD435","on-error-container":"#93000a","surface-variant":"#e0e3e2","border-subtle":"#D7DBDA","error-container":"#ffdad6","on-tertiary-fixed-variant":"#474746","on-tertiary-container":"#91908f","surface":"#f7faf9","on-secondary-fixed":"#181e00","background":"#f7faf9","tertiary-container":"#292929","tertiary":"#151515","on-secondary":"#ffffff","pure-white":"#FFFFFF","on-primary-fixed":"#002023","on-primary-fixed-variant":"#254d51","on-secondary-container":"#5a6900","tertiary-fixed":"#e5e2e1","secondary":"#566500","on-primary":"#ffffff","graphite-teal-surface":"#00383D","surface-container-lowest":"#ffffff","secondary-fixed":"#d4ef4f","primary-fixed":"#c1eaef","surface-bright":"#f7faf9","on-primary-container":"#70979b"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-lg":"1.5rem","space-sm":"0.5rem","margin-mobile":"1rem",gutter:"1.5rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-md":"1rem","space-xl":"2.5rem",margin:"3rem"},fontFamily:{"body-md":["Inter"],"label-md":["Inter"],"technical-code":["Inter"],"headline-lg":["Montserrat"],"body-lg":["Inter"],"body-sm":["Inter"],"display-lg":["Montserrat"],"headline-xl":["Montserrat"],"label-sm":["Inter"],"display-lg-mobile":["Montserrat"],"headline-xl-mobile":["Montserrat"],"headline-sm":["Montserrat"],"headline-md":["Montserrat"],"title-md":["Montserrat"]},fontSize:{"body-md":["1rem",{lineHeight:"1.5rem",fontWeight:"400"}],"label-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.02em",fontWeight:"600"}],"technical-code":["0.8125rem",{lineHeight:"1.25rem",letterSpacing:"0.04em",fontWeight:"500"}],"headline-lg":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.015em",fontWeight:"700"}],"body-lg":["1.125rem",{lineHeight:"1.75rem",fontWeight:"400"}],"body-sm":["0.875rem",{lineHeight:"1.375rem",fontWeight:"400"}],"display-lg":["3.5rem",{lineHeight:"4.25rem",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-xl":["2.5rem",{lineHeight:"3rem",letterSpacing:"-0.02em",fontWeight:"700"}],"label-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.06em",fontWeight:"700"}],"display-lg-mobile":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-xl-mobile":["1.75rem",{lineHeight:"2.25rem",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["1.25rem",{lineHeight:"1.75rem",fontWeight:"600"}],"headline-md":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.01em",fontWeight:"600"}],"title-md":["1.125rem",{lineHeight:"1.5rem",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-pure-white shadow-[0_1px_8px_rgba(0,46,50,0.06)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VXrlbjdFzVtCcnXF7yrvvMWtaqqtMrKL6OzUjd0lqYVSypdAUvvDIeWVGuLTpvaIgYUi4iMAUkr5HFNbur18YHAyeiq_vHImYzbE_amLqxFOz6R7hqZ9W8N7ZhAQQZmwT9WT_pCUq-spXJyw4tDL8Z-Ndc7fKjTp8uI9oDe0LcRjSYIrE5sqoLvxXF8-74Xfd_X-gn9ikW_j97c1b1gFd7UhLxKa9VKjjkFYP17SEezF2V2qthbRDJL1i9eWh4JhVAfosyI7DT0A"/><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm uppercase text-graphite-teal-deep font-bold tracking-tight">CTDDCFN</span><span class="font-label-sm text-label-sm uppercase px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold tracking-wider">● A PRONTIDÃO COMEÇA AQUI!</span></div><span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline-block">Comando do Treinamento e do Desenvolvimento Doutrinário do CFN</span></div></div><div class="flex items-center gap-space-md"><div class="relative hidden lg:block w-80"><span class="material-symbols-outlined absolute left-3 top-2.5 text-graphite-teal-deep opacity-70 text-base">search</span><input class="w-full pl-9 pr-4 py-1.5 text-body-sm font-body-sm rounded-full bg-cool-light-grey text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-renewal-green" placeholder="Pesquisar doutrinas, diretrizes, ordens..." type="text"/></div><button class="relative p-space-xs text-graphite-teal-deep hover:bg-cool-light-grey rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-renewal-green"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-graphite-teal-surface text-pure-white flex items-center justify-center font-technical-code text-technical-code font-bold">SG</div><div class="hidden md:flex flex-col text-left"><span class="font-label-sm text-label-sm text-graphite-teal-deep uppercase font-bold leading-none">1º SG-FN / OPERADOR</span><span class="font-label-sm text-label-sm text-renewal-green-dark leading-tight">AUTENTICADO MB</span></div></div></div></div><nav class="h-12 w-full bg-graphite-teal-deep px-gutter flex items-center justify-between text-pure-white" data-active-classes="bg-graphite-teal-surface text-renewal-green font-bold"><div class="flex items-center gap-space-lg overflow-x-auto whitespace-nowrap"><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="inicio" href="#">Início</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="departamentos" href="#">Departamentos</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="sites" href="#">Sites</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="sistemas" href="#">Sistemas</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="om" href="#">OM</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="bono" href="#">BONO</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="plano-do-dia" href="#">Plano do Dia</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="catalogo" href="#">Catálogo</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="pedido-de-ti" href="#">Pedido de TI</a></div><div class="flex items-center gap-space-sm shrink-0 pl-space-md"><a class="flex items-center gap-space-xs px-space-md py-1 bg-graphite-teal-surface text-pure-white hover:bg-cool-light-grey hover:text-graphite-teal-deep rounded transition-colors text-label-sm font-label-sm font-bold uppercase" data-path="intranet-auth" href="#"><span class="w-2 h-2 rounded-full bg-renewal-green"></span>INTRANET AUTH</a></div></nav></header><div class="pt-32 flex-1 w-full flex"><aside class="w-72 shrink-0 bg-surface-container-lowest flex flex-col p-space-md gap-space-md"><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">Institucional</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="historico" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">history</span>Histórico CTDDCFN</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="missao-e-visao" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">shield</span>Missão &amp; Visão</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="organograma" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">account_tree</span>Cadeia de Comando</a></nav></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">Produtos Doutrinários</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="manuais-cfn" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">menu_book</span>Manuais CFN</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="notas-doutrinarias" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">description</span>Notas Doutrinárias</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="licoes-aprendidas" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">psychology</span>Lições Aprendidas</a></nav></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">SECOM</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="noticias" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">newspaper</span>Notícias &amp; Mídia</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="revista-ancora" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">auto_stories</span>Revista Âncora</a></nav></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">Ensino &amp; Treinamento</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="cursos-e-estagios" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">school</span>Cursos &amp; Estágios</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="simuladores" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">terminal</span>Simuladores Táticos</a></nav></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">Navegação &amp; Admin</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="bono-interno" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">assignment</span>BONO Interno</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="escalas-de-servico" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">calendar_month</span>Escalas de Serviço</a></nav></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">Divisão de Informática</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="chamados-ti" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">support_agent</span>Abertura de Chamados</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="ativos-de-rede" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">lan</span>Ativos de Rede</a></nav></div><div class="mt-auto p-space-sm bg-cool-light-grey rounded-lg flex flex-col gap-space-xs shadow-[0_1px_3px_rgba(0,46,50,0.05)]"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-base text-graphite-teal-deep">explore</span><span class="font-label-sm text-label-sm uppercase font-bold text-graphite-teal-deep">Bússola Interna</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Acesso indexado a publicações militares e diretrizes vigentes.</p><div class="flex items-center justify-between text-graphite-teal-deep font-label-sm text-label-sm font-semibold"><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-renewal-green"></span>ONLINE</span><span>v3.4.1</span></div></div></aside><main class="flex-1 min-w-0 bg-surface p-space-lg"><div class="flex flex-col w-full">
+<!-- Top Tactical Breadcrumbs & Document Identifier Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-space-md mb-space-md gap-space-sm border-b border-border-subtle/40">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-label-sm font-label-sm uppercase tracking-wider text-on-surface-variant">
+<a class="hover:text-graphite-teal-deep transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-base">home</span>
+        Início
+      </a>
+<span class="material-symbols-outlined text-xs text-outline">chevron_right</span>
+<span class="hover:text-graphite-teal-deep transition-colors cursor-pointer">Ensino &amp; Treinamento</span>
+<span class="material-symbols-outlined text-xs text-outline">chevron_right</span>
+<span class="text-graphite-teal-deep font-bold px-1.5 py-0.5 rounded bg-cool-light-grey">C-Esp-SegProtAut / 2026</span>
+</nav>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container/30 text-graphite-teal-deep text-label-sm font-label-sm uppercase font-semibold">
+<span class="w-2 h-2 rounded-full bg-renewal-green-dark"></span>
+        Edital Vigente 2026
+      </span>
+<span class="text-technical-code font-technical-code text-on-surface-variant text-xs">PUB-DOC-CFN-8842/B</span>
+</div>
+</div>
+<!-- Page Header Title Module -->
+<div class="relative bg-pure-white rounded-xl p-space-lg shadow-sm border-t-4 border-graphite-teal-deep mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-2 text-label-sm font-label-sm uppercase tracking-widest text-graphite-teal-deep font-bold">
+<span class="material-symbols-outlined text-base text-renewal-green-dark">verified_user</span>
+          Comando do Treinamento e do Desenvolvimento Doutrinário do CFN
+        </div>
+<h1 class="font-headline-lg text-headline-lg font-bold text-graphite-teal-deep tracking-tight">
+          Índices C-Esp-SegProtAut/2026
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl pt-1">
+          Curso Especial de Segurança e Proteção de Autoridades — Critérios de Admissibilidade, Baremas de Avaliação Operacional e Diretrizes Normativas para o Ano Letivo de 2026.
+        </p>
+</div>
+<!-- Quick Action / Status Badge Cluster -->
+<div class="flex flex-row sm:flex-col items-end justify-between shrink-0 gap-space-xs bg-cool-light-grey/80 p-space-md rounded-lg">
+<div class="text-right">
+<span class="text-label-sm font-label-sm uppercase text-outline block">Classificação de Segurança</span>
+<span class="text-label-md font-label-md font-bold text-graphite-teal-deep uppercase">Ostensivo - Uso Interno</span>
+</div>
+<div class="text-right mt-1">
+<span class="text-label-sm font-label-sm uppercase text-outline block">Protocolo</span>
+<span class="text-technical-code font-technical-code font-semibold text-graphite-industrial">DIVENS-2026/SEC</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Grid: Primary Download Area & Curricular Overview -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Primary Download & Document Specification (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Primary Download Module -->
+<div class="bg-pure-white rounded-xl p-space-lg shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-container/10 rounded-full blur-2xl pointer-events-none -mr-10 -mt-10"></div>
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-cool-light-grey flex items-center justify-center text-graphite-teal-deep">
+<span class="material-symbols-outlined text-2xl">picture_as_pdf</span>
+</div>
+<div>
+<h2 class="font-title-md text-title-md font-bold text-graphite-teal-deep">Publicação Oficial Disponível</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Arquivo homologado pela Divisão de Ensino</p>
+</div>
+</div>
+<div class="p-space-md bg-cool-light-grey/60 rounded-lg">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              O arquivo abaixo está disponível para consulta e download. Ele contém os índices atualizados relacionados ao 
+              <strong class="font-semibold text-graphite-teal-deep">Curso Especial de Segurança e Proteção de Autoridades</strong> para o ano de 2026. O cumprimento integral dos coeficientes é pré-requisito para convocação às bancas de validação prática.
+            </p>
+</div>
+<!-- Primary Download Button -->
+<div class="pt-space-xs">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-lg py-3 rounded-lg bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-title-md text-title-md tracking-wide shadow-md transition-all group" href="#download">
+<span class="material-symbols-outlined text-renewal-green group-hover:translate-y-0.5 transition-transform text-2xl">
+                download
+              </span>
+<span>TABELA ÍNDICES SegProt.pdf</span>
+</a>
+<span class="block mt-2 font-technical-code text-technical-code text-on-surface-variant text-xs">
+              Soma de Verificação SHA-256: 7d4a98f12c5b018... MB-AUTHENTICATED
+            </span>
+</div>
+</div>
+<!-- Technical Metadata Specs -->
+<div class="mt-space-lg pt-space-md border-t border-cool-light-grey grid grid-cols-2 sm:grid-cols-4 gap-space-md">
+<div>
+<span class="block text-label-sm font-label-sm uppercase text-outline">Formato</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-base text-status-critical">description</span>
+<span class="text-label-md font-label-md font-bold text-graphite-teal-deep">PDF / A-1b</span>
+</div>
+</div>
+<div>
+<span class="block text-label-sm font-label-sm uppercase text-outline">Tamanho</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-base text-graphite-teal-deep">folder_zip</span>
+<span class="text-label-md font-label-md font-bold text-graphite-teal-deep">2.4 MB</span>
+</div>
+</div>
+<div>
+<span class="block text-label-sm font-label-sm uppercase text-outline">Última Revisão</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-base text-renewal-green-dark">calendar_today</span>
+<span class="text-label-md font-label-md font-bold text-graphite-teal-deep">24/JAN/2026</span>
+</div>
+</div>
+<div>
+<span class="block text-label-sm font-label-sm uppercase text-outline">Expedidor</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-base text-graphite-teal-deep">corporate_fare</span>
+<span class="text-label-md font-label-md font-bold text-graphite-teal-deep">DivEns / CTDDCFN</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tactical Training Scenario Visual Feature -->
+<div class="bg-pure-white rounded-xl p-space-lg shadow-sm overflow-hidden flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-graphite-teal-deep text-xl">military_tech</span>
+<h3 class="font-title-md text-title-md font-bold text-graphite-teal-deep uppercase">
+              Registro Operacional &amp; Instrução
+            </h3>
+</div>
+<span class="text-label-sm font-label-sm text-outline uppercase font-semibold">Instrução Tática Especial</span>
+</div>
+<div class="relative w-full h-60 rounded-lg overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Brazilian Marine Corps special operations operators during VIP protection and tactical escort live fire training exercise, wearing tactical marine gear in deep graphite-teal and dark khaki, protective formation drill under realistic defensive conditions, ultra sharp detail and documentary editorial lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLTl2yV19-Hr8LB7TLh-1PrX_X5o_5MiXmpNzDFH_VRI2Tffn9kemxtRbDPiEHFH9aMgDBTTwZkOX-ZXtB58IVYB594RcHvA7YnHnJBD5Asil8Sp8EEWCyW_0UWjGmbiG-04Xfik_vrec4ZHNjsPRVYOCgGYfUFlt6jZwC_2BMcvBFd20PGXZInVzxIEog8X2fqSbMMYd9BuQ9tIcZNmfrnTiIjnRXHpiHzV9npwiu-l-Fkf-FBsiK"/>
+<div class="absolute inset-0 bg-gradient-to-t from-graphite-industrial/90 via-graphite-industrial/30 to-transparent flex flex-col justify-end p-space-md">
+<span class="text-renewal-green font-technical-code text-xs uppercase tracking-widest font-bold">Módulo de Escolta e Deslocamento a Pé</span>
+<p class="text-pure-white font-body-sm text-body-sm mt-1 max-w-xl">
+              Equipe de Segurança Aproximada executando protocolos de extração rápida em zona de alto risco sob observação do corpo de instrutores do CTDDCFN.
+            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Qualification Criteria & Evaluation Metrics (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Evaluation Domains Breakdown -->
+<div class="bg-pure-white rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b border-cool-light-grey pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-graphite-teal-deep">fact_check</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-graphite-teal-deep">
+              Matriz dos Índices 2026
+            </h3>
+</div>
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-cool-light-grey text-graphite-teal-deep font-bold">
+            MÍNIMO: 7.00
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Resumo dos quatro pilares eliminatórios avaliados conforme as normas consolidadas no arquivo PDF oficial.
+        </p>
+<!-- Criteria List Modules -->
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1: Aptidão Física Militar -->
+<div class="p-space-md rounded-lg bg-surface-container-low hover:bg-cool-light-grey transition-colors flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-bold text-graphite-teal-deep flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-renewal-green-dark">sprint</span>
+                Aptidão Física Específica
+              </span>
+<span class="text-label-sm font-label-sm font-bold text-graphite-teal-deep bg-pure-white px-2 py-0.5 rounded shadow-sm">
+                Peso 2.5
+              </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Corrida de 3.200m em 14'00", barra fixa com pegada pronada (mín. 12 reps), natação utilitária 200m e flutuação operacional de 30 minutos com carga.
+            </p>
+<div class="w-full bg-border-subtle/50 h-1.5 rounded-full mt-1 overflow-hidden">
+<div class="bg-graphite-teal-deep h-full rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<!-- Item 2: Tiro Tático e Defensivo -->
+<div class="p-space-md rounded-lg bg-surface-container-low hover:bg-cool-light-grey transition-colors flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-bold text-graphite-teal-deep flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-renewal-green-dark">crisis_alert</span>
+                Tiro Tático &amp; Defensivo
+              </span>
+<span class="text-label-sm font-label-sm font-bold text-graphite-teal-deep bg-pure-white px-2 py-0.5 rounded shadow-sm">
+                Peso 3.0
+              </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Sequência de engajamento a curta distância (3m a 15m), recargas táticas, transição de armamento e resolução de panes sob estresse induzido. Índice mínimo: 85% de acertos na zona alfa.
+            </p>
+<div class="w-full bg-border-subtle/50 h-1.5 rounded-full mt-1 overflow-hidden">
+<div class="bg-renewal-green-dark h-full rounded-full" style="width: 90%"></div>
+</div>
+</div>
+<!-- Item 3: Escolta VIP e Varredura -->
+<div class="p-space-md rounded-lg bg-surface-container-low hover:bg-cool-light-grey transition-colors flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-bold text-graphite-teal-deep flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-renewal-green-dark">shield</span>
+                Escolta a Pé &amp; Segurança VIP
+              </span>
+<span class="text-label-sm font-label-sm font-bold text-graphite-teal-deep bg-pure-white px-2 py-0.5 rounded shadow-sm">
+                Peso 2.5
+              </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Formações em diamante, cunha e linha, varreduras prévias de itinerários, coordenação de postos de triagem e extração silenciosa.
+            </p>
+<div class="w-full bg-border-subtle/50 h-1.5 rounded-full mt-1 overflow-hidden">
+<div class="bg-graphite-teal-deep h-full rounded-full" style="width: 75%"></div>
+</div>
+</div>
+<!-- Item 4: Direção Evasiva e Defensiva -->
+<div class="p-space-md rounded-lg bg-surface-container-low hover:bg-cool-light-grey transition-colors flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-bold text-graphite-teal-deep flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-renewal-green-dark">directions_car</span>
+                Direção Evasiva &amp; Contraemboscada
+              </span>
+<span class="text-label-sm font-label-sm font-bold text-graphite-teal-deep bg-pure-white px-2 py-0.5 rounded shadow-sm">
+                Peso 2.0
+              </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Manobras dinâmicas (J-Turn, Y-Turn), transposição de bloqueios estáticos e comboios de alta velocidade em viaturas blindadas operacionais.
+            </p>
+<div class="w-full bg-border-subtle/50 h-1.5 rounded-full mt-1 overflow-hidden">
+<div class="bg-graphite-teal-deep h-full rounded-full" style="width: 80%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact / Support Card for Candidates -->
+<div class="bg-cool-light-grey/80 rounded-xl p-space-md flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-pure-white flex items-center justify-center shrink-0 text-graphite-teal-deep shadow-sm">
+<span class="material-symbols-outlined text-2xl">help_outline</span>
+</div>
+<div class="flex-1">
+<h4 class="font-title-md text-title-md font-bold text-graphite-teal-deep">Dúvidas sobre os Baremas?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Encaminhe sua solicitação à Secretaria da Divisão de Ensino via ramal 8399 ou via mensagem RITMAR.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Highlighting active navigation item on sidebar for C-Esp-SegProtAut under ENSINO
+  document.addEventListener("DOMContentLoaded", () => {
+    try {
+      const activePathLink = document.querySelector('a[data-path="cursos-e-estagios"]');
+      if (activePathLink) {
+        activePathLink.classList.remove("text-on-surface-variant", "hover:bg-surface-container-high");
+        activePathLink.classList.add("bg-graphite-teal-surface", "text-pure-white", "font-bold");
+        
+        // Append a tactical indicator badge next to it if inside navigation
+        const badge = document.createElement("span");
+        badge.className = "w-2 h-2 rounded-full bg-renewal-green ml-auto";
+        activePathLink.appendChild(badge);
+      }
+    } catch (e) {
+      // Graceful fallback
+    }
+  });
+</script></main></div><footer class="w-full bg-graphite-teal-deep text-pure-white"><div class="h-1 w-full bg-renewal-green"></div><div class="w-full px-gutter py-space-xl flex flex-col md:flex-row justify-between items-start gap-space-xl"><div class="flex items-start gap-space-md max-w-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VXrlbjdFzVtCcnXF7yrvvMWtaqqtMrKL6OzUjd0lqYVSypdAUvvDIeWVGuLTpvaIgYUi4iMAUkr5HFNbur18YHAyeiq_vHImYzbE_amLqxFOz6R7hqZ9W8N7ZhAQQZmwT9WT_pCUq-spXJyw4tDL8Z-Ndc7fKjTp8uI9oDe0LcRjSYIrE5sqoLvxXF8-74Xfd_X-gn9ikW_j97c1b1gFd7UhLxKa9VKjjkFYP17SEezF2V2qthbRDJL1i9eWh4JhVAfosyI7DT0A"/><div class="flex flex-col"><span class="font-title-md text-title-md font-bold uppercase tracking-wide">CTDDCFN</span><span class="font-body-sm text-body-sm text-surface-container-highest">Comando do Treinamento e do Desenvolvimento Doutrinário do Corpo de Fuzileiros Navais</span><p class="font-body-sm text-body-sm text-outline-variant mt-space-sm">Complexo Naval da Ilha do Governador, Rio de Janeiro - RJ, CEP 21911-000</p></div></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase font-bold text-renewal-green">Comunicação Social (SECOM)</span><div class="flex items-center gap-space-xs text-body-sm font-body-sm text-pure-white"><span class="material-symbols-outlined text-base text-renewal-green">call</span>(21) 3386-4399</div><div class="flex items-center gap-space-xs text-body-sm font-body-sm text-pure-white"><span class="material-symbols-outlined text-base text-renewal-green">mail</span>ctddcfn.secom@marinha.mil.br</div><div class="flex items-center gap-space-xs text-body-sm font-body-sm text-surface-container-highest mt-space-xs"><span class="material-symbols-outlined text-base text-renewal-green">shield</span>Rede RITMAR: Ramal 8399</div></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase font-bold text-renewal-green">Acesso Direto</span><nav class="flex flex-col gap-1"><a class="font-body-sm text-body-sm text-surface-container-highest hover:text-renewal-green transition-colors" data-path="inicio" href="#">Portal MB</a><a class="font-body-sm text-body-sm text-surface-container-highest hover:text-renewal-green transition-colors" data-path="sistemas" href="#">Doutrina Naval Digital</a><a class="font-body-sm text-body-sm text-surface-container-highest hover:text-renewal-green transition-colors" data-path="bono" href="#">Boletim de Ordens e Notícias</a></nav></div></div><div class="w-full bg-graphite-industrial py-space-sm px-gutter flex items-center justify-between text-technical-code font-technical-code text-surface-container-highest"><div class="flex items-center gap-space-sm"><span class="text-renewal-green">●</span><span>SISTEMA OPERACIONAL SEGURO | CLASSIFICAÇÃO: RESERVADO</span></div><div><span>CTDDCFN © 2025 - TODOS OS DIREITOS RESERVADOS</span></div></div></footer></body></html>

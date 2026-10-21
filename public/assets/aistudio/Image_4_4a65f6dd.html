@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Comandante | CTDDCFN - Marinha do Brasil</title>
+<!-- Google Fonts: Montserrat & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              teal: '#002e32',
+              tealDark: '#002023',
+              tealLight: '#01454a',
+              lime: '#bad435',
+              limeHover: '#a3be27',
+              canvas: '#f8fafc',
+            }
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: CustomStyles -->
+<style data-purpose="base-typography">
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+  </style>
+<style data-purpose="component-accents">
+    .custom-scroll::-webkit-scrollbar {
+      width: 5px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+  </style>
+<!-- END: CustomStyles -->
+</head>
+<body class="min-h-screen flex flex-col bg-slate-50 text-slate-800 antialiased selection:bg-[#bad435] selection:text-[#002e32]">
+<!-- BEGIN: MainHeader -->
+<header class="bg-white text-slate-800 border-b border-slate-200 shadow-sm" data-purpose="institutional-header">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3.5 text-center sm:text-left">
+<a class="shrink-0 transition-transform hover:scale-105 duration-200" href="#" title="Brasão Oficial CTDDCFN">
+<img alt="Brasão Oficial CTDDCFN" class="h-16 w-auto object-contain drop-shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCclDac3kkKIc6Fy50QYuB29h6QuSnDHGcOZKp-KVONO9HJ25wK2aY9hWdWNSsh1Y0zhoZTgKgGXEM8a1nQikcq5aHAEV8lZ-79KQ3EBM6BITzs1h_07Ys3DBcB6RhCpZsFGJSIhNLl_YJsZywS5VyngfxwTcfgyUEVhfm4SKI9YylruX-lch1elloE48RWJZ6OF70OHpZKtvnXRN-MNHF3ivgcT3q3YbUPV6R9WQtyd81H095t2vaXR5UCjf5ERS3VnQ"/>
+</a>
+<div class="flex flex-col text-left">
+<div class="flex items-center gap-2">
+<h1 class="text-2xl font-black tracking-tight text-[#002e32]">CTDDCFN</h1>
+<span class="text-[10px] bg-[#bad435] text-[#002e32] px-2 py-0.5 font-bold rounded uppercase tracking-wider shadow-sm">Marinha do Brasil</span>
+</div>
+<span class="text-[11px] font-bold text-slate-600 tracking-wide uppercase mt-0.5">Comando do Treinamento e do Desenvolvimento Doutrinário do CFN</span>
+<p class="text-[10px] text-[#002e32] font-semibold italic tracking-wide uppercase">A PRONTIDÃO COMEÇA AQUI!</p>
+</div>
+</div>
+<div class="flex items-center gap-3 w-full md:w-auto justify-end">
+<div class="w-full md:w-80 lg:w-96 relative">
+<input class="w-full pl-9 pr-4 py-2 rounded-full text-xs bg-slate-100 text-slate-800 placeholder-slate-500 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#002e32] focus:bg-white transition" placeholder="Pesquisar doutrinas, diretrizes, or..." type="text"/>
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-slate-400 text-base pointer-events-none">search</span>
+</div>
+<div class="flex items-center gap-2 pl-1 border-l border-slate-200">
+<button aria-label="Notificações" class="p-1.5 text-slate-500 hover:text-[#002e32] hover:bg-slate-100 rounded-full transition">
+<span class="material-symbols-outlined text-lg">notifications</span>
+</button>
+<button aria-label="Segurança" class="p-1.5 text-slate-500 hover:text-[#002e32] hover:bg-slate-100 rounded-full transition">
+<span class="material-symbols-outlined text-lg">security</span>
+</button>
+<div class="flex items-center gap-2 pl-2 bg-slate-50 py-1 px-2.5 rounded-full border border-slate-200">
+<span class="material-symbols-outlined text-slate-600 text-base">military_tech</span>
+<div class="text-left">
+<span class="block text-[10px] font-bold text-[#002e32] leading-tight">1º SG-FN</span>
+<span class="block text-[9px] text-slate-500 font-mono leading-tight">OPERADOR</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: MainNavigationBar -->
+<nav class="bg-[#002023] border-b border-teal-900 sticky top-0 z-40 shadow-sm" data-purpose="primary-navigation">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between overflow-x-auto text-xs font-semibold tracking-wide">
+<ul class="flex items-center space-x-1 sm:space-x-1.5 py-1.5 whitespace-nowrap">
+<li>
+<a class="px-3 py-1.5 rounded text-white hover:bg-[#002e32] hover:text-[#bad435] transition flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-sm">home</span> Início
+        </a>
+</li>
+<li>
+<a class="px-3 py-1.5 rounded text-slate-200 hover:bg-[#002e32] hover:text-[#bad435] transition flex items-center gap-1" href="#">
+          Departamentos <span class="material-symbols-outlined text-xs">expand_more</span>
+</a>
+</li>
+<li>
+<a class="px-3 py-1.5 rounded text-slate-200 hover:bg-[#002e32] hover:text-[#bad435] transition" href="#">Sites</a>
+</li>
+<li>
+<a class="px-3 py-1.5 rounded text-slate-200 hover:bg-[#002e32] hover:text-[#bad435] transition" href="#">Sistemas</a>
+</li>
+<li>
+<a class="px-3 py-1.5 rounded text-slate-200 hover:bg-[#002e32] hover:text-[#bad435] transition" href="#">OM</a>
+</li>
+<li>
+<a class="px-3 py-1.5 rounded text-slate-200 hover:bg-[#002e32] hover:text-[#bad435] transition" href="#">BONO</a>
+</li>
+<li>
+<a class="px-3 py-1.5 rounded text-slate-200 hover:bg-[#002e32] hover:text-[#bad435] transition" href="#">Plano do Dia</a>
+</li>
+<li>
+<a class="px-3 py-1.5 rounded text-slate-200 hover:bg-[#002e32] hover:text-[#bad435] transition" href="#">Catálogo</a>
+</li>
+<li>
+<a class="px-3 py-1.5 rounded text-slate-200 hover:bg-[#002e32] hover:text-[#bad435] transition" href="#">Pedido de TI</a>
+</li>
+</ul>
+<div class="py-1.5 pl-3">
+<a class="inline-flex items-center gap-1.5 bg-[#bad435] hover:bg-[#a3be27] text-[#002e32] font-black px-3.5 py-1.5 rounded text-xs transition duration-200 shadow-sm uppercase tracking-wider" href="#">
+<span class="material-symbols-outlined text-sm font-bold">key</span> INTRANET AUTH
+      </a>
+</div>
+</div>
+</nav>
+<!-- END: MainNavigationBar -->
+<!-- BEGIN: BreadcrumbBar -->
+<div class="bg-white border-b border-slate-200" data-purpose="breadcrumbs">
+<div class="max-w-7xl mx-auto px-4 py-2.5 text-xs text-slate-500 flex items-center space-x-2">
+<a class="hover:text-[#002e32] flex items-center gap-1" href="#">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+      Início
+    </a>
+<span>/</span>
+<a class="hover:text-[#002e32]" href="#">Institucional</a>
+<span>/</span>
+<span class="text-[#002e32] font-semibold">Comandante</span>
+</div>
+</div>
+<!-- END: BreadcrumbBar -->
+<!-- BEGIN: PageContentContainer -->
+<main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 py-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- BEGIN: LeftSidebar -->
+<aside class="lg:col-span-4 xl:col-span-3 space-y-6" data-purpose="institutional-sidebar">
+<!-- Unified Clean Sidebar Menu (SCREEN_4 Standard) -->
+<div class="bg-white rounded-lg border border-slate-200/90 shadow-sm p-4 divide-y divide-slate-100 font-sans">
+<!-- Section: INSTITUCIONAL -->
+<div class="pb-4">
+<span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase block mb-2 px-2">Institucional</span>
+<ul class="space-y-0.5 text-xs font-medium">
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded bg-teal-50/70 text-[#002e32] font-bold border-l-2 border-[#bad435]" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-[#002e32]">star</span>
+                  Comandante
+                </span>
+<span class="material-symbols-outlined text-xs text-slate-400">chevron_right</span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">history_edu</span>
+                  Ex-Comandantes
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">badge</span>
+                  Suboficial-Mor
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">shield</span>
+                  Heráldica
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">auto_stories</span>
+                  Histórico
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">flag</span>
+                  Missão e Visão
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">gavel</span>
+                  Regulamento
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">account_tree</span>
+                  Organograma
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">psychology</span>
+                  Deusa Minerva
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">public</span>
+                  CTDD na Internet
+                </span>
+</a>
+</li>
+</ul>
+</div>
+<!-- Section: PRODUTOS DOUTRINÁRIOS -->
+<div class="py-4">
+<span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase block mb-2 px-2">Produtos Doutrinários</span>
+<ul class="space-y-0.5 text-xs font-medium">
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">folder</span>
+                  Portfólio de Produtos
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">school</span>
+                  Portal do Conhecimento
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">podcasts</span>
+                  Podcast Momento Doutrinário
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">flash_on</span>
+                  Flash Doutrinário
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">anchor</span>
+                  Revista Âncoras e Fuzis
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">lightbulb</span>
+                  Decida | Envie sua solução
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">memory</span>
+                  Fronteira da tecnologia - JID
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">insights</span>
+                  Relatórios de Lições Aprendidas
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">local_library</span>
+                  Biblioteca Digital de Doutrina
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">spellcheck</span>
+                  Coletânea de Termos e Siglas
+                </span>
+</a>
+</li>
+</ul>
+</div>
+<!-- Section: SECOM -->
+<div class="py-4">
+<span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase block mb-2 px-2">SECOM</span>
+<ul class="space-y-0.5 text-xs font-medium">
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">event_note</span>
+                  Plano de Dia
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">assignment</span>
+                  Ordem Interna
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">description</span>
+                  CTDDMARINST
+                </span>
+</a>
+</li>
+</ul>
+</div>
+<!-- Section: ENSINO -->
+<div class="py-4">
+<span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase block mb-2 px-2">Ensino</span>
+<ul class="space-y-0.5 text-xs font-medium">
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">military_tech</span>
+                  Cursos e Estágios
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">calendar_month</span>
+                  Calendário de Adestramento
+                </span>
+</a>
+</li>
+</ul>
+</div>
+<!-- Section: NAVEGAÇÃO -->
+<div class="py-4">
+<span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase block mb-2 px-2">Navegação</span>
+<ul class="space-y-0.5 text-xs font-medium">
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">sailing</span>
+                  Carta Náutica Digital
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">map</span>
+                  Operações Anfíbias
+                </span>
+</a>
+</li>
+</ul>
+</div>
+<!-- Section: DIVISÃO DE INFORMÁTICA -->
+<div class="pt-4">
+<span class="text-[11px] font-bold tracking-wider text-slate-400 uppercase block mb-2 px-2">Divisão de Informática</span>
+<ul class="space-y-0.5 text-xs font-medium">
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">headset_mic</span>
+                  Chamados TI
+                </span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded text-slate-700 hover:text-[#002e32] hover:bg-slate-50 transition" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-400">wifi</span>
+                  Status dos Sistemas
+                </span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Bússola Interna Card (Identical to SCREEN_4) -->
+<div class="bg-[#002e32] text-white rounded-lg p-5 shadow-sm border border-teal-900 font-sans" data-purpose="bussola-interna">
+<div class="flex items-center justify-between border-b border-teal-800/80 pb-2 mb-3">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-[#bad435]">explore</span>
+<h3 class="text-xs font-bold uppercase tracking-wider text-white">Bússola Interna</h3>
+</div>
+<span class="text-[9px] bg-[#bad435]/20 text-[#bad435] px-1.5 py-0.5 rounded font-mono font-bold tracking-wider">MB-INTRANET</span>
+</div>
+<p class="text-[11px] text-slate-300 mb-3 leading-relaxed">Pesquise rapidamente termos e arquivos doutrinários internos.</p>
+<div class="space-y-2.5">
+<div class="relative">
+<input class="w-full text-xs pl-8 pr-3 py-2 bg-[#002023] border border-teal-700/60 rounded text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-[#bad435]" placeholder="Digite o termo ou código..." type="text"/>
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-slate-400 text-sm">search</span>
+</div>
+<button class="w-full py-2 bg-[#bad435] hover:bg-[#a3be27] text-[#002e32] rounded font-bold text-xs tracking-wider transition uppercase flex items-center justify-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-sm font-bold">search</span> Pesquisar
+          </button>
+</div>
+<div class="mt-4 pt-3 border-t border-teal-800/60 flex items-center justify-between text-[10px] text-teal-300/80 font-mono">
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> REDE ATIVA</span>
+<span>DEFCON 4 / PRONTIDÃO</span>
+</div>
+</div>
+</aside>
+<!-- END: LeftSidebar -->
+<!-- BEGIN: MainContent -->
+<section class="lg:col-span-8 xl:col-span-9 space-y-6" data-purpose="curriculum-content">
+<!-- Commander Hero Card -->
+<article class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden p-6 sm:p-8" data-purpose="commander-hero">
+<div class="flex flex-col md:flex-row gap-6 lg:gap-8 items-start">
+<!-- Commander Portrait -->
+<div class="w-full md:w-52 lg:w-60 shrink-0">
+<div class="rounded-lg overflow-hidden border-2 border-slate-200 shadow bg-slate-100 aspect-[3/4] relative">
+<img alt="Vice-Almirante (FN) Cláudio Lopes de Araujo Leite" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-9hxoPINlkjxobvxtgVV7bp-BZNu6UIJNcPAMtU89dmWPeSe1qLYH5QS23eZz7NVEtaxUqTyjdvjYshxsLFaXYVImlb8rW_Smoq2Pm5mlyNZ2MYnTdFyiTN8U3Out0nvADGkznfJxyYTHAb4B4sD6vMFSuBajd5tatj4Ex_PwADtzbXW43-x_0XTKEV0zpfDCkBGvXDN7BmQGH7qmwVcVQxubF1JScnu6cofbNzbQpddXWHNZZ9xV"/>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#002e32]/90 via-[#002e32]/40 to-transparent p-2 text-center">
+<span class="text-[10px] text-white tracking-widest uppercase font-semibold">Corpo de Fuzileiros Navais</span>
+</div>
+</div>
+</div>
+<!-- Commander Header Text & Quick Badges -->
+<div class="flex-1 space-y-4">
+<div>
+<div class="inline-flex items-center gap-2 mb-2">
+<span class="h-1.5 w-6 bg-[#bad435] rounded-full"></span>
+<span class="text-xs font-bold tracking-widest uppercase text-slate-500">Curriculum Vitae</span>
+</div>
+<h2 class="text-2xl sm:text-3xl font-bold text-[#002e32] leading-tight">
+                Vice-Almirante (FN) Cláudio Lopes de Araujo Leite
+              </h2>
+<p class="text-sm sm:text-base font-semibold text-teal-800 mt-2">
+                Comandante do Treinamento e do Desenvolvimento Doutrinário do Corpo de Fuzileiros Navais
+              </p>
+</div>
+<!-- Quick Badges / Pill Tags -->
+<div class="pt-2 flex flex-wrap gap-2 text-xs">
+<div class="inline-flex items-center gap-1.5 bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-slate-700">
+<span class="font-bold text-[#002e32]">Promoção a Vice-Almirante:</span>
+<span>31 MAR 2026</span>
+</div>
+<div class="inline-flex items-center gap-1.5 bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-slate-700">
+<span class="font-bold text-[#002e32]">Naturalidade:</span>
+<span>Rio de Janeiro</span>
+</div>
+<div class="inline-flex items-center gap-1.5 bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-slate-700">
+<span class="font-bold text-[#002e32]">Esposa:</span>
+<span>Taíssa Clemente de Araujo Leite</span>
+</div>
+<div class="inline-flex items-center gap-1.5 bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-slate-700">
+<span class="font-bold text-[#002e32]">Filha:</span>
+<span>Catarina Clemente de Araujo Leite</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Section 1: Dados Pessoais -->
+<article class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm" data-purpose="dados-pessoais">
+<h3 class="text-lg font-bold text-[#002e32] border-b-2 border-slate-100 pb-2 mb-4 flex items-center gap-2">
+<span class="w-1.5 h-4 bg-[#bad435] rounded-sm"></span>
+          Dados pessoais
+        </h3>
+<dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-xs sm:text-sm">
+<div class="flex border-b border-slate-100 py-1.5">
+<dt class="w-36 font-semibold text-slate-500">Nascimento</dt>
+<dd class="text-slate-800 font-medium">13/06/1969</dd>
+</div>
+<div class="flex border-b border-slate-100 py-1.5">
+<dt class="w-36 font-semibold text-slate-500">Naturalidade</dt>
+<dd class="text-slate-800 font-medium">Rio de Janeiro</dd>
+</div>
+<div class="flex border-b border-slate-100 py-1.5 sm:col-span-2">
+<dt class="w-36 font-semibold text-slate-500">Estado civil</dt>
+<dd class="text-slate-800 font-medium">Casado</dd>
+</div>
+</dl>
+</article>
+<!-- Section 2: Carreira -->
+<article class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm" data-purpose="carreira">
+<h3 class="text-lg font-bold text-[#002e32] border-b-2 border-slate-100 pb-2 mb-4 flex items-center gap-2">
+<span class="w-1.5 h-4 bg-[#bad435] rounded-sm"></span>
+          Carreira
+        </h3>
+<div class="relative pl-6 before:content-[''] before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-slate-200">
+<ul class="space-y-3.5 text-xs sm:text-sm text-slate-700">
+<li class="relative pl-3 before:content-[''] before:absolute before:left-[-1.3rem] before:top-2 before:w-2 before:h-2 before:rounded-full before:bg-[#002e32]">
+<span class="font-bold text-[#002e32]">Guarda-Marinha</span> – 13 DEZ 1990
+            </li>
+<li class="relative pl-3 before:content-[''] before:absolute before:left-[-1.3rem] before:top-2 before:w-2 before:h-2 before:rounded-full before:bg-[#002e32]">
+<span class="font-bold text-[#002e32]">Segundo-Tenente</span> – 08 OUT 1991
+            </li>
+<li class="relative pl-3 before:content-[''] before:absolute before:left-[-1.3rem] before:top-2 before:w-2 before:h-2 before:rounded-full before:bg-[#002e32]">
+<span class="font-bold text-[#002e32]">Primeiro-Tenente</span> – 25 DEZ 1993
+            </li>
+<li class="relative pl-3 before:content-[''] before:absolute before:left-[-1.3rem] before:top-2 before:w-2 before:h-2 before:rounded-full before:bg-[#002e32]">
+<span class="font-bold text-[#002e32]">Capitão-Tenente</span> – 25 DEZ 1996
+            </li>
+<li class="relative pl-3 before:content-[''] before:absolute before:left-[-1.3rem] before:top-2 before:w-2 before:h-2 before:rounded-full before:bg-[#002e32]">
+<span class="font-bold text-[#002e32]">Capitão de Corveta</span> – 25 DEZ 2002
+            </li>
+<li class="relative pl-3 before:content-[''] before:absolute before:left-[-1.3rem] before:top-2 before:w-2 before:h-2 before:rounded-full before:bg-[#002e32]">
+<span class="font-bold text-[#002e32]">Capitão de Fragata</span> – 31 AGO 2008
+            </li>
+<li class="relative pl-3 before:content-[''] before:absolute before:left-[-1.3rem] before:top-2 before:w-2 before:h-2 before:rounded-full before:bg-[#002e32]">
+<span class="font-bold text-[#002e32]">Capitão de Mar e Guerra</span> – 25 DEZ 2013
+            </li>
+<li class="relative pl-3 before:content-[''] before:absolute before:left-[-1.3rem] before:top-2 before:w-2 before:h-2 before:rounded-full before:bg-[#002e32]">
+<span class="font-bold text-[#002e32]">Contra-Almirante</span> – 31 MAR 2020
+            </li>
+<li class="relative pl-3 before:content-[''] before:absolute before:left-[-1.3rem] before:top-2 before:w-2.5 before:h-2.5 before:rounded-full before:bg-[#bad435] before:ring-2 before:ring-[#002e32]">
+<span class="font-bold text-[#002e32]">Vice-Almirante</span> – 31 MAR 2026
+            </li>
+</ul>
+</div>
+</article>
+<!-- Section 3: Comandos e Funções -->
+<article class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm" data-purpose="comandos-e-funcoes">
+<h3 class="text-lg font-bold text-[#002e32] border-b-2 border-slate-100 pb-2 mb-4 flex items-center gap-2">
+<span class="w-1.5 h-4 bg-[#bad435] rounded-sm"></span>
+          Comandos e funções
+        </h3>
+<ul class="space-y-2.5 text-xs sm:text-sm text-slate-700">
+<li class="flex items-start gap-2.5">
+<span class="text-[#bad435] font-black mt-0.5">•</span>
+<span>Comandante do Treinamento e do Desenvolvimento Doutrinário do Corpo de Fuzileiros Navais</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-[#bad435] font-black mt-0.5">•</span>
+<span>Comandante do Material de Fuzileiros Navais</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-[#bad435] font-black mt-0.5">•</span>
+<span>Comandante do Centro de Educação Física Almirante Adalberto Nunes e Presidente da Comissão de Desportos da Marinha</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-[#bad435] font-black mt-0.5">•</span>
+<span>Subchefe de Organização do Estado-Maior da Armada</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-[#bad435] font-black mt-0.5">•</span>
+<span>Comandante do Centro de Instrução Almirante Sylvio de Camargo</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-[#bad435] font-black mt-0.5">•</span>
+<span>Imediato do Comando do Pessoal de Fuzileiros Navais</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-[#bad435] font-black mt-0.5">•</span>
+<span>Comandante do Centro de Avaliação da Ilha da Marambaia</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-[#bad435] font-black mt-0.5">•</span>
+<span>Chefe do Departamento de Doutrina do Comando-Geral do Corpo de Fuzileiros Navais</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-[#bad435] font-black mt-0.5">•</span>
+<span>Comandante do Batalhão de Comando e Controle</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-[#bad435] font-black mt-0.5">•</span>
+<span>Imediato do 2º Batalhão de Infantaria de Fuzileiros Navais</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-[#bad435] font-black mt-0.5">•</span>
+<span>Instrutor do CAOCFN</span>
+</li>
+</ul>
+</article>
+<!-- Section 4: Cursos -->
+<article class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm" data-purpose="cursos">
+<h3 class="text-lg font-bold text-[#002e32] border-b-2 border-slate-100 pb-2 mb-4 flex items-center gap-2">
+<span class="w-1.5 h-4 bg-[#bad435] rounded-sm"></span>
+          Cursos
+        </h3>
+<ul class="space-y-2.5 text-xs sm:text-sm text-slate-700">
+<li class="flex items-start gap-2.5">
+<span class="text-[#bad435] font-black mt-0.5">•</span>
+<span>Escola Naval – 1990</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-[#bad435] font-black mt-0.5">•</span>
+<span>Curso de Aperfeiçoamento de Oficiais do Corpo de Fuzileiros Navais – 1997</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-[#bad435] font-black mt-0.5">•</span>
+<span>Curso de Estado-Maior para Oficiais Superiores (CEMOS – EGN) – 2007</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-[#bad435] font-black mt-0.5">•</span>
+<span>Curso de Altos Estudos de Política e Estratégia (CAEPE – ESG) – 2018</span>
+</li>
+</ul>
+</article>
+<!-- Section 5: Condecorações -->
+<article class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm" data-purpose="condecoracoes">
+<h3 class="text-lg font-bold text-[#002e32] border-b-2 border-slate-100 pb-2 mb-4 flex items-center gap-2">
+<span class="w-1.5 h-4 bg-[#bad435] rounded-sm"></span>
+          Condecorações
+        </h3>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2.5 text-xs sm:text-sm text-slate-700">
+<li class="flex items-start gap-2">
+<span class="text-[#bad435] font-black">•</span>
+<span>Ordem do Mérito da Defesa (Grau de Comendador)</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#bad435] font-black">•</span>
+<span>Ordem do Mérito Naval (Grau de Comendador)</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#bad435] font-black">•</span>
+<span>Ordem do Mérito Militar (Grau de Comendador)</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#bad435] font-black">•</span>
+<span>Ordem do Mérito Ministério Público Militar</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#bad435] font-black">•</span>
+<span>Medalha Mérito Desportivo Militar</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#bad435] font-black">•</span>
+<span>Medalha da Vitória</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#bad435] font-black">•</span>
+<span>Medalha Militar de Ouro com Passador de Platina</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#bad435] font-black">•</span>
+<span>Medalha Mérito Tamandaré</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#bad435] font-black">•</span>
+<span>Medalha do Pacificador</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#bad435] font-black">•</span>
+<span>Medalha Mérito Santos-Dumont</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#bad435] font-black">•</span>
+<span>Medalha-Prêmio Escola de Guerra Naval</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#bad435] font-black">•</span>
+<span>Medalha Mérito Anfíbio (duas âncoras)</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#bad435] font-black">•</span>
+<span>Medalha Tiradentes</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#bad435] font-black">•</span>
+<span>Medalha da Missão da ONU para a Estabilização do Haiti</span>
+</li>
+<li class="flex items-start gap-2 md:col-span-2">
+<span class="text-[#bad435] font-black">•</span>
+<span>Medalha da Organização Brasileira dos Veteranos das Nações Unidas</span>
+</li>
+</ul>
+</article>
+<!-- Formal Signature Block -->
+<div class="bg-white rounded-xl border border-slate-200 p-8 shadow-sm text-right" data-purpose="signature-block">
+<p class="text-xs sm:text-sm text-slate-500 mb-6">
+          Rio de Janeiro, 27 de março de 2026.
+        </p>
+<div class="inline-block text-center border-t border-slate-300 pt-3 px-8">
+<h4 class="font-extrabold text-[#002e32] text-sm sm:text-base tracking-wider uppercase">
+            Cláudio Lopes de Araujo Leite
+          </h4>
+<p class="text-xs text-slate-600 font-medium">
+            Vice-Almirante (FN)
+          </p>
+</div>
+</div>
+</section>
+<!-- END: MainContent -->
+</div>
+</main>
+<!-- END: PageContentContainer -->
+<!-- BEGIN: InstitutionalFooter -->
+<footer class="bg-[#002e32] text-white mt-12 border-t-4 border-[#bad435] w-full" data-purpose="institutional-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left space-y-3">
+<div class="flex items-center gap-3">
+<img alt="Brasão Oficial CTDDCFN" class="h-20 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCclDac3kkKIc6Fy50QYuB29h6QuSnDHGcOZKp-KVONO9HJ25wK2aY9hWdWNSsh1Y0zhoZTgKgGXEM8a1nQikcq5aHAEV8lZ-79KQ3EBM6BITzs1h_07Ys3DBcB6RhCpZsFGJSIhNLl_YJsZywS5VyngfxwTcfgyUEVhfm4SKI9YylruX-lch1elloE48RWJZ6OF70OHpZKtvnXRN-MNHF3ivgcT3q3YbUPV6R9WQtyd81H095t2vaXR5UCjf5ERS3VnQ"/>
+<div class="text-left">
+<span class="text-lg font-black tracking-tight text-white block">CTDDCFN</span>
+<span class="text-[11px] font-bold text-slate-300 block uppercase">Comando do Treinamento e do Desenvolvimento Doutrinário do CFN</span>
+<span class="text-[10px] text-[#bad435] font-semibold italic uppercase">A Prontidão Começa Aqui!</span>
+</div>
+</div>
+<p class="text-xs text-slate-300 leading-relaxed pt-1">
+          Organização Militar vocacionada ao aprimoramento doutrinário, adestramento e capacitação contínua do combatente anfíbio da Marinha do Brasil.
+        </p>
+</div>
+<div class="md:col-span-3 text-xs text-slate-300 space-y-2">
+<h4 class="font-bold text-xs uppercase tracking-wider text-[#bad435] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">pin_drop</span> Endereço &amp; Sede
+        </h4>
+<p class="leading-relaxed">
+          Rua Magno Martins, s/nº<br/>
+          Freguesia, Ilha do Governador<br/>
+          Rio de Janeiro – RJ<br/>
+          CEP: 21.911-430
+        </p>
+</div>
+<div class="md:col-span-3 text-xs text-slate-300 space-y-2">
+<h4 class="font-bold text-xs uppercase tracking-wider text-[#bad435] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">call</span> Contatos Oficiais
+        </h4>
+<p>Telefone: <a class="text-white hover:text-[#bad435] transition" href="tel:2133864399">(21) 3386-4399</a></p>
+<p>RITM: 8110-4399</p>
+<p>E-mail: <a class="text-white hover:text-[#bad435] transition underline decoration-dotted" href="mailto:ctddcfn.secom@marinha.mil.br">ctddcfn.secom@marinha.mil.br</a></p>
+</div>
+<div class="md:col-span-2 text-xs text-slate-300 space-y-2">
+<h4 class="font-bold text-xs uppercase tracking-wider text-[#bad435] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">link</span> Institucional
+        </h4>
+<ul class="space-y-1 text-[11px]">
+<li><a class="hover:text-[#bad435] transition" href="#">Marinha do Brasil</a></li>
+<li><a class="hover:text-[#bad435] transition" href="#">ComFFE</a></li>
+<li><a class="hover:text-[#bad435] transition" href="#">Comando-Geral CFN</a></li>
+<li><a class="hover:text-[#bad435] transition" href="#">Portal do Conhecimento</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-t border-teal-900 bg-[#002023] px-4 py-3 text-xs text-slate-400">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+<span class="text-[11px]">© 2026 CTDDCFN - Comando do Treinamento e do Desenvolvimento Doutrinário do CFN. Todos os direitos reservados.</span>
+<div class="flex items-center gap-3 text-[10px] uppercase font-mono tracking-wider">
+<span class="inline-flex items-center gap-1 text-emerald-400"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> SISTEMA OPERACIONAL SEGURO</span>
+<span class="text-slate-600">|</span>
+<span class="text-amber-300 font-bold">CLASSIFICAÇÃO: RESERVADO</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: InstitutionalFooter -->
+</body></html>

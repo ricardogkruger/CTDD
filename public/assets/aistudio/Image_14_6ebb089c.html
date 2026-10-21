@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="pt-BR" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#181c1c", "on-tertiary": "#ffffff", "surface": "#f7faf9", "inverse-surface": "#2d3131", "cool-light-grey": "#F2F5F4", "surface-container-lowest": "#ffffff", "status-critical": "#B42828", "pure-white": "#FFFFFF", "renewal-green-dark": "#8FA619", "secondary-fixed": "#d4ef4f", "on-primary-fixed": "#002023", "surface-container-low": "#f1f4f3", "on-primary": "#ffffff", "outline": "#717879", "graphite-teal-surface": "#00383D", "status-critical-bg": "#FDE8E8", "surface-container": "#ebeeed", "surface-bright": "#f7faf9", "graphite-industrial": "#1C1C1C", "primary-container": "#002e32", "outline-variant": "#c0c8c9", "surface-tint": "#3e6469", "tertiary-fixed-dim": "#c8c6c5", "border-subtle": "#D7DBDA", "primary-fixed": "#c1eaef", "surface-container-high": "#e6e9e8", "on-secondary": "#ffffff", "on-error-container": "#93000a", "inverse-on-surface": "#eef1f0", "error": "#ba1a1a", "surface-dim": "#d7dbda", "renewal-green": "#BAD435", "on-tertiary-fixed-variant": "#474746", "secondary-fixed-dim": "#b8d233", "surface-variant": "#e0e3e2", "tertiary-container": "#292929", "on-secondary-fixed-variant": "#404c00", "on-surface": "#181c1c", "on-secondary-fixed": "#181e00", "on-tertiary-container": "#91908f", "secondary-container": "#d1ec4c", "secondary": "#566500", "surface-container-highest": "#e0e3e2", "on-primary-container": "#70979b", "on-primary-fixed-variant": "#254d51", "tertiary": "#151515", "graphite-teal-deep": "#002E32", "on-secondary-container": "#5a6900", "canvas-clean": "#F8FAFC", "background": "#f7faf9", "error-container": "#ffdad6", "tertiary-fixed": "#e5e2e1", "on-tertiary-fixed": "#1b1b1b", "inverse-primary": "#a5ced2", "primary-fixed-dim": "#a5ced2", "primary": "#00181a", "on-error": "#ffffff", "on-surface-variant": "#414849" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xl": "2.5rem", "space-sm": "0.5rem", "margin": "3rem", "space-xs": "0.25rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-md": "1rem" }, "fontFamily": { "headline-md": [ "Montserrat" ], "headline-xl-mobile": [ "Montserrat" ], "body-lg": [ "Inter" ], "headline-lg": [ "Montserrat" ], "title-md": [ "Montserrat" ], "technical-code": [ "Inter" ], "body-sm": [ "Inter" ], "headline-xl": [ "Montserrat" ], "label-md": [ "Inter" ], "headline-sm": [ "Montserrat" ], "label-sm": [ "Inter" ], "display-lg-mobile": [ "Montserrat" ], "display-lg": [ "Montserrat" ], "body-md": [ "Inter" ] }, "fontSize": { "headline-md": [ "1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-xl-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" } ], "headline-lg": [ "2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "title-md": [ "1.125rem", { "lineHeight": "1.5rem", "fontWeight": "600" } ], "technical-code": [ "0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0.04em", "fontWeight": "500" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" } ], "headline-xl": [ "2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-md": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-sm": [ "1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" } ], "label-sm": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.06em", "fontWeight": "700" } ], "display-lg-mobile": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "display-lg": [ "3.5rem", { "lineHeight": "4.25rem", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "body-md": [ "1rem", { "lineHeight": "1.5rem", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-canvas-clean shadow-[0_1px_8px_rgba(0,46,50,0.06)]"><div class="h-20 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="relative flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VXrlbjdFzVtCcnXF7yrvvMWtaqqtMrKL6OzUjd0lqYVSypdAUvvDIeWVGuLTpvaIgYUi4iMAUkr5HFNbur18YHAyeiq_vHImYzbE_amLqxFOz6R7hqZ9W8N7ZhAQQZmwT9WT_pCUq-spXJyw4tDL8Z-Ndc7fKjTp8uI9oDe0LcRjSYIrE5sqoLvxXF8-74Xfd_X-gn9ikW_j97c1b1gFd7UhLxKa9VKjjkFYP17SEezF2V2qthbRDJL1i9eWh4JhVAfosyI7DT0A"></div><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm uppercase text-graphite-teal-deep tracking-tight">CTDDCFN</span><span class="px-space-xs py-0.5 bg-graphite-teal-deep text-on-primary font-label-sm text-label-sm uppercase rounded">MARINHA DO BRASIL</span></div><span class="font-label-sm text-label-sm text-on-surface-variant hidden lg:inline-block leading-tight">Comando do Treinamento e do Desenvolvimento Doutrinário do CFN</span><span class="font-technical-code text-technical-code text-secondary font-semibold uppercase tracking-wider hidden sm:inline-block">A PRONTIDÃO COMEÇA AQUI!</span></div></div><div class="flex-1 max-w-xl mx-space-md hidden md:block"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-3 text-graphite-teal-deep opacity-70 text-base">search</span><input class="w-full pl-9 pr-4 py-2 bg-pure-white text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-full outline-none ring-1 ring-border-subtle focus:ring-2 focus:ring-graphite-teal-deep transition-all" placeholder="Pesquisar doutrinas, diretrizes, ordens..." type="search"></div></div><div class="flex items-center gap-space-sm"><div class="hidden xl:flex items-center gap-2 px-space-sm py-1.5 bg-surface-container-low rounded border border-border-subtle"><span class="w-2 h-2 rounded-full bg-renewal-green animate-pulse"></span><span class="font-technical-code text-technical-code text-graphite-industrial font-semibold uppercase">SIPN 2.0 / REDE MILITAR</span></div><div class="flex items-center gap-2 pl-space-sm"><div class="text-right hidden sm:block"><p class="font-label-sm text-label-sm text-graphite-industrial uppercase leading-none">1º SG-FN / OPERADOR</p><p class="font-technical-code text-technical-code text-secondary font-medium mt-0.5 leading-none">ESTAÇÃO ATIVA</p></div><div class="w-9 h-9 rounded bg-surface-container-high flex items-center justify-center text-graphite-teal-deep"><span class="material-symbols-outlined text-xl">shield_person</span></div></div></div></div><nav class="h-12 w-full bg-graphite-teal-deep px-space-lg flex items-center justify-between border-b-2 border-renewal-green overflow-x-auto" data-active-classes="bg-graphite-teal-surface text-renewal-green font-bold"><div class="flex items-center gap-space-md whitespace-nowrap"><a class="font-label-md text-label-md uppercase text-on-primary hover:text-renewal-green transition-colors" data-path="inicio" href="#">Início</a><div class="relative group flex items-center gap-1 cursor-pointer"><span class="font-label-md text-label-md uppercase text-on-primary group-hover:text-renewal-green transition-colors">Departamentos</span><span class="material-symbols-outlined text-on-primary group-hover:text-renewal-green text-sm transition-colors">expand_more</span></div><a class="font-label-md text-label-md uppercase text-on-primary hover:text-renewal-green transition-colors" data-path="sites" href="#">Sites</a><a class="font-label-md text-label-md uppercase text-on-primary hover:text-renewal-green transition-colors" data-path="sistemas" href="#">Sistemas</a><a class="font-label-md text-label-md uppercase text-on-primary hover:text-renewal-green transition-colors" data-path="om" href="#">OM</a><a class="font-label-md text-label-md uppercase text-on-primary hover:text-renewal-green transition-colors" data-path="bono" href="#">BONO</a><a class="font-label-md text-label-md uppercase text-on-primary hover:text-renewal-green transition-colors" data-path="plano-do-dia" href="#">Plano do Dia</a><a class="font-label-md text-label-md uppercase text-on-primary hover:text-renewal-green transition-colors" data-path="catalogo" href="#">Catálogo</a><a class="font-label-md text-label-md uppercase text-on-primary hover:text-renewal-green transition-colors" data-path="pedido-de-ti" href="#">Pedido de TI</a></div><div class="flex items-center pl-space-md whitespace-nowrap"><a class="inline-flex items-center gap-2 px-space-md py-1.5 bg-renewal-green text-graphite-teal-deep hover:bg-renewal-green-dark hover:text-pure-white font-label-sm text-label-sm uppercase rounded transition-all" data-path="intranet-auth" href="#"><span class="material-symbols-outlined text-sm font-semibold">lock</span>INTRANET AUTH</a></div></nav></header><aside class="fixed left-0 top-32 bottom-0 w-72 bg-pure-white z-40 border-r border-border-subtle flex flex-col justify-between overflow-y-auto"><div class="p-space-md space-y-space-md"><section><h3 class="font-label-sm text-label-sm uppercase text-graphite-teal-deep font-bold tracking-wider px-space-sm mb-space-xs">INSTITUCIONAL</h3><nav class="space-y-0.5" data-active-classes="bg-graphite-teal-deep text-pure-white font-bold rounded"><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="comandante" href="#">Comandante</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="ex-comandantes" href="#">Ex-Comandantes</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="suboficial-mor" href="#">Suboficial-Mor</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="heraldica" href="#">Heráldica</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="historico" href="#">Histórico</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="missao" href="#">Missão e Visão</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="regulamento" href="#">Regulamento</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="organograma" href="#">Organograma</a><a aria-current="page" class="block px-space-sm py-1.5 transition-all bg-graphite-teal-deep text-pure-white font-bold rounded" data-path="deusa-minerva" href="#">Deusa Minerva</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="ctdd-na-internet" href="#">CTDD na Internet</a></nav></section><section><h3 class="font-label-sm text-label-sm uppercase text-graphite-teal-deep font-bold tracking-wider px-space-sm mb-space-xs">PRODUTOS DOUTRINÁRIOS</h3><nav class="space-y-0.5" data-active-classes="bg-graphite-teal-deep text-pure-white font-bold rounded"><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="portfolio-produtos" href="#">Portfólio de Produtos</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="portal-conhecimento" href="#">Portal do Conhecimento</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="podcast-momento-doutrinario" href="#">Podcast Momento Doutrinário</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="flash-doutrinario" href="#">Flash Doutrinário</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="revista-ancoras-fuzis" href="#">Revista Âncoras e Fuzis</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="decida-envie-solucao" href="#">Decida | Envie sua solução</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="fronteira-tecnologia" href="#">Fronteira da tecnologia - JID</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="licoes-aprendidas" href="#">Relatórios de Lições Aprendidas</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="biblioteca-digital" href="#">Biblioteca Digital de Doutrina</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="coletanea-termos-siglas" href="#">Coletânea de Termos e Siglas</a></nav></section><section><h3 class="font-label-sm text-label-sm uppercase text-graphite-teal-deep font-bold tracking-wider px-space-sm mb-space-xs">SECOM</h3><nav class="space-y-0.5" data-active-classes="bg-graphite-teal-deep text-pure-white font-bold rounded"><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="secom-plano-do-dia" href="#">Plano de Dia</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="ordem-interna" href="#">Ordem Interna</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="ctddmarinst" href="#">CTDDMARINST</a></nav></section><section><h3 class="font-label-sm text-label-sm uppercase text-graphite-teal-deep font-bold tracking-wider px-space-sm mb-space-xs">ENSINO</h3><nav class="space-y-0.5" data-active-classes="bg-graphite-teal-deep text-pure-white font-bold rounded"><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="placape" href="#">PLACAPE</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="race" href="#">RACE</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="temas-tcc" href="#">Banco de Temas de TCC</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="c-esp-segprotaut" href="#">C-Esp-SegProtAut</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="curriculos-vagas" href="#">Currículos &amp; Vagas</a></nav></section><section><h3 class="font-label-sm text-label-sm uppercase text-graphite-teal-deep font-bold tracking-wider px-space-sm mb-space-xs">NAVEGAÇÃO</h3><nav class="space-y-0.5" data-active-classes="bg-graphite-teal-deep text-pure-white font-bold rounded"><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="carta-servico" href="#">Carta de Serviço</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="compartilhamentos-mb" href="#">Compartilhamentos MB</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="radio-marinha" href="#">Rádio Marinha</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="pesqsatpes" href="#">PesqSATPES</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="sisbens" href="#">SISBENS</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="auxilio-transporte" href="#">Auxílio Transporte</a></nav></section><section><h3 class="font-label-sm text-label-sm uppercase text-graphite-teal-deep font-bold tracking-wider px-space-sm mb-space-xs">DIVISÃO DE INFORMÁTICA</h3><nav class="space-y-0.5" data-active-classes="bg-graphite-teal-deep text-pure-white font-bold rounded"><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="siscrecim" href="#">Abertura de Chamado (SISCRECIM)</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="compartilhamento-arquivos" href="#">Compartilhamento de Arquivos da MB</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="alterar-senha-internet" href="#">Alterar senha - Internet</a><a class="block px-space-sm py-1.5 text-on-surface-variant hover:bg-surface-container hover:text-graphite-industrial font-body-sm text-body-sm rounded transition-all" data-path="autenticacao-zimbra" href="#">Autenticação Zimbra</a></nav></section></div></aside><div class="pl-72"><main class="w-full pt-32 pb-space-xl px-gutter bg-surface min-h-[calc(100vh-280px)]"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto space-y-space-lg">
+<!-- Top Breadcrumb & Metadata Strip -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-xs">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2">
+<a class="font-label-sm text-label-sm uppercase text-outline hover:text-graphite-teal-deep transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-sm">home</span>
+          Início
+        </a>
+<span class="font-technical-code text-technical-code text-outline-variant">/</span>
+<a class="font-label-sm text-label-sm uppercase text-outline hover:text-graphite-teal-deep transition-colors" href="#">Institucional</a>
+<span class="font-technical-code text-technical-code text-outline-variant">/</span>
+<span class="font-label-sm text-label-sm uppercase text-graphite-teal-deep font-bold">Deusa Minerva / Atena</span>
+</nav>
+<div class="flex items-center gap-space-sm">
+<span class="px-2.5 py-1 bg-surface-container-high text-graphite-teal-deep font-technical-code text-technical-code uppercase rounded-sm flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-xs text-renewal-green-dark">auto_stories</span>
+          CÓD: DOUTRINA-SIMB-004
+        </span>
+<span class="px-2.5 py-1 bg-surface-container-low text-on-surface-variant font-technical-code text-technical-code uppercase rounded-sm shadow-sm">
+          OSTENSIVO
+        </span>
+</div>
+</div>
+<!-- Editorial Header Block -->
+<section class="relative bg-pure-white p-space-lg sm:p-space-xl rounded-xl shadow-sm overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-graphite-teal-deep via-graphite-teal-surface to-renewal-green"></div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-sm bg-surface-container text-graphite-teal-deep font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm text-graphite-teal-surface">shield</span>
+            Símbolo Institucional da Doutrina Naval
+          </div>
+<h1 class="font-headline-lg text-headline-lg text-graphite-teal-deep tracking-tight">
+            Deusa Minerva / Atena
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Patrona da Sabedoria Estratégica, do Conhecimento Doutrinário e da Arte da Guerra dos Fuzileiros Navais.
+          </p>
+</div>
+<!-- Quick Emblem Status Badge -->
+<div class="flex items-center gap-3 p-space-sm bg-canvas-clean rounded-lg shadow-sm border-0 shrink-0">
+<div class="w-10 h-10 rounded bg-graphite-teal-deep text-renewal-green flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">local_police</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm uppercase text-graphite-industrial font-bold leading-tight">HERÁLDICA &amp; DOUTRINA</p>
+<p class="font-technical-code text-technical-code text-secondary leading-tight mt-0.5">TRADIÇÃO COMBATENTE</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content: Dual-Column Bento Composition -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Coluna Esquerda: Busto Escultural e Ficha Técnica (5 cols) -->
+<div class="lg:col-span-5 space-y-space-md">
+<!-- Card Escultural Principal -->
+<div class="bg-pure-white rounded-xl shadow-sm overflow-hidden flex flex-col items-center">
+<div class="w-full bg-gradient-to-b from-cool-light-grey to-surface-container-low p-space-lg sm:p-space-xl flex justify-center items-center relative">
+<div class="absolute inset-0 opacity-15 bg-[radial-gradient(#002E32_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<!-- Sculpture Artifact Display -->
+<div class="relative w-64 sm:w-72 max-w-full drop-shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
+<img class="w-full h-auto object-contain mx-auto" data-alt="An imposing, classical ancient bronze bust sculpture of Goddess Minerva Athena, adorned with an ornate Corinthian winged military helmet and engraved armor chestplate with Medusa gorgoneion crest. Resting on a dark metallic pedestal labeled MINERVA in engraved Roman serif capitals. Soft museum studio lighting, deep teal ambient reflections, photorealistic museum archival piece." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu8qwQ5nEm8hKmuto8ecrqz7pU-pF1o35Lr58ejjmg6ryMYNS7HmEwvxLcmpRt-xesQFKnoxYWBe-7ZYkFQlB3JBQ0x2rCJgnVgLIsZgL1KPLXjKglBqxwcET_ZsH57GSwcSoHBUn3qa-6bDXPC2mqeXqMsGxPIf5pTPYX-jXnhDcmaGcEcsa9iYO-cXqxPTrZ6IjjCqglKsfxeKkOAkMnbZBnQYNogjQvRtxaaxfpLZPHv0F5UDgs">
+</div>
+</div>
+<!-- Legenda e Ficha Iconográfica -->
+<div class="w-full p-space-md sm:p-space-lg space-y-space-sm bg-pure-white">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-graphite-industrial font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-renewal-green-dark">history_edu</span>
+                Busto Oficial de Minerva
+              </span>
+<span class="px-2 py-0.5 rounded-sm bg-renewal-green/20 text-graphite-teal-deep font-technical-code text-technical-code uppercase font-semibold">
+                ACERVO HISTÓRICO
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Representação escultórica da divindade armada da estratégia, sabedoria e vitória. Integrada às tradições e distintivos doutrinários do CTDDCFN como emblema maior da reflexão intelectual aplicada à prontidão operativa dos Fuzileiros Navais.
+            </p>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs font-technical-code text-technical-code">
+<div class="p-space-xs bg-surface-container-low rounded">
+<span class="block text-outline text-[11px] uppercase">Origem Simbólica</span>
+<span class="text-graphite-industrial font-semibold">Grécia / Roma Antiga</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded">
+<span class="block text-outline text-[11px] uppercase">Atributo Central</span>
+<span class="text-graphite-industrial font-semibold">Guerra Estratégica</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Virtudes Card (Micro-Bento) -->
+<div class="bg-graphite-teal-deep text-on-primary rounded-xl p-space-lg shadow-sm space-y-space-sm relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-renewal-green opacity-10 blur-xl pointer-events-none"></div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-renewal-green text-xl">military_tech</span>
+<h3 class="font-headline-sm text-headline-sm uppercase text-pure-white tracking-wide">
+              Pilares de Atena no CFN
+            </h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<div class="p-space-sm bg-graphite-teal-surface/60 rounded-lg">
+<div class="flex items-center gap-1.5 text-renewal-green font-label-md text-label-md uppercase mb-0.5">
+<span class="material-symbols-outlined text-base">psychology</span>
+                Sapientia
+              </div>
+<p class="font-body-sm text-body-sm text-surface-variant">Conhecimento tático fundamentado e rigor analítico.</p>
+</div>
+<div class="p-space-sm bg-graphite-teal-surface/60 rounded-lg">
+<div class="flex items-center gap-1.5 text-renewal-green font-label-md text-label-md uppercase mb-0.5">
+<span class="material-symbols-outlined text-base">explore</span>
+                Stratēgikē
+              </div>
+<p class="font-body-sm text-body-sm text-surface-variant">Planejamento metódico antecipatório frente ao incerto.</p>
+</div>
+<div class="p-space-sm bg-graphite-teal-surface/60 rounded-lg">
+<div class="flex items-center gap-1.5 text-renewal-green font-label-md text-label-md uppercase mb-0.5">
+<span class="material-symbols-outlined text-base">construction</span>
+                Ingenium
+              </div>
+<p class="font-body-sm text-body-sm text-surface-variant">Engenhosidade operacional e adaptação dinâmica.</p>
+</div>
+<div class="p-space-sm bg-graphite-teal-surface/60 rounded-lg">
+<div class="flex items-center gap-1.5 text-renewal-green font-label-md text-label-md uppercase mb-0.5">
+<span class="material-symbols-outlined text-base">verified</span>
+                Constantia
+              </div>
+<p class="font-body-sm text-body-sm text-surface-variant">Firmeza de caráter e disciplina inegociável em combate.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Coluna Direita: Narrativa Institucional & Aplicação Doutrinária (7 cols) -->
+<div class="lg:col-span-7 space-y-space-lg">
+<!-- Texto Oficial / Manuscrito Institucional -->
+<article class="bg-pure-white rounded-xl p-space-lg sm:p-space-xl shadow-sm space-y-space-md">
+<div class="flex items-center gap-2 pb-space-xs">
+<span class="w-2.5 h-2.5 bg-renewal-green rounded-full"></span>
+<h2 class="font-headline-sm text-headline-sm uppercase text-graphite-teal-deep tracking-tight">
+              A Mitologia e a Vocação da Sabedoria
+            </h2>
+</div>
+<!-- Lead Quote / Citação de Destaque -->
+<div class="p-space-md sm:p-space-lg bg-cool-light-grey rounded-lg relative">
+<span class="material-symbols-outlined text-graphite-teal-deep/20 text-5xl absolute top-2 right-3 select-none pointer-events-none">format_quote</span>
+<p class="font-body-lg text-body-lg text-graphite-industrial font-medium italic leading-relaxed relative z-10">
+              "Filha de Zeus e Metis, Atena (mitologia grega) ou Minerva (mitologia romana) nasceu reunindo a mentalidade guerreira de seu pai com a astúcia de sua mãe. Considerada e amada pelos gregos como a Deusa da Guerra Estratégica, sempre lutou com inteligência e engenhosidade. Para os romanos, Minerva revela-se também a Deusa da Sabedoria e da Arte."
+            </p>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase font-bold text-graphite-teal-deep">Tradição Doutrinária Naval</span>
+<span class="font-technical-code text-technical-code">DOCUMENTO CTDDCFN-MEM-08</span>
+</div>
+</div>
+<div class="space-y-space-sm font-body-md text-body-md text-on-surface leading-relaxed">
+<p class="">
+              Ao contrário das divindades associadas à fúria desmedida e ao combate cego, Minerva encarna a vitória obtida pelo cálculo lúcido, pela prudência e pelo domínio da arte militar. Na concepção da doutrina anfíbia, a força bruta é estéril se desprovida de discernimento tático e doutrina consolidada.
+            </p>
+<p class="">
+              O patronato de Minerva sobre os estabelecimentos de ensino e desenvolvimento doutrinário sintetiza a máxima de que <strong>a bravura precisa de método</strong> e <strong>a prontidão forja-se no estudo metódico da arte da guerra</strong>.
+            </p>
+</div>
+</article>
+<!-- Aplicação no CTDDCFN: 3 Cards Temáticos -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between px-space-xs">
+<h3 class="font-label-sm text-label-sm uppercase text-graphite-teal-deep font-bold tracking-wider">
+              A Relação com a Doutrina de Fuzileiros Navais
+            </h3>
+<span class="font-technical-code text-technical-code text-secondary">METODOLOGIA APLICADA</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-pure-white p-space-md rounded-xl shadow-sm flex flex-col justify-between space-y-space-sm hover:shadow-md transition-shadow">
+<div class="space-y-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-graphite-teal-deep flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">auto_stories</span>
+</div>
+<h4 class="font-title-md text-title-md text-graphite-teal-deep font-bold">
+                  Saber Doutrinário
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Compilação de lições aprendidas, produção de manuais técnicos e disseminação perene do conhecimento expedicionário.
+                </p>
+</div>
+<div class="pt-space-xs flex items-center gap-1 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="">Normatização</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-pure-white p-space-md rounded-xl shadow-sm flex flex-col justify-between space-y-space-sm hover:shadow-md transition-shadow">
+<div class="space-y-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-graphite-teal-deep flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">neurology</span>
+</div>
+<h4 class="font-title-md text-title-md text-graphite-teal-deep font-bold">
+                  Astúcia &amp; Estratégia
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Desenvolvimento do pensamento crítico e da capacidade de decisão autônoma nos quadros de comando em cenários complexos.
+                </p>
+</div>
+<div class="pt-space-xs flex items-center gap-1 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="">Processo Decisório</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-pure-white p-space-md rounded-xl shadow-sm flex flex-col justify-between space-y-space-sm hover:shadow-md transition-shadow">
+<div class="space-y-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-graphite-teal-deep flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">precision_manufacturing</span>
+</div>
+<h4 class="font-title-md text-title-md text-graphite-teal-deep font-bold">
+                  Engenhosidade Tática
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Inovação operacional contínua, emprego de novas tecnologias e domínio da guerra moderna multidomínio.
+                </p>
+</div>
+<div class="pt-space-xs flex items-center gap-1 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="">Evolução Técnica</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Síntese Operacional & Chamada de Ação Doutrinária -->
+<div class="bg-cool-light-grey rounded-xl p-space-lg shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="space-y-1 text-center sm:text-left">
+<p class="font-label-sm text-label-sm uppercase text-graphite-industrial font-bold flex items-center justify-center sm:justify-start gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">menu_book</span>
+              Biblioteca Digital de Doutrina
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Acesse as publicações oficiais, periódicos e diretrizes doutrinárias balizadas no legado de Minerva.
+            </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<a class="px-space-md py-2 bg-graphite-teal-deep text-on-primary hover:bg-graphite-teal-surface font-label-md text-label-md uppercase rounded transition-colors flex items-center gap-2 shadow-sm" href="#">
+<span class="material-symbols-outlined text-base">download</span>
+              Manuais Doutrinários
+            </a>
+<a class="px-space-md py-2 bg-pure-white text-graphite-industrial hover:bg-surface-container-high font-label-md text-label-md uppercase rounded transition-colors flex items-center gap-1.5 shadow-sm" href="#">
+<span class="material-symbols-outlined text-base">menu_book</span>
+              Revista Âncoras &amp; Fuzis
+            </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div><footer class="w-full bg-graphite-teal-deep text-on-primary border-t border-border-subtle relative z-40"><div class="w-full px-gutter py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg"><div class="space-y-space-sm"><div class="flex items-center gap-3"><img alt="Brasão Oficial CTDDCFN" class="w-12 h-auto object-contain shrink-0 drop-shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqv2t6kr8gVD8ee8yhozKdeXXT4KkyPlap83OlctVpu_vzQxTqV4HdnN5o02lHBDKik-0bvcYXYjsy5DxADYIcadqcgXXm5qDM4Vcs5YVYb59GWQbebeKmNynZAkPM4ab2fsVkqaQaurkXMvmEwfNovVdN05cGwuelVMPnoBzgb37R5JZUCPE75ofW4s2TquEAw62azDxxehHUYESxmyYMhXuwawqNJ542mRfZaWv8zL_FKfviEP1ajDET0aPsCoaKmw"><div class="flex flex-col"><h4 class="font-headline-sm text-headline-sm text-pure-white uppercase tracking-tight">CTDDCFN</h4><span class="font-label-sm text-label-sm text-surface-variant uppercase leading-tight">Comando do Treinamento e do Desenvolvimento Doutrinário do CFN</span></div></div><p class="font-technical-code text-technical-code text-renewal-green font-semibold uppercase tracking-wide">● A PRONTIDÃO COMEÇA AQUI!</p><p class="font-body-sm text-body-sm text-surface-variant leading-relaxed">Organização Militar vocacionada ao aprimoramento doutrinário, adestramento e capacitação contínua do combatente anfíbio da Marinha do Brasil.</p></div><div class="space-y-space-sm"><h5 class="font-label-md text-label-md uppercase text-pure-white border-b border-graphite-teal-surface pb-1">ENDEREÇO &amp; SEDE</h5><p class="font-body-sm text-body-sm text-surface-variant leading-relaxed">Complexo Naval da Ilha do Governador<br>Rua Magno Martins, s/nº - Freguesia<br>Ilha do Governador, Rio de Janeiro - RJ<br>CEP: 21.911-430</p></div><div class="space-y-space-sm"><h5 class="font-label-md text-label-md uppercase text-pure-white border-b border-graphite-teal-surface pb-1">CONTATOS OFICIAIS</h5><ul class="font-body-sm text-body-sm text-surface-variant space-y-1.5"><li class=""><span class="text-renewal-green font-technical-code font-semibold">Telefone:</span> (21) 3386-4399</li><li class=""><span class="text-renewal-green font-technical-code font-semibold">RITM:</span> 8110-4399</li><li class=""><span class="text-renewal-green font-technical-code font-semibold">E-mail:</span> ctddcfn.secom@marinha.mil.br</li></ul></div><div class="space-y-space-sm"><h5 class="font-label-md text-label-md uppercase text-pure-white border-b border-graphite-teal-surface pb-1">INSTITUCIONAL</h5><ul class="font-body-sm text-body-sm text-surface-variant space-y-1.5"><li class=""><a class="hover:text-renewal-green transition-colors flex items-center gap-1" href="#"><span class="material-symbols-outlined text-xs">north_east</span>Marinha do Brasil</a></li><li class=""><a class="hover:text-renewal-green transition-colors flex items-center gap-1" href="#"><span class="material-symbols-outlined text-xs">north_east</span>Comando da Força de Fuzileiros da Esquadra (ComFFE)</a></li><li class=""><a class="hover:text-renewal-green transition-colors flex items-center gap-1" href="#"><span class="material-symbols-outlined text-xs">north_east</span>Comando-Geral do Corpo de Fuzileiros Navais</a></li><li class=""><a class="hover:text-renewal-green transition-colors flex items-center gap-1" href="#"><span class="material-symbols-outlined text-xs">north_east</span>Portal do Conhecimento</a></li><li class=""><a class="hover:text-renewal-green transition-colors flex items-center gap-1" href="#"><span class="material-symbols-outlined text-xs">north_east</span>Acesso à Informação</a></li></ul></div></div></div><div class="w-full px-gutter py-space-sm bg-graphite-industrial flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-technical-code text-technical-code text-surface-variant">© 2026 CTDDCFN - Comando do Treinamento e do Desenvolvimento Doutrinário do CFN. Todos os direitos reservados.</p><div class="flex items-center gap-space-md"><span class="font-technical-code text-technical-code text-renewal-green flex items-center gap-1"><span class="material-symbols-outlined text-xs">verified_user</span>● SISTEMA OPERACIONAL SEGURO</span><span class="px-2 py-0.5 bg-status-critical text-on-error font-technical-code text-technical-code uppercase rounded">CLASSIFICAÇÃO: RESERVADO</span></div></div></footer>
+
+</body></html>

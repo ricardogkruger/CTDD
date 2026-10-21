@@ -1,0 +1,6 @@
+{
+  "name": "CTDDCFN Drupal 10 Theme & Page Studio",
+  "description": "Template institucional homologado para CMS Drupal 10 e superior com criador dinâmico de novas páginas, preview em tempo real e exportação completa do tema Twig/Tailwind para o CTDDCFN.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

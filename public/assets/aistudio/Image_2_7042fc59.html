@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_dashboard" name="shell-type"/>
+<title>CTDDCFN - Portal Operacional &amp; Doutrinário</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-variant": "#e0e3e2",
+            "on-tertiary-container": "#91908f",
+            "secondary-container": "#d1ec4c",
+            "secondary-fixed": "#bad435",
+            "background": "#f7faf9",
+            "surface": "#f7faf9",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "outline-variant": "#c0c8c9",
+            "on-secondary-fixed-variant": "#404c00",
+            "surface-bright": "#f7faf9",
+            "inverse-on-surface": "#eef1f0",
+            "on-surface": "#181c1c",
+            "on-error-container": "#93000a",
+            "error-container": "#ffdad6",
+            "outline": "#717879",
+            "primary-container": "#002e32",
+            "tertiary-fixed-dim": "#c8c6c5",
+            "secondary-fixed-dim": "#a8c428",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f1f4f3",
+            "on-primary-container": "#70979b",
+            "tertiary-container": "#292929",
+            "surface-tint": "#3e6469",
+            "tertiary": "#151515",
+            "surface-container-high": "#e6e9e8",
+            "primary": "#00181a",
+            "on-primary-fixed-variant": "#254d51",
+            "inverse-surface": "#2d3131",
+            "inverse-primary": "#a5ced2",
+            "surface-container-highest": "#e0e3e2",
+            "surface-dim": "#d7dbda",
+            "on-surface-variant": "#414849",
+            "on-secondary": "#ffffff",
+            "on-primary": "#ffffff",
+            "surface-container": "#ebeeed",
+            "on-tertiary-fixed": "#1b1b1b",
+            "secondary": "#566500",
+            "on-primary-fixed": "#002023",
+            "on-secondary-container": "#5a6900",
+            "primary-fixed-dim": "#a5ced2",
+            "on-tertiary-fixed-variant": "#474746",
+            "on-background": "#181c1c",
+            "on-secondary-fixed": "#1c1c1c",
+            "tertiary-fixed": "#e5e2e1",
+            "on-tertiary": "#ffffff",
+            "primary-fixed": "#c1eaef"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          spacing: {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "gutter-mobile": "1rem",
+            "margin": "3rem",
+            "margin-mobile": "1rem"
+          },
+          fontFamily: {
+            "headline-lg": ["Montserrat", "sans-serif"],
+            "headline-md": ["Montserrat", "sans-serif"],
+            "headline-sm": ["Montserrat", "sans-serif"],
+            "title-md": ["Montserrat", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "label-md": ["Inter", "sans-serif"],
+            "label-sm": ["Inter", "sans-serif"],
+            "technical-code": ["Inter", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-primary-container">
+<!-- ========================================================================= -->
+<!-- 1. TOPO & CABEÇALHO INSTITUCIONAL                                         -->
+<!-- ========================================================================= -->
+<header class="w-full bg-surface-container-lowest border-b border-surface-container-high/80 shadow-[0_2px_12px_rgba(0,46,50,0.06)] z-30">
+<!-- Linha Superior: Brasão, Título Oficial, Busca & Ações -->
+<div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4 py-5">
+<!-- Brasão e Identidade Formal da Organização Militar -->
+<div class="flex items-center gap-4 shrink-0">
+<img alt="Brasão Oficial CTDDCFN" class="w-14 h-14 md:w-16 md:h-16 object-contain drop-shadow shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp1oLNXCsotINIDIAkyOwifMHnVFWwHxCVf8vTJ8oPsHyC24DRAPqFBS-gHII4kCrYF8X0pZngaTPPBn0cRjQZrUky4yIMnxXjkQtOcp3hvZiHT2G290YHvjigu4_8XNH9rNQeB5unjwoa-suuM7nkIqViCvafDtJwicDDC5H9IB4HxiCg2cI1F3g8djwmnbQYUbZZNGHuwjte3IyaXcyZ9qeG3ViYyODHeBu9mCjNktZ5zTYwASn5Evi9sagdst4O3A"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-lg md:text-xl font-bold tracking-tight text-primary-container leading-none">CTDDCFN</span>
+<span class="bg-secondary-fixed/25 text-[#374500] border border-[#bad435]/50 text-[10px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider font-technical-code">MARINHA DO BRASIL</span>
+</div>
+<span class="text-[11px] md:text-xs font-bold text-on-surface-variant/90 tracking-tight uppercase leading-snug line-clamp-1 max-w-[550px] mt-0.5">
+          COMANDO DO TREINAMENTO E DO DESENVOLVIMENTO DOUTRINÁRIO DO CORPO DE FUZILEIROS NAVAIS
+        </span>
+<span class="text-[10px] font-extrabold text-[#566500] uppercase tracking-widest leading-none mt-1">
+          A PRONTIDÃO COMEÇA AQUI!
+        </span>
+</div>
+</div>
+<!-- Barra de Busca Centralizada com visual tático militar -->
+<div class="flex-1 max-w-xl mx-4 hidden md:block">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-lg pointer-events-none">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-low/80 hover:bg-surface-container-low text-on-surface text-body-sm font-body-sm rounded-lg border border-outline-variant/40 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all placeholder:text-outline" placeholder="Pesquisar doutrinas, diretrizes, ordens e sistemas..." type="text"/>
+</div>
+</div>
+<!-- Atalhos de Estado, Notificação e Perfil do Militar -->
+<div class="flex items-center gap-2 shrink-0">
+<button class="relative p-2 text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-colors rounded-lg" title="Avisos Operacionais" type="button">
+<span class="material-symbols-outlined text-[22px]">notifications</span>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-[#bad435] ring-2 ring-surface-container-lowest"></span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-colors rounded-lg" title="Canal Seguro SIPAM" type="button">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</button>
+<div class="h-6 w-px bg-surface-container-high mx-1 hidden sm:block"></div>
+<div class="flex items-center gap-2 pl-1">
+<div class="w-9 h-9 rounded-full border border-primary-container/20 p-0.5 bg-surface-container-low shrink-0 overflow-hidden flex items-center justify-center">
+<img alt="Perfil Operacional" class="w-full h-full rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp1oLNXCsotINIDIAkyOwifMHnVFWwHxCVf8vTJ8oPsHyC24DRAPqFBS-gHII4kCrYF8X0pZngaTPPBn0cRjQZrUky4yIMnxXjkQtOcp3hvZiHT2G290YHvjigu4_8XNH9rNQeB5unjwoa-suuM7nkIqViCvafDtJwicDDC5H9IB4HxiCg2cI1F3g8djwmnbQYUbZZNGHuwjte3IyaXcyZ9qeG3ViYyODHeBu9mCjNktZ5zTYwASn5Evi9sagdst4O3A"/>
+</div>
+<div class="hidden lg:flex flex-col text-left">
+<span class="text-xs font-bold text-on-surface leading-tight">1º SG-FN</span>
+<span class="text-[10px] text-outline font-technical-code leading-none">OPERADOR</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Barra de Navegação Primária em Graphite Teal (#002E32) -->
+<nav class="bg-[#002E32] text-on-primary border-t border-primary-fixed-dim/15">
+<div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between overflow-x-auto">
+<div class="flex items-center gap-1 shrink-0 py-2 text-label-md font-semibold">
+<a class="px-3 py-1.5 rounded text-white bg-white/10 font-bold border-b-2 border-secondary-fixed transition-all" data-path="inicio" href="#">Início</a>
+<a class="px-3 py-1.5 rounded text-on-primary-container hover:text-white hover:bg-white/5 transition-colors" data-path="departamentos" href="#">Departamentos</a>
+<a class="px-3 py-1.5 rounded text-on-primary-container hover:text-white hover:bg-white/5 transition-colors" data-path="sites-om" href="#">Sites</a>
+<a class="px-3 py-1.5 rounded text-on-primary-container hover:text-white hover:bg-white/5 transition-colors" data-path="sistemas" href="#">Sistemas</a>
+<a class="px-3 py-1.5 rounded text-on-primary-container hover:text-white hover:bg-white/5 transition-colors" data-path="organizacoes-militares" href="#">OM</a>
+<a class="px-3 py-1.5 rounded text-on-primary-container hover:text-white hover:bg-white/5 transition-colors" data-path="bono" href="#">BONO</a>
+<a class="px-3 py-1.5 rounded text-on-primary-container hover:text-white hover:bg-white/5 transition-colors" data-path="plano-do-dia" href="#">Plano do Dia</a>
+<a class="px-3 py-1.5 rounded text-on-primary-container hover:text-white hover:bg-white/5 transition-colors" data-path="catalogo-de-material" href="#">Catálogo</a>
+<a class="px-3 py-1.5 rounded text-on-primary-container hover:text-white hover:bg-white/5 transition-colors" data-path="pedido-ti" href="#">Pedido de TI</a>
+</div>
+<div class="shrink-0 py-2 ml-4">
+<a class="inline-flex items-center gap-1.5 bg-[#bad435] hover:bg-[#a8c428] text-[#1c1c1c] px-3.5 py-1.5 rounded font-label-md text-xs font-bold uppercase tracking-wider transition-all shadow-sm active:scale-95" data-path="login" href="#">
+<span class="material-symbols-outlined text-sm font-bold">lock</span>
+          INTRANET AUTH
+        </a>
+</div>
+</div>
+</nav>
+</header>
+<!-- ========================================================================= -->
+<!-- CORPO PRINCIPAL COM SIDEBAR + ÁREA DE CONTEÚDO                            -->
+<!-- ========================================================================= -->
+<div class="w-full flex-1 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col lg:flex-row gap-6">
+<!-- ======================================================================= -->
+<!-- 2. BARRA LATERAL (MENU ESQUERDO)                                       -->
+<!-- ======================================================================= -->
+<aside class="w-full lg:w-72 shrink-0 flex flex-col gap-5">
+<div class="bg-surface-container-lowest rounded-xl border border-surface-container-high/80 p-4 shadow-sm space-y-4">
+<!-- Categoria 1: INSTITUCIONAL -->
+<div class="space-y-1">
+<span class="text-[11px] font-bold text-outline uppercase tracking-wider px-2 mb-1.5 font-technical-code flex items-center justify-between">
+<span class="">Institucional</span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#bad435]"></span>
+</span>
+<nav class="space-y-0.5 text-body-sm font-medium">
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">military_tech</span>Comandante
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">history_edu</span>Ex-Comandantes
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">shield_person</span>Suboficial-Mor
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">workspace_premium</span>Heráldica
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">auto_stories</span>Histórico
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">flag</span>Missão e Visão
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">gavel</span>Regulamento
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">corporate_fare</span>Organograma
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#"><svg class="w-[19px] h-[19px] shrink-0 text-[#002e32]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewbox="0 0 24 24"><path d="M12 2a4 4 0 0 0-4 4c0 1.5.8 2.8 2 3.5V11a2 2 0 0 1-2 2H6v3h12v-3h-2a2 2 0 0 1-2-2V9.5c1.2-.7 2-2 2-3.5a4 4 0 0 0-4-4z"></path><path d="M5 19h14"></path><path d="M3 22h18"></path><path d="M9 6h6"></path></svg>Deusa Minerva</a>
+<a class="flex items-center justify-between px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors group" href="#" target="_blank">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">public</span>CTDD na Internet
+            </span>
+<span class="material-symbols-outlined text-xs text-outline group-hover:text-primary-container">open_in_new</span>
+</a>
+</nav>
+</div>
+<!-- Categoria 2: PRODUTOS DOUTRINÁRIOS -->
+<div class="border-t border-surface-container-high/70 pt-3 space-y-1">
+<span class="text-[11px] font-bold text-outline uppercase tracking-wider px-2 mb-1.5 font-technical-code block">Produtos Doutrinários</span>
+<nav class="space-y-0.5 text-body-sm font-medium">
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">inventory_2</span>Portfólio de Produtos
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">hub</span>Portal do Conhecimento
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">podcasts</span>Podcast Momento Doutrinário
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">flash_on</span>Flash Doutrinário
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">menu_book</span>Revista Âncoras e Fuzis
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">lightbulb</span>Decida | Envie sua solução
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">biotech</span>Fronteira da Tecnologia - JID
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">psychology</span>Relatórios de Lições Aprendidas
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#"><svg class="w-[19px] h-[19px] shrink-0 text-[#002e32]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewbox="0 0 24 24"><path d="M12 2a4 4 0 0 0-4 4c0 1.5.8 2.8 2 3.5V11a2 2 0 0 1-2 2H6v3h12v-3h-2a2 2 0 0 1-2-2V9.5c1.2-.7 2-2 2-3.5a4 4 0 0 0-4-4z"></path><path d="M5 19h14"></path><path d="M3 22h18"></path><path d="M9 6h6"></path></svg>Deusa Minerva</a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">format_list_bulleted</span>Coletânea de Termos e Siglas
+          </a>
+</nav>
+</div>
+<!-- Categoria 3: SECOM -->
+<div class="border-t border-surface-container-high/70 pt-3 space-y-1">
+<span class="text-[11px] font-bold text-outline uppercase tracking-wider px-2 mb-1.5 font-technical-code block">SECOM</span>
+<nav class="space-y-0.5 text-body-sm font-medium">
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">today</span>Plano de Dia
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">assignment</span>Ordem Interna
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">campaign</span>CTDDMARINST
+          </a>
+</nav>
+</div>
+<!-- Categoria 4: ENSINO -->
+<div class="border-t border-surface-container-high/70 pt-3 space-y-1">
+<span class="text-[11px] font-bold text-outline uppercase tracking-wider px-2 mb-1.5 font-technical-code block">Ensino</span>
+<nav class="space-y-0.5 text-body-sm font-medium">
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">calendar_month</span>PLACAPE
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">rule</span>RACE
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">school</span>Banco de Temas de TCC
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">security</span>C-Esp-SegProtAut
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">description</span>Currículos &amp; Solicitação de Vagas
+          </a>
+</nav>
+</div>
+<!-- Categoria 5: NAVEGAÇÃO -->
+<div class="border-t border-surface-container-high/70 pt-3 space-y-1">
+<span class="text-[11px] font-bold text-outline uppercase tracking-wider px-2 mb-1.5 font-technical-code block">Navegação</span>
+<nav class="space-y-0.5 text-body-sm font-medium">
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">folder_shared</span>Compartilhamento MB
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">analytics</span>PesqSATPES &amp; SISBENS
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">article</span>Carta de Serviço ao Usuário
+          </a>
+</nav>
+</div>
+<!-- Categoria 6: DIVISÃO DE INFORMÁTICA -->
+<div class="border-t border-surface-container-high/70 pt-3 space-y-1">
+<span class="text-[11px] font-bold text-outline uppercase tracking-wider px-2 mb-1.5 font-technical-code block">Divisão de Informática</span>
+<nav class="space-y-0.5 text-body-sm font-medium">
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">support_agent</span>Abertura de Chamado (SISCRECIM)
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">key</span>Alterar senha - Internet / Zimbra
+          </a>
+<a class="flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[19px] text-[#002e32]">vpn_lock</span>Acesso Remoto Seguro
+          </a>
+</nav>
+</div>
+</div>
+<!-- Módulo: Bússola Interna -->
+<div class="bg-[#002E32] text-on-primary rounded-xl p-4 shadow-sm border border-secondary-fixed/25">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#bad435] text-xl">explore</span>
+<span class="font-title-md text-sm font-bold tracking-wide text-white">Bússola Interna</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-[#bad435] animate-ping"></span>
+</div>
+<p class="text-[11px] font-technical-code text-primary-fixed opacity-85 mb-3 leading-relaxed">
+        Pesquisa rápida no acervo normativo e doutrinário do CTDD.
+      </p>
+<div class="space-y-2">
+<input class="w-full text-xs font-body-sm px-3 py-2 rounded bg-black/30 border border-primary-fixed/20 text-white placeholder-primary-fixed/60 focus:outline-none focus:border-[#bad435]" placeholder="Digite o termo ou código..." type="text"/>
+<button class="w-full py-2 bg-[#bad435] hover:bg-[#a8c428] text-[#1c1c1c] font-bold text-xs uppercase tracking-wider rounded transition-colors flex items-center justify-center gap-1.5 shadow-sm active:scale-98" type="button">
+<span class="material-symbols-outlined text-sm font-bold">search</span>Pesquisar
+        </button>
+</div>
+<div class="flex items-center justify-between mt-3 pt-2 border-t border-primary-fixed/15">
+<span class="font-technical-code text-[10px] text-[#bad435] bg-black/40 px-1.5 py-0.5 rounded font-bold">MB-INTRANET</span>
+<span class="font-technical-code text-[10px] text-primary-fixed/90">DEFCON 4 / PRONTIDÃO</span>
+</div>
+</div>
+</aside>
+<!-- ======================================================================= -->
+<!-- 3. ÁREA DE CONTEÚDO PRINCIPAL (MAIN)                                   -->
+<!-- ======================================================================= -->
+<main class="flex-1 min-w-0 flex flex-col gap-6"><div class="flex flex-col w-full space-y-8">
+<!-- 1. CABEÇALHO DE SEÇÃO & METADADOS INSTITUCIONAIS -->
+<section class="flex flex-col gap-3">
+<!-- Breadcrumb e Marcador Operacional -->
+<div class="flex flex-wrap items-center justify-between gap-3">
+<nav class="flex items-center gap-2 font-technical-code text-technical-code text-on-surface-variant">
+<a class="hover:text-primary-container transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>Início</span>
+</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-on-surface font-semibold">Notícias &amp; Comunicação Doutrinária</span>
+</nav>
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-secondary-fixed/20 text-on-secondary-fixed font-technical-code text-label-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-renewal-green animate-pulse"></span>
+<span>MB-SECOM / ATUALIZAÇÕES DOUTRINÁRIAS</span>
+</div>
+</div>
+<!-- Título Principal da Seção com Grid de Apoio -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 pt-1">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-technical-code text-label-sm text-secondary tracking-widest font-bold uppercase">Boletim Informativo e Produção de Conhecimento</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary-container tracking-tight">
+          Postagens &amp; Informativos Doutrinários
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl leading-relaxed">
+          Disseminação contínua de diretrizes navais, eventos operacionais, lições aprendidas em combate anfíbio e avanços na capacitação técnico-militar do Corpo de Fuzileiros Navais.
+        </p>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface-variant font-technical-code text-technical-code flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary-container">database</span>
+<span>BD-SECOM: v4.8</span>
+</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary-container font-label-md text-label-md transition-colors flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">rss_feed</span>
+<span>Assinar RSS</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 2. CONTROLES: BUSCA TÁTICA E FILTROS DINÂMICOS -->
+<section class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col gap-4">
+<!-- Linha Superior de Busca e Ordenação -->
+<div class="flex flex-col md:flex-row gap-3 items-stretch md:items-center justify-between">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px] pointer-events-none">search</span>
+<input class="w-full pl-11 pr-4 py-2.5 bg-surface-container-low hover:bg-surface-container rounded-lg text-body-sm font-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary-fixed transition-all placeholder:text-outline" placeholder="Pesquisar postagens, portarias, eventos, termos táticos..." type="text"/>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-2 rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-outline">sort</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Ordem:</span>
+<select class="bg-transparent font-technical-code text-technical-code text-on-surface font-semibold focus:outline-none cursor-pointer">
+<option>Mais recentes primeiro</option>
+<option>Mais antigas primeiro</option>
+<option>Mais relevantes (Doutrina)</option>
+</select>
+</div>
+<div class="hidden sm:flex items-center px-3 py-2 bg-secondary-fixed/25 rounded-lg text-on-secondary-fixed font-technical-code text-technical-code font-bold">
+          12 de 48 postagens
+        </div>
+</div>
+</div>
+<!-- Linha de Categorias / Filtros em Pílulas -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 text-label-sm">
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container text-on-primary font-bold shrink-0 transition-transform active:scale-95 shadow-sm flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+<span>Todas as Postagens</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary-container font-medium shrink-0 transition-colors">
+        Operações Humanitárias
+      </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary-container font-medium shrink-0 transition-colors">
+        Exercícios Anfíbios
+      </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary-container font-medium shrink-0 transition-colors">
+        Ensino &amp; Instrução
+      </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary-container font-medium shrink-0 transition-colors">
+        Lições Aprendidas
+      </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary-container font-medium shrink-0 transition-colors">
+        Doutrina &amp; Tecnologia
+      </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary-container font-medium shrink-0 transition-colors">
+        Eventos Internacionais
+      </button>
+</div>
+</section>
+<!-- 3. DESTAQUE PRINCIPAL (HERO POST / MANCHETE HORIZONTAL) -->
+<section class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden relative group">
+<div class="h-1.5 w-full bg-gradient-to-r from-secondary-fixed via-secondary to-primary-container"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+<!-- Imagem de Destaque -->
+<div class="lg:col-span-7 relative min-h-[300px] lg:min-h-[420px] overflow-hidden bg-primary-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Brazilian Marine Corps officers and international naval attachés seated at a high-level humanitarian operations seminar inside an auditorium with blue oceanic tactical displays, wearing digital camouflage service uniforms and medals, professional documentary lighting, photorealistic military setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBordcRhJV881KyBjCc8gKfK-Qe2MmDNHQ7-g_AMxwl4XUDiUfBmGPgOKE6dNp5xMJXu6j8lkvTF-FkR5EzpfgFCMQmcEg4yCItL0WYgcOqOXWPCzuen9uVCNQA0KEdbaLO_3DV0v2_cQIadYQIcOi8PCVq_HYbFQOJq3KuZ01mERs5o_txgybT8-xdtA1MOqYGF4EYRPxY8MDKUvPTp2g3OzW0jp3ji2SaWa2t1rLnfLy_Y2JpmZ02"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/30 to-transparent lg:hidden"></div>
+<div class="absolute top-4 left-4 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-secondary-fixed text-graphite-industrial font-technical-code text-label-sm font-extrabold uppercase shadow-sm tracking-wider">
+            DESTAQUE OPERACIONAL
+          </span>
+<span class="px-2.5 py-1 rounded bg-primary-container/90 text-on-primary font-technical-code text-technical-code backdrop-blur-sm">
+            COMUNICAÇÃO ESTRATÉGICA
+          </span>
+</div>
+</div>
+<!-- Conteúdo Editorial do Destaque -->
+<div class="lg:col-span-5 p-6 lg:p-8 flex flex-col justify-between bg-surface-container-lowest">
+<div class="space-y-4">
+<!-- Metadados do Post -->
+<div class="flex flex-wrap items-center gap-3 text-outline text-technical-code font-technical-code">
+<span class="flex items-center gap-1 text-primary-container font-semibold">
+<span class="material-symbols-outlined text-[16px] text-secondary">calendar_today</span>
+              01 Setembro, 2026
+            </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+              5 min de leitura
+            </span>
+<span>•</span>
+<span class="text-secondary font-bold">SECOM / CTDDCFN</span>
+</div>
+<!-- Título Manchete -->
+<h2 class="font-headline-md text-headline-md text-primary-container leading-tight hover:text-secondary transition-colors cursor-pointer">
+            II Seminário Internacional de Operações Humanitárias e Resposta a Desastres consolida cooperação multinacional anfíbia
+          </h2>
+<!-- Resumo -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed line-clamp-4">
+            Comandantes, adidos militares e especialistas internacionais discutiram, na sede do CTDDCFN, a doutrina integrada para emprego de forças anfíbias em calamidades de grande porte na Amazônia Azul e em missões de estabilização da ONU, padronizando protocolos de interoperabilidade.
+          </p>
+<!-- Tópicos Táticos Rápidos -->
+<div class="pt-2 flex flex-wrap gap-2 font-technical-code text-[11px]">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">#AjudaHumanitária</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">#AmazôniaAzul</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">#CooperaçãoNaval</span>
+</div>
+</div>
+<!-- Botão CTA -->
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-primary-container hover:bg-graphite-teal-surface text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm group/cta" href="#">
+<span>Ler matéria completa</span>
+<span class="material-symbols-outlined text-[18px] group-hover/cta:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. GRADE PRINCIPAL DE NOTÍCIAS & ARTIGOS (GRID RESPONSIVO) -->
+<section class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">newspaper</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Publicações Recentes</h3>
+</div>
+<span class="text-technical-code font-technical-code text-outline text-xs">Atualizado em tempo real pelo SECOM</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="relative h-48 bg-primary-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Japanese Consul-General with high-ranking Brazilian Navy Marine Corps admirals inside the CTDDCFN headquarters room, exchanging official naval plaques and ceremonial emblems, warm formal indoor lighting, flags of Brazil and Japan in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB81PkZFhH4RVU-3Ctg0cxsscyK6Ve8hedWWZ8t38yC1fm2ry18lhdCLjfJ01Ib8fqWoVgUzIVFmye_QQXiuUdwBqH6bkuIOvgYQXRD2AGDw6j5OkKq5nSomwAURO4U043yV4KxMgTjOq1SLl_cshdWldWaH4xwCP5D1bTU5aojPHR1auK7p0sc-MSZpc0cP25CM6quolXLgEO749rsIiNX6Ut4tC1ifY30Ansa27FzVJaTwrZ2rXtg"/>
+<div class="absolute top-3 left-3">
+<span class="px-2 py-0.5 rounded bg-primary-container/90 text-on-primary font-technical-code text-[11px] font-bold uppercase backdrop-blur-sm">
+              Relações Internacionais
+            </span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-outline font-technical-code text-technical-code">
+<span class="material-symbols-outlined text-[15px] text-secondary">event</span>
+<span>30 Junho, 2026</span>
+<span>•</span>
+<span>4 min</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary-container group-hover:text-secondary transition-colors line-clamp-2 leading-snug">
+              Visita Oficial do Cônsul-Geral do Japão às Instalações do CTDDCFN
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+              Encontro fortaleceu laços de intercâmbio acadêmico e avaliou metodologias de simulação tática e resposta a desastres naturais aplicadas pelas forças de autodefesa japonesas.
+            </p>
+</div>
+<div class="pt-2 flex items-center justify-between border-t border-surface-container-high/60">
+<span class="font-technical-code text-[11px] text-outline">Por: AssImp / CTDD</span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary font-bold hover:text-primary-container transition-colors" href="#">
+<span>Acessar notícia</span>
+<span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="relative h-48 bg-primary-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Auditorium full of Brazilian Marine Corps officers attending the 2nd Lessons Learned Workshop, large presentation screens displaying amphibious operations analysis charts, sharp focus on attentive military officers, professional institutional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlSmfSAq1UvDsEcf0zglixLoeTjjYAiYrnsefgtHn1vrinCRQn5gEcu_U2tFat4mri6eL41ASXdPH-fPEEXtsy40-QJaAXV3trNpXUVDbOpWtD8AgGdbK7JTI8kUXM-qbFPXfEBklvAIzRrvMk71DXrg0YdfUXwf3AwC_lEz--KQQ8EFmv0JXG_I_CIvQJ22a7FwuLVWVqs1V2LJLxXYEG2ZOqwNJLuBuovIxEvNE7y7ekurNZlTh4"/>
+<div class="absolute top-3 left-3">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-graphite-industrial font-technical-code text-[11px] font-bold uppercase">
+              Lições Aprendidas
+            </span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-outline font-technical-code text-technical-code">
+<span class="material-symbols-outlined text-[15px] text-secondary">event</span>
+<span>26 Junho, 2026</span>
+<span>•</span>
+<span>6 min</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary-container group-hover:text-secondary transition-colors line-clamp-2 leading-snug">
+              2ª Jornada de Lições Aprendidas do CFN apresenta inovações doutrinárias
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+              Debate aprofundado com oficiais de operações sobre dados colhidos em manobras expedicionárias recentes, resultando em 14 propostas de revisão para manuais táticos.
+            </p>
+</div>
+<div class="pt-2 flex items-center justify-between border-t border-surface-container-high/60">
+<span class="font-technical-code text-[11px] text-outline">Por: Div. Doutrina</span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary font-bold hover:text-primary-container transition-colors" href="#">
+<span>Acessar notícia</span>
+<span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="relative h-48 bg-primary-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Marine fast-attack riverine craft navigating along coastal waters during Amazônia Azul patrol exercise, wake of clear sea water, armed marines in tactical formation on deck, bright sunny tactical marine landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaapr4aLj8QVvEnJVryJXv9FoKTjHv8IUOwB17CPRjAUvwa2WSLUzkERH75O7VrKnGTb4cMHrnyWs65-U3JGuoY2OlySZYjNM-dYPBFD8Doy_ICA3rX-Q7qSQFtsEzJ7EGWS-LPFHOsr5ZjbPa1XuuL5pTqvow8W9StbowPAQzvTPgG0gZJQ3SJhl7XBMhKeM7QMlqOZc4vmHyEQYWEJuySoaLG6CCbAKvX2HA8ZPSOO6oDTygRWmo"/>
+<div class="absolute top-3 left-3">
+<span class="px-2 py-0.5 rounded bg-primary-container/90 text-on-primary font-technical-code text-[11px] font-bold uppercase backdrop-blur-sm">
+              Operações Anfíbias
+            </span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-outline font-technical-code text-technical-code">
+<span class="material-symbols-outlined text-[15px] text-secondary">event</span>
+<span>28 Maio, 2026</span>
+<span>•</span>
+<span>3 min</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary-container group-hover:text-secondary transition-colors line-clamp-2 leading-snug">
+              III Fórum Nacional sobre Proteção Integrada de Fronteiras e Amazônia Azul
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+              Integração entre o Comando de Operações Navais e órgãos de segurança pública para atuação conjunta no teatro litorâneo e bacias hidrográficas estratégicas.
+            </p>
+</div>
+<div class="pt-2 flex items-center justify-between border-t border-surface-container-high/60">
+<span class="font-technical-code text-[11px] text-outline">Por: Gabinete Comandante</span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary font-bold hover:text-primary-container transition-colors" href="#">
+<span>Acessar notícia</span>
+<span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="relative h-48 bg-primary-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Marine Corps troop running in close military formation on coastal training grounds of Ilha do Governador Rio de Janeiro, carrying standard naval guidon and flags at early dawn golden hour, discipline and high motivation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeCS9eV-W5nnUIxyyWxT1BwmtzESHl2S3NEGEORkrWjXtHOuwBKjLuDHaI56BU0LTiF4m2sxfYRitU-6Hw9ikukt15bVJQCMsaEz5hsO_nRviLbKFSa3P5kziWWX8xnXBkCgQw4hMULyrFtQi4vhMuCiJHOYJGMsDFwuz9BAXhO2iVTHF4Jjc0O94N5FyFLVyu-DX9tqwtSQF4pxYfaTNGoaN1zpt-RfnQOYYbUI6chEJYPhwJk7j9"/>
+<div class="absolute top-3 left-3">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-technical-code text-[11px] font-bold uppercase">
+              Ensino &amp; Instrução
+            </span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-outline font-technical-code text-technical-code">
+<span class="material-symbols-outlined text-[15px] text-secondary">event</span>
+<span>26 Maio, 2026</span>
+<span>•</span>
+<span>3 min</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary-container group-hover:text-secondary transition-colors line-clamp-2 leading-snug">
+              Passo Acertado, Vibração e Espírito de Corpo: TFM na Ilha do Governador
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+              Atividade física militar congregou todo o efetivo de oficiais e praças em circuito de marcha anfíbia, reforçando a rusticidade e a prontidão permanente da tropa.
+            </p>
+</div>
+<div class="pt-2 flex items-center justify-between border-t border-surface-container-high/60">
+<span class="font-technical-code text-[11px] text-outline">Por: Sec. Educação Física</span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary font-bold hover:text-primary-container transition-colors" href="#">
+<span>Acessar notícia</span>
+<span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="relative h-48 bg-primary-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Formal military change of command ceremony on naval parade deck, Marine Corps honor guard with dress uniforms holding naval ceremonial saber, national flag displayed proudly under clear sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDDRJ_49tdvOxcIsytIP6m4N-2Wa0nQ2G6zvYL6BuhI41Mas5xrKfP2g7dytGR5zdjSxzNnnI4AKVKo-dcyeyc-hwUGj-RYfKsctfm5Jl1SG9yc6mHAWz42T1V1UUtyz1a1_X-7t7LLRiDwZ3JA1hHN8NSSMNBhIUbaiEHh2gAnHoJf89o7ISykb5RXUkaIlGFy-kMhosVZ0qFnpvvSoDPJtTJMmVPkkdJeGWEYpI9svsqRJtMi3JW"/>
+<div class="absolute top-3 left-3">
+<span class="px-2 py-0.5 rounded bg-primary-container/90 text-on-primary font-technical-code text-[11px] font-bold uppercase backdrop-blur-sm">
+              Institucional
+            </span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-outline font-technical-code text-technical-code">
+<span class="material-symbols-outlined text-[15px] text-secondary">event</span>
+<span>27 Março, 2026</span>
+<span>•</span>
+<span>5 min</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary-container group-hover:text-secondary transition-colors line-clamp-2 leading-snug">
+              Cerimônia Militar de Transmissão de Cargo de Direção do CTDDCFN
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+              Em solenidade presidida pelo Comandante-Geral do CFN, foram ressaltados os marcos de modernização da grade curricular e os novos laboratórios de simulação.
+            </p>
+</div>
+<div class="pt-2 flex items-center justify-between border-t border-surface-container-high/60">
+<span class="font-technical-code text-[11px] text-outline">Por: SECOM Central</span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary font-bold hover:text-primary-container transition-colors" href="#">
+<span>Acessar notícia</span>
+<span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="relative h-48 bg-primary-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="International military delegation touring a tactical combat simulation center with holographic digital sand tables and computer systems, Brazilian marine instructor explaining doctrine concepts to foreign naval officers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy0chkephFQ1EUFKqH9Exxcxoerp9r8vT9bsOu0fhEpZw9RnjLTcJoUY0xGZogANTi3ZUw5u0XPvk_66NeZEhsijJOLVAd3SkTV4f_JQoOcl1DGURs0frMn8nDGFv9hTpdZoPfsPcb1Jzw2dp08l77mE1Eek4p-RyNvTJdyPltXKBw28nrWeSGr8PYIiRlhs99SwH246eDffCMK-rEXxgLFjBQK-vjNXYHvZkIH07TYY4SIwl9NloE"/>
+<div class="absolute top-3 left-3">
+<span class="px-2 py-0.5 rounded bg-primary-container/90 text-on-primary font-technical-code text-[11px] font-bold uppercase backdrop-blur-sm">
+              Cooperação Técnica
+            </span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-outline font-technical-code text-technical-code">
+<span class="material-symbols-outlined text-[15px] text-secondary">event</span>
+<span>09 Março, 2026</span>
+<span>•</span>
+<span>4 min</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary-container group-hover:text-secondary transition-colors line-clamp-2 leading-snug">
+              Comitiva Estrangeira visita complexo do CIASC e centro doutrinário
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+              Oficiais de nações amigas conheceram os laboratórios de Comando e Controle (C2) e os módulos de tiro simulado utilizados para instrução tática de pequenos escalões.
+            </p>
+</div>
+<div class="pt-2 flex items-center justify-between border-t border-surface-container-high/60">
+<span class="font-technical-code text-[11px] text-outline">Por: Divisão de Cooperação</span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary font-bold hover:text-primary-container transition-colors" href="#">
+<span>Acessar notícia</span>
+<span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 5. MÓDULOS DE APOIO: BOLETINS RÁPIDOS & MALA DIRETA DOUTRINÁRIA -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-6 pt-2">
+<!-- Coluna 1: Boletins e Publicações Rápidas (7 colunas) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col justify-between space-y-4">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">feed</span>
+<h4 class="font-title-md text-title-md text-primary-container">Boletins &amp; Publicações Rápidas</h4>
+</div>
+<a class="font-technical-code text-technical-code text-secondary font-bold hover:underline" href="#">Ver arquivo geral</a>
+</div>
+<div class="space-y-3">
+<!-- Item 1 -->
+<div class="p-3.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-3">
+<div class="w-8 h-8 rounded bg-primary-container text-secondary-fixed flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="font-technical-code text-[11px] text-secondary font-bold uppercase">Publicação Oficial</span>
+<span class="font-technical-code text-[11px] text-outline">Hoje, 09:15</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary-container font-semibold truncate">
+                Revista Âncoras e Fuzis nº 54 já disponível para download
+              </p>
+<p class="font-body-sm text-xs text-on-surface-variant line-clamp-1">
+                Edição especial focada em Guerra Eletrônica e Sistemas Aéreos Não Tripulados nas praias de desembarque.
+              </p>
+</div>
+<a class="p-1.5 text-outline hover:text-primary-container" href="#" title="Baixar PDF">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</a>
+</div>
+<!-- Item 2 -->
+<div class="p-3.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-3">
+<div class="w-8 h-8 rounded bg-primary-container text-secondary-fixed flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="font-technical-code text-[11px] text-secondary font-bold uppercase">Edital Acadêmico</span>
+<span class="font-technical-code text-[11px] text-outline">Ontem, 16:40</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary-container font-semibold truncate">
+                Abertura de Inscrições para o Banco de Temas de TCC Doutrinário
+              </p>
+<p class="font-body-sm text-xs text-on-surface-variant line-clamp-1">
+                Militares do quadro de aperfeiçoamento podem submeter propostas até 30 de outubro.
+              </p>
+</div>
+<a class="p-1.5 text-outline hover:text-primary-container" href="#" title="Ver Edital">
+<span class="material-symbols-outlined text-[20px]">open_in_new</span>
+</a>
+</div>
+<!-- Item 3 -->
+<div class="p-3.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-3">
+<div class="w-8 h-8 rounded bg-primary-container text-secondary-fixed flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="font-technical-code text-[11px] text-secondary font-bold uppercase">PLACAPE 2027</span>
+<span class="font-technical-code text-[11px] text-outline">28 Ago, 2026</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary-container font-semibold truncate">
+                Atualização do Calendário de Cursos de Especialização e Aperfeiçoamento
+              </p>
+<p class="font-body-sm text-xs text-on-surface-variant line-clamp-1">
+                Grade das instruções práticas de Sobrevivência e Operações em Área Urbana consolidada.
+              </p>
+</div>
+<a class="p-1.5 text-outline hover:text-primary-container" href="#" title="Acessar PLACAPE">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between text-technical-code font-technical-code text-outline text-xs">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+          Canal exclusivo para o efetivo da ativa e reserva do CFN
+        </span>
+</div>
+</div>
+<!-- Coluna 2: Mala Direta Doutrinária (5 colunas) -->
+<div class="lg:col-span-5 bg-primary-container text-on-primary rounded-xl p-6 shadow-sm flex flex-col justify-between space-y-5 relative overflow-hidden">
+<!-- Fundo decorativo sutil -->
+<div class="absolute right-0 bottom-0 opacity-5 pointer-events-none transform translate-x-8 translate-y-8">
+<svg class="w-64 h-64 text-on-primary" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3z"></path>
+</svg>
+</div>
+<div class="space-y-3 relative z-10">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-secondary-fixed/20 text-secondary-fixed font-technical-code text-[11px] font-bold">
+<span class="material-symbols-outlined text-[15px]">mark_email_read</span>
+<span>MALA DIRETA TÁTICA</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-white">Receba Informes Doutrinários no seu Zimbra / MB</h4>
+<p class="font-body-sm text-body-sm text-primary-fixed leading-relaxed">
+          Cadastre seu endereço funcional para receber semanalmente resumos de novas diretrizes, boletins da SECOM e lançamentos de revistas operacionais.
+        </p>
+</div>
+<form class="space-y-3 relative z-10" onsubmit="event.preventDefault(); alert('Inscrição registrada no serviço SECOM/CTDDCFN com sucesso.');">
+<div class="space-y-1">
+<label class="font-technical-code text-[11px] text-primary-fixed/80 uppercase">E-mail Institucional (@marinha.mil.br)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-primary-fixed-dim text-[18px]">mail</span>
+<input class="w-full pl-10 pr-3 py-2.5 bg-black/30 border border-primary-fixed-dim/20 rounded-lg text-body-sm font-body-sm text-white placeholder-primary-fixed/50 focus:outline-none focus:border-secondary-fixed transition-colors" placeholder="exemplo.militar@marinha.mil.br" required="" type="email"/>
+</div>
+</div>
+<button class="w-full py-2.5 px-4 rounded-lg bg-secondary-fixed hover:bg-secondary-fixed-dim text-graphite-industrial font-label-md text-label-md font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-sm active:scale-98" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Cadastrar para Notificações</span>
+</button>
+<p class="font-technical-code text-[10px] text-primary-fixed/60 text-center">
+          Transmissão em conformidade com as normas de segurança da informação da MB.
+        </p>
+</form>
+</div>
+</section>
+<!-- 6. PAGINAÇÃO TÁTICA INSTITUCIONAL -->
+<section class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 pb-2">
+<div class="font-technical-code text-technical-code text-on-surface-variant">
+      Página <span class="font-bold text-primary-container">1</span> de <span class="font-bold text-primary-container">8</span> (Total: 48 matérias homologadas)
+    </div>
+<nav class="flex items-center gap-1.5">
+<!-- Botão Anterior desabilitado na primeira página -->
+<button class="px-3 py-2 rounded-lg bg-surface-container-low text-outline cursor-not-allowed font-technical-code text-technical-code flex items-center gap-1" disabled="">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+<span class="hidden sm:inline">Anterior</span>
+</button>
+<!-- Números -->
+<button class="w-9 h-9 rounded-lg bg-primary-container text-on-primary font-technical-code text-technical-code font-bold flex items-center justify-center shadow-sm relative">
+<span>1</span>
+<span class="absolute bottom-1 w-3 h-0.5 bg-secondary-fixed rounded-full"></span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary-container font-technical-code text-technical-code font-semibold flex items-center justify-center transition-colors">
+        2
+      </button>
+<button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary-container font-technical-code text-technical-code font-semibold flex items-center justify-center transition-colors">
+        3
+      </button>
+<span class="px-1 text-outline font-technical-code">...</span>
+<button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary-container font-technical-code text-technical-code font-semibold flex items-center justify-center transition-colors">
+        8
+      </button>
+<!-- Botão Próximo -->
+<button class="px-3 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary-container font-technical-code text-technical-code font-semibold flex items-center gap-1 transition-colors">
+<span class="hidden sm:inline">Próxima</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</nav>
+</section>
+</div></main>
+</div>
+<!-- ========================================================================= -->
+<!-- 4. RODAPÉ INSTITUCIONAL (100% LARGURA DA TELA)                            -->
+<!-- ========================================================================= -->
+<footer class="w-full bg-[#002E32] text-white py-10 px-4 sm:px-6 lg:px-8 border-t border-primary-fixed-dim/20 mt-12">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+<!-- Coluna 1: Brasão e Identidade -->
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<img alt="CTDDCFN Brasão Oficial" class="w-14 h-14 object-contain drop-shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp1oLNXCsotINIDIAkyOwifMHnVFWwHxCVf8vTJ8oPsHyC24DRAPqFBS-gHII4kCrYF8X0pZngaTPPBn0cRjQZrUky4yIMnxXjkQtOcp3hvZiHT2G290YHvjigu4_8XNH9rNQeB5unjwoa-suuM7nkIqViCvafDtJwicDDC5H9IB4HxiCg2cI1F3g8djwmnbQYUbZZNGHuwjte3IyaXcyZ9qeG3ViYyODHeBu9mCjNktZ5zTYwASn5Evi9sagdst4O3A"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-lg font-bold text-white leading-tight">CTDDCFN</span>
+<span class="font-technical-code text-[11px] text-[#bad435] font-bold uppercase tracking-wider">Marinha do Brasil</span>
+</div>
+</div>
+<p class="font-body-sm text-xs text-primary-fixed leading-relaxed font-semibold">
+          COMANDO DO TREINAMENTO E DO DESENVOLVIMENTO DOUTRINÁRIO DO CORPO DE FUZILEIROS NAVAIS
+        </p>
+<p class="font-technical-code text-[11px] text-[#bad435] font-bold uppercase tracking-widest">
+          A PRONTIDÃO COMEÇA AQUI!
+        </p>
+</div>
+<!-- Coluna 2: Endereço & Localização -->
+<div class="space-y-2">
+<h4 class="font-technical-code text-xs uppercase tracking-wider text-[#bad435] font-bold flex items-center gap-1.5 mb-2">
+<span class="material-symbols-outlined text-sm">location_on</span>Endereço &amp; Sede
+        </h4>
+<p class="font-body-sm text-xs text-primary-fixed/90 leading-relaxed">
+          Rua Magno Martins, s/nº<br/>
+          Ilha do Governador - Rio de Janeiro - RJ<br/>
+          CEP: 21.911-430
+        </p>
+<p class="font-technical-code text-[11px] text-primary-fixed/70 pt-1">
+          Complexo Naval da Ilha do Governador
+        </p>
+</div>
+<!-- Coluna 3: Contatos Oficiais -->
+<div class="space-y-2">
+<h4 class="font-technical-code text-xs uppercase tracking-wider text-[#bad435] font-bold flex items-center gap-1.5 mb-2">
+<span class="material-symbols-outlined text-sm">call</span>Contatos Oficiais
+        </h4>
+<p class="font-body-sm text-xs text-primary-fixed/90 leading-relaxed font-technical-code space-y-1">
+<span class="">Telefone: (21) 3386-4399</span><br/>
+<span class="">RITN: 8126-4399</span><br/>
+<span class="">E-mail: <a class="hover:underline text-[#bad435]" href="mailto:ctddcfn.secom@marinha.mil.br">ctddcfn.secom@marinha.mil.br</a></span>
+</p>
+</div>
+<!-- Coluna 4: Links Institucionais & Transparência -->
+<div class="space-y-2">
+<h4 class="font-technical-code text-xs uppercase tracking-wider text-[#bad435] font-bold flex items-center gap-1.5 mb-2">
+<span class="material-symbols-outlined text-sm">link</span>Links Institucionais
+        </h4>
+<div class="grid grid-cols-2 gap-x-2 gap-y-1 font-body-sm text-xs text-primary-fixed/85">
+<a class="hover:text-[#bad435] transition-colors" href="#">Acesso à Informação</a>
+<a class="hover:text-[#bad435] transition-colors" href="#">Portal do MB</a>
+<a class="hover:text-[#bad435] transition-colors" href="#">Carta de Serviços</a>
+<a class="hover:text-[#bad435] transition-colors" href="#">Comando-Geral CFN</a>
+<a class="hover:text-[#bad435] transition-colors" href="#">Transparência Passiva</a>
+<a class="hover:text-[#bad435] transition-colors" href="#">Sistema Notorial</a>
+<a class="hover:text-[#bad435] transition-colors" href="#">Legislação e Normas</a>
+<a class="hover:text-[#bad435] transition-colors" href="#">Notorial Doutrina</a>
+<a class="hover:text-[#bad435] transition-colors col-span-2" href="#">Ouvidoria da Marinha</a>
+</div>
+</div>
+</div>
+<!-- Linha de Copyright e Homologação Federal -->
+<div class="border-t border-primary-fixed-dim/20 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+<div class="space-y-1">
+<p class="text-technical-code text-xs text-primary-fixed/80">
+          © 2026 CTDDCFN - Comando do Treinamento e do Desenvolvimento Doutrinário do CFN. Todos os direitos reservados.
+        </p>
+<p class="text-technical-code text-[11px] text-primary-fixed/60">
+          Portal homologado de acordo com os padrões da Marinha do Brasil e do Governo Federal.
+        </p>
+</div>
+<div class="flex items-center gap-4 text-technical-code text-xs text-primary-fixed/90 shrink-0">
+<span class="inline-flex items-center gap-1.5 font-bold">
+<span class="w-2 h-2 rounded-full bg-[#bad435] animate-pulse"></span>
+          SISTEMA OPERACIONAL SEGURO
+        </span>
+<span class="text-primary-fixed/40">•</span>
+<span class="bg-black/30 border border-primary-fixed-dim/20 px-2.5 py-0.5 rounded text-[#bad435] font-bold">
+          CLASSIFICAÇÃO: RESERVADO
+        </span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

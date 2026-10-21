@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"cool-light-grey":"#F2F5F4","status-critical-bg":"#FDE8E8","surface-container":"#ebeeed","on-surface":"#181c1c","status-critical":"#B42828","surface-dim":"#d7dbda","canvas-clean":"#F8FAFC","inverse-primary":"#a5ced2","surface-container-highest":"#e0e3e2","primary-fixed-dim":"#a5ced2","renewal-green-dark":"#8FA619","on-error":"#ffffff","outline-variant":"#c0c8c9","primary":"#00181a","tertiary-fixed-dim":"#c8c6c5","graphite-industrial":"#1C1C1C","on-surface-variant":"#414849","outline":"#717879","graphite-teal-deep":"#002E32","surface-container-low":"#f1f4f3","secondary-container":"#d1ec4c","error":"#ba1a1a","surface-container-high":"#e6e9e8","on-background":"#181c1c","primary-container":"#002e32","surface-tint":"#3e6469","inverse-surface":"#2d3131","on-tertiary":"#ffffff","on-secondary-fixed-variant":"#404c00","on-tertiary-fixed":"#1b1b1b","secondary-fixed-dim":"#b8d233","inverse-on-surface":"#eef1f0","renewal-green":"#BAD435","on-error-container":"#93000a","surface-variant":"#e0e3e2","border-subtle":"#D7DBDA","error-container":"#ffdad6","on-tertiary-fixed-variant":"#474746","on-tertiary-container":"#91908f","surface":"#f7faf9","on-secondary-fixed":"#181e00","background":"#f7faf9","tertiary-container":"#292929","tertiary":"#151515","on-secondary":"#ffffff","pure-white":"#FFFFFF","on-primary-fixed":"#002023","on-primary-fixed-variant":"#254d51","on-secondary-container":"#5a6900","tertiary-fixed":"#e5e2e1","secondary":"#566500","on-primary":"#ffffff","graphite-teal-surface":"#00383D","surface-container-lowest":"#ffffff","secondary-fixed":"#d4ef4f","primary-fixed":"#c1eaef","surface-bright":"#f7faf9","on-primary-container":"#70979b"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-lg":"1.5rem","space-sm":"0.5rem","margin-mobile":"1rem",gutter:"1.5rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-md":"1rem","space-xl":"2.5rem",margin:"3rem"},fontFamily:{"body-md":["Inter"],"label-md":["Inter"],"technical-code":["Inter"],"headline-lg":["Montserrat"],"body-lg":["Inter"],"body-sm":["Inter"],"display-lg":["Montserrat"],"headline-xl":["Montserrat"],"label-sm":["Inter"],"display-lg-mobile":["Montserrat"],"headline-xl-mobile":["Montserrat"],"headline-sm":["Montserrat"],"headline-md":["Montserrat"],"title-md":["Montserrat"]},fontSize:{"body-md":["1rem",{lineHeight:"1.5rem",fontWeight:"400"}],"label-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.02em",fontWeight:"600"}],"technical-code":["0.8125rem",{lineHeight:"1.25rem",letterSpacing:"0.04em",fontWeight:"500"}],"headline-lg":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.015em",fontWeight:"700"}],"body-lg":["1.125rem",{lineHeight:"1.75rem",fontWeight:"400"}],"body-sm":["0.875rem",{lineHeight:"1.375rem",fontWeight:"400"}],"display-lg":["3.5rem",{lineHeight:"4.25rem",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-xl":["2.5rem",{lineHeight:"3rem",letterSpacing:"-0.02em",fontWeight:"700"}],"label-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.06em",fontWeight:"700"}],"display-lg-mobile":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-xl-mobile":["1.75rem",{lineHeight:"2.25rem",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["1.25rem",{lineHeight:"1.75rem",fontWeight:"600"}],"headline-md":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.01em",fontWeight:"600"}],"title-md":["1.125rem",{lineHeight:"1.5rem",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-pure-white shadow-[0_1px_8px_rgba(0,46,50,0.06)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VXrlbjdFzVtCcnXF7yrvvMWtaqqtMrKL6OzUjd0lqYVSypdAUvvDIeWVGuLTpvaIgYUi4iMAUkr5HFNbur18YHAyeiq_vHImYzbE_amLqxFOz6R7hqZ9W8N7ZhAQQZmwT9WT_pCUq-spXJyw4tDL8Z-Ndc7fKjTp8uI9oDe0LcRjSYIrE5sqoLvxXF8-74Xfd_X-gn9ikW_j97c1b1gFd7UhLxKa9VKjjkFYP17SEezF2V2qthbRDJL1i9eWh4JhVAfosyI7DT0A"/><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm uppercase text-graphite-teal-deep font-bold tracking-tight">CTDDCFN</span><span class="font-label-sm text-label-sm uppercase px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold tracking-wider">● A PRONTIDÃO COMEÇA AQUI!</span></div><span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline-block">Comando do Treinamento e do Desenvolvimento Doutrinário do CFN</span></div></div><div class="flex items-center gap-space-md"><div class="relative hidden lg:block w-80"><span class="material-symbols-outlined absolute left-3 top-2.5 text-graphite-teal-deep opacity-70 text-base">search</span><input class="w-full pl-9 pr-4 py-1.5 text-body-sm font-body-sm rounded-full bg-cool-light-grey text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-renewal-green" placeholder="Pesquisar doutrinas, diretrizes, ordens..." type="text"/></div><button class="relative p-space-xs text-graphite-teal-deep hover:bg-cool-light-grey rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-renewal-green"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-graphite-teal-surface text-pure-white flex items-center justify-center font-technical-code text-technical-code font-bold">SG</div><div class="hidden md:flex flex-col text-left"><span class="font-label-sm text-label-sm text-graphite-teal-deep uppercase font-bold leading-none">1º SG-FN / OPERADOR</span><span class="font-label-sm text-label-sm text-renewal-green-dark leading-tight">AUTENTICADO MB</span></div></div></div></div><nav class="h-12 w-full bg-graphite-teal-deep px-gutter flex items-center justify-between text-pure-white" data-active-classes="bg-graphite-teal-surface text-renewal-green font-bold"><div class="flex items-center gap-space-lg overflow-x-auto whitespace-nowrap"><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="inicio" href="#">Início</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="departamentos" href="#">Departamentos</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="sites" href="#">Sites</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="sistemas" href="#">Sistemas</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="om" href="#">OM</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="bono" href="#">BONO</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="plano-do-dia" href="#">Plano do Dia</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="catalogo" href="#">Catálogo</a><a class="font-label-md text-label-md text-pure-white hover:text-renewal-green transition-colors py-1.5 px-space-sm rounded" data-path="pedido-de-ti" href="#">Pedido de TI</a></div><div class="flex items-center gap-space-sm shrink-0 pl-space-md"><a class="flex items-center gap-space-xs px-space-md py-1 bg-graphite-teal-surface text-pure-white hover:bg-cool-light-grey hover:text-graphite-teal-deep rounded transition-colors text-label-sm font-label-sm font-bold uppercase" data-path="intranet-auth" href="#"><span class="w-2 h-2 rounded-full bg-renewal-green"></span>INTRANET AUTH</a></div></nav></header><div class="pt-32 flex-1 w-full flex"><aside class="w-72 shrink-0 bg-surface-container-lowest flex flex-col p-space-md gap-space-md"><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">Institucional</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="historico" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">history</span>Histórico CTDDCFN</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="missao-e-visao" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">shield</span>Missão &amp; Visão</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="organograma" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">account_tree</span>Cadeia de Comando</a></nav></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">Produtos Doutrinários</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="manuais-cfn" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">menu_book</span>Manuais CFN</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="notas-doutrinarias" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">description</span>Notas Doutrinárias</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="licoes-aprendidas" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">psychology</span>Lições Aprendidas</a></nav></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">SECOM</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="noticias" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">newspaper</span>Notícias &amp; Mídia</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="revista-ancora" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">auto_stories</span>Revista Âncora</a></nav></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">Ensino &amp; Treinamento</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="cursos-e-estagios" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">school</span>Cursos &amp; Estágios</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="simuladores" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">terminal</span>Simuladores Táticos</a></nav></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">Navegação &amp; Admin</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="bono-interno" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">assignment</span>BONO Interno</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="escalas-de-servico" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">calendar_month</span>Escalas de Serviço</a></nav></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline font-bold tracking-wider px-space-xs">Divisão de Informática</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-surface text-pure-white font-bold"><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="chamados-ti" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">support_agent</span>Abertura de Chamados</a><a class="px-space-sm py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-sm" data-path="ativos-de-rede" href="#"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">lan</span>Ativos de Rede</a></nav></div><div class="mt-auto p-space-sm bg-cool-light-grey rounded-lg flex flex-col gap-space-xs shadow-[0_1px_3px_rgba(0,46,50,0.05)]"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-base text-graphite-teal-deep">explore</span><span class="font-label-sm text-label-sm uppercase font-bold text-graphite-teal-deep">Bússola Interna</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Acesso indexado a publicações militares e diretrizes vigentes.</p><div class="flex items-center justify-between text-graphite-teal-deep font-label-sm text-label-sm font-semibold"><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-renewal-green"></span>ONLINE</span><span>v3.4.1</span></div></div></aside><main class="flex-1 min-w-0 bg-surface p-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<script>
+    (function highlightNav() {
+      const activeHref = 'missao-e-visao';
+      const asideLinks = document.querySelectorAll('aside a[data-path]');
+      asideLinks.forEach(link => {
+        if (link.getAttribute('data-path') === activeHref || link.textContent.trim().toLowerCase().includes('visão')) {
+          link.classList.remove('text-on-surface-variant', 'hover:bg-surface-container-high');
+          link.classList.add('bg-graphite-teal-surface', 'text-renewal-green', 'font-bold');
+        }
+      });
+    })();
+  </script>
+<!-- Breadcrumb & Status Tracker -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs text-label-md font-label-md text-on-surface-variant">
+<a class="flex items-center gap-1 text-graphite-teal-deep hover:text-renewal-green-dark transition-colors" data-path="inicio" href="#">
+<span class="material-symbols-outlined text-base">home</span>
+<span>Início</span>
+</a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface-variant font-medium">Institucional</span>
+<span class="text-outline-variant">/</span>
+<span class="text-graphite-teal-deep font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-renewal-green"></span>
+        Visão Institucional
+      </span>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-graphite-teal-deep font-technical-code text-technical-code font-bold uppercase tracking-wide">
+<span class="material-symbols-outlined text-sm text-renewal-green-dark">verified</span>
+        DIRETRIZ DO COMANDO-GERAL
+      </div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold uppercase">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+        VIGÊNCIA: 2024-2027
+      </div>
+</div>
+</div>
+<!-- Main Hero Card: Visão de Futuro -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-xl shadow-sm p-space-xl flex flex-col gap-space-lg">
+<!-- Top accent architectural stripe -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-graphite-teal-deep via-graphite-teal-surface to-renewal-green"></div>
+<!-- Watermark Naval Crest Badge Background -->
+<div class="absolute -right-8 -bottom-10 opacity-[0.03] pointer-events-none select-none text-graphite-teal-deep">
+<span class="material-symbols-outlined text-[280px]">shield</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-graphite-teal-deep text-renewal-green flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-3xl">visibility</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase font-bold text-renewal-green-dark tracking-wider">DIRETRIZ ESTRATÉGICA CFN</span>
+<span class="text-outline-variant">•</span>
+<span class="font-technical-code text-technical-code text-outline uppercase">DOC-ESTR-01/2024</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-graphite-teal-deep font-bold tracking-tight">
+            Visão de Futuro
+          </h1>
+</div>
+</div>
+<!-- Strategic Horizon Badge -->
+<div class="flex items-center gap-space-sm bg-graphite-teal-deep text-pure-white px- space-md py-2.5 px-space-md rounded-lg shadow-sm border-l-4 border-renewal-green">
+<span class="material-symbols-outlined text-renewal-green text-2xl">event_available</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-surface-container-highest">Horizonte Estratégico</span>
+<span class="font-headline-sm text-headline-sm font-bold text-renewal-green leading-none">META 2027</span>
+</div>
+</div>
+</div>
+<!-- Official Vision Text Box -->
+<div class="relative bg-cool-light-grey rounded-lg p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-graphite-teal-deep flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-renewal-green-dark">format_quote</span>
+          Texto Doutrinário Oficial Integral
+        </span>
+<span class="font-technical-code text-technical-code text-on-surface-variant font-medium">ESTADO-MAIOR DA ARMADA / CFN</span>
+</div>
+<blockquote class="font-body-lg text-body-lg text-on-surface leading-relaxed text-justify font-medium">
+        “Ser uma referência, até 2027, na produção e gestão do conhecimento profissional das Forças Armadas, acompanhando a evolução de assuntos militares no Brasil e no exterior e contribuindo com o desenvolvimento de novas concepções, conceitos, táticas, técnicas e procedimentos para o emprego do Corpo de Fuzileiros Navais em proveito da Marinha do Brasil, de maneira a assessorar o Setor Operativo sobre todas as áreas de conhecimentos que envolvam o emprego de Fuzileiros Navais e a prover o Comandante-Geral do Corpo de Fuzileiros Navais toda fundamentação doutrinária para o desenvolvimento e direção da gestão estratégica do pessoal e material do CFN.”
+      </blockquote>
+<div class="pt-space-xs flex items-center justify-between text-label-sm font-label-sm text-outline">
+<span>Aprovado em Reunião de Doutrina Militar Naval</span>
+<span class="flex items-center gap-1 text-graphite-teal-deep font-semibold">
+<span class="material-symbols-outlined text-sm">lock</span> Publicação Ostensiva Institucional
+        </span>
+</div>
+</div>
+</div>
+<!-- Operational Pillars Section -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-6 rounded bg-renewal-green"></div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-graphite-teal-deep">
+          Pilares da Projeção Doutrinária
+        </h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline-block uppercase tracking-wider">
+        Desdobramento Tático-Operacional
+      </span>
+</div>
+<!-- 3 Core Pillars Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute top-0 left-0 right-0 h-1 bg-graphite-teal-deep"></div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-graphite-teal-deep">
+<span class="material-symbols-outlined text-2xl">psychology</span>
+</div>
+<span class="font-technical-code text-technical-code font-bold text-renewal-green-dark bg-cool-light-grey px-2 py-0.5 rounded">PILAR 01</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-graphite-teal-deep mt-space-xs">
+            Produção &amp; Gestão do Conhecimento
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-normal">
+            Monitorar sistematicamente a vanguarda dos conflitos contemporâneos e inovações militares globais, sistematizando lições aprendidas, manuais operacionais e notas técnicas de prontidão.
+          </p>
+</div>
+<div class="pt-space-sm border-t border-surface-container flex items-center justify-between text-label-sm font-label-sm text-graphite-teal-deep font-semibold">
+<span>Capacitação Contínua</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute top-0 left-0 right-0 h-1 bg-renewal-green"></div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-2xl">shield_with_heart</span>
+</div>
+<span class="font-technical-code text-technical-code font-bold text-graphite-teal-deep bg-surface-container px-2 py-0.5 rounded">PILAR 02</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-graphite-teal-deep mt-space-xs">
+            Assessoria ao Setor Operativo
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-normal">
+            Fornecer suporte técnico direto e fundamentado a todas as Forças de Emprego Rápido, Batalhões e Destacamentos Anfíbios, garantindo convergência em táticas, técnicas e procedimentos (TTP).
+          </p>
+</div>
+<div class="pt-space-sm border-t border-surface-container flex items-center justify-between text-label-sm font-label-sm text-graphite-teal-deep font-semibold">
+<span>Prontidão Operativa</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute top-0 left-0 right-0 h-1 bg-graphite-teal-surface"></div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-graphite-teal-deep">
+<span class="material-symbols-outlined text-2xl">military_tech</span>
+</div>
+<span class="font-technical-code text-technical-code font-bold text-renewal-green-dark bg-cool-light-grey px-2 py-0.5 rounded">PILAR 03</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-graphite-teal-deep mt-space-xs">
+            Gestão Estratégica do CFN
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-normal">
+            Prover substrato doutrinário irrefutável para a tomada de decisões de alto nível pelo Comandante-Geral, orientando investimentos em novos armamentos, sistemas de comando e quadros de pessoal.
+          </p>
+</div>
+<div class="pt-space-sm border-t border-surface-container flex items-center justify-between text-label-sm font-label-sm text-graphite-teal-deep font-semibold">
+<span>Decisão &amp; Modernização</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Context Split Section: Imagery & Milestones -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Visual Operational Display -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="relative h-64 w-full bg-cover bg-center overflow-hidden" data-alt="Brazilian Marine Corps soldiers operating modern tactical command systems and amphibious training vessels during a coastal readiness operation in Rio de Janeiro, dramatic military dawn lighting, graphite teal and muted gold tones, sharp authentic gear, tactical realism" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD5H6-PtnEXDkl175fHU9ZDjlGMekun72q1U379gWB88JVNf-FJwsJ0Klrg63z6RsqqbDx5sfQBM1NanDuKz6tXgKsVeg7IGHhSO2iD7f-fR9Hp0InvfsB2GMwCIdmjxMcI3JoqJ6y5WrxtAjI3e-4fs_5ZAtOXRWRiZDwVca1-VeQAAGlNT4IHYyXPpeLsh807HM5nRuSqi15Lhd6wRy54_H4dGP4IdDhW4dlekd19QmD_sDPZzcQ5')">
+<div class="absolute inset-0 bg-gradient-to-t from-graphite-teal-deep via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-pure-white">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase font-bold text-renewal-green">Treinamento em Campo</span>
+<span class="font-headline-sm text-headline-sm font-bold">Corpo de Fuzileiros Navais</span>
+</div>
+<span class="material-symbols-outlined text-2xl text-pure-white">sailing</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs bg-surface-container-lowest flex-1 justify-between">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          O desenvolvimento doutrinário contínuo alicerça as operações anfíbias mais complexas da América Latina, unindo tradição de combate e tecnologia expedicionária de ponta.
+        </p>
+<div class="flex items-center justify-between pt-space-xs text-technical-code font-technical-code text-outline">
+<span>LOCALIDADE: CIAMPA / CADIM</span>
+<span>ESTADO: PRONTO EMPREGO</span>
+</div>
+</div>
+</div>
+<!-- Strategic Alignment & Actionable Directives -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-graphite-teal-deep">timeline</span>
+<span class="font-label-md text-label-md uppercase font-bold text-graphite-teal-deep">Linha de Ação Estratégica</span>
+</div>
+<span class="font-label-sm text-label-sm text-renewal-green-dark font-bold uppercase tracking-wide">Plano de Metas</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          O alinhamento da Visão 2027 orienta todos os ciclos de revisão das publicações normativas e programas de adestramento do CTDDCFN.
+        </p>
+<!-- Metric Steps / Timeline Progress -->
+<div class="flex flex-col gap-space-sm mt-space-xs">
+<!-- Step 1 -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-cool-light-grey">
+<div class="w-8 h-8 rounded-full bg-graphite-teal-deep text-renewal-green flex items-center justify-center font-bold text-sm shrink-0">1</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep">Atualização dos Manuais Doutrinários (2024 - 2025)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Revisão e publicação das matrizes de operações anfíbias e emprego de aeronaves remotamente pilotadas (SARP).</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-cool-light-grey">
+<div class="w-8 h-8 rounded-full bg-graphite-teal-deep text-renewal-green flex items-center justify-center font-bold text-sm shrink-0">2</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep">Digitalização &amp; Simuladores Integrados (2025 - 2026)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Expansão do ambiente sintético de simulação para tomada de decisão em nível de Grupo de Combate e Estado-Maior.</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-cool-light-grey">
+<div class="w-8 h-8 rounded-full bg-renewal-green text-graphite-teal-deep flex items-center justify-center font-bold text-sm shrink-0">3</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-graphite-teal-deep">Consolidação como Polo de Excelência (2027)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Reconhecimento pleno como centro de referência de doutrina militar conjunta nacional e interoperabilidade internacional.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Action Navigation Link Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-md border-t border-surface-container">
+<a class="inline-flex items-center gap-space-xs text-graphite-teal-deep hover:text-renewal-green-dark font-label-md text-label-md font-bold transition-colors" data-path="missao-e-visao" href="#">
+<span class="material-symbols-outlined text-lg">shield</span>
+          Consultar Missão Institucional
+        </a>
+<a class="inline-flex items-center gap-space-xs px-space-md py-2 bg-graphite-teal-deep text-pure-white rounded hover:bg-graphite-teal-surface transition-colors font-label-md text-label-md font-semibold" data-path="manuais-cfn" href="#">
+<span class="material-symbols-outlined text-renewal-green text-lg">menu_book</span>
+          Acessar Catálogo de Manuais
+        </a>
+</div>
+</div>
+</div>
+</div></main></div><footer class="w-full bg-graphite-teal-deep text-pure-white"><div class="h-1 w-full bg-renewal-green"></div><div class="w-full px-gutter py-space-xl flex flex-col md:flex-row justify-between items-start gap-space-xl"><div class="flex items-start gap-space-md max-w-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VXrlbjdFzVtCcnXF7yrvvMWtaqqtMrKL6OzUjd0lqYVSypdAUvvDIeWVGuLTpvaIgYUi4iMAUkr5HFNbur18YHAyeiq_vHImYzbE_amLqxFOz6R7hqZ9W8N7ZhAQQZmwT9WT_pCUq-spXJyw4tDL8Z-Ndc7fKjTp8uI9oDe0LcRjSYIrE5sqoLvxXF8-74Xfd_X-gn9ikW_j97c1b1gFd7UhLxKa9VKjjkFYP17SEezF2V2qthbRDJL1i9eWh4JhVAfosyI7DT0A"/><div class="flex flex-col"><span class="font-title-md text-title-md font-bold uppercase tracking-wide">CTDDCFN</span><span class="font-body-sm text-body-sm text-surface-container-highest">Comando do Treinamento e do Desenvolvimento Doutrinário do Corpo de Fuzileiros Navais</span><p class="font-body-sm text-body-sm text-outline-variant mt-space-sm">Complexo Naval da Ilha do Governador, Rio de Janeiro - RJ, CEP 21911-000</p></div></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase font-bold text-renewal-green">Comunicação Social (SECOM)</span><div class="flex items-center gap-space-xs text-body-sm font-body-sm text-pure-white"><span class="material-symbols-outlined text-base text-renewal-green">call</span>(21) 3386-4399</div><div class="flex items-center gap-space-xs text-body-sm font-body-sm text-pure-white"><span class="material-symbols-outlined text-base text-renewal-green">mail</span>ctddcfn.secom@marinha.mil.br</div><div class="flex items-center gap-space-xs text-body-sm font-body-sm text-surface-container-highest mt-space-xs"><span class="material-symbols-outlined text-base text-renewal-green">shield</span>Rede RITMAR: Ramal 8399</div></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase font-bold text-renewal-green">Acesso Direto</span><nav class="flex flex-col gap-1"><a class="font-body-sm text-body-sm text-surface-container-highest hover:text-renewal-green transition-colors" data-path="inicio" href="#">Portal MB</a><a class="font-body-sm text-body-sm text-surface-container-highest hover:text-renewal-green transition-colors" data-path="sistemas" href="#">Doutrina Naval Digital</a><a class="font-body-sm text-body-sm text-surface-container-highest hover:text-renewal-green transition-colors" data-path="bono" href="#">Boletim de Ordens e Notícias</a></nav></div></div><div class="w-full bg-graphite-industrial py-space-sm px-gutter flex items-center justify-between text-technical-code font-technical-code text-surface-container-highest"><div class="flex items-center gap-space-sm"><span class="text-renewal-green">●</span><span>SISTEMA OPERACIONAL SEGURO | CLASSIFICAÇÃO: RESERVADO</span></div><div><span>CTDDCFN © 2025 - TODOS OS DIREITOS RESERVADOS</span></div></div></footer></body></html>

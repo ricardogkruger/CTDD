@@ -1,0 +1,1491 @@
+<!DOCTYPE html><html lang="pt-BR" style="width: 1280px; height: 2764px; overflow: hidden; position: relative;"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error-container": "#93000a", "secondary-fixed": "#d4ef4f", "primary-container": "#002e32", "surface-dim": "#d7dbda", "renewal-green-dark": "#8FA619", "tertiary": "#151515", "on-tertiary-fixed-variant": "#474746", "surface-container-highest": "#e0e3e2", "on-tertiary-container": "#91908f", "on-secondary-fixed": "#181e00", "on-primary-fixed-variant": "#254d51", "surface-tint": "#3e6469", "pure-white": "#FFFFFF", "inverse-on-surface": "#eef1f0", "on-tertiary": "#ffffff", "cool-light-grey": "#F2F5F4", "surface-bright": "#f7faf9", "primary-fixed-dim": "#a5ced2", "graphite-industrial": "#1C1C1C", "status-critical-bg": "#FDE8E8", "surface": "#f7faf9", "graphite-teal-deep": "#002E32", "secondary-container": "#d1ec4c", "on-secondary-container": "#5a6900", "on-secondary-fixed-variant": "#404c00", "error": "#ba1a1a", "error-container": "#ffdad6", "surface-variant": "#e0e3e2", "surface-container": "#ebeeed", "background": "#f7faf9", "primary-fixed": "#c1eaef", "tertiary-fixed": "#e5e2e1", "on-primary": "#ffffff", "on-surface": "#181c1c", "tertiary-fixed-dim": "#c8c6c5", "canvas-clean": "#F8FAFC", "surface-container-low": "#f1f4f3", "outline-variant": "#c0c8c9", "on-tertiary-fixed": "#1b1b1b", "on-primary-fixed": "#002023", "on-error": "#ffffff", "on-secondary": "#ffffff", "outline": "#717879", "on-primary-container": "#70979b", "primary": "#00181a", "tertiary-container": "#292929", "graphite-teal-surface": "#00383D", "status-critical": "#B42828", "surface-container-high": "#e6e9e8", "on-background": "#181c1c", "inverse-surface": "#2d3131", "renewal-green": "#BAD435", "border-subtle": "#D7DBDA", "on-surface-variant": "#414849", "secondary": "#566500", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#b8d233", "inverse-primary": "#a5ced2" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1.5rem", "space-xl": "2.5rem", "gutter-mobile": "1rem", "margin": "3rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-xl-mobile": [ "Montserrat" ], "headline-sm": [ "Montserrat" ], "display-lg": [ "Montserrat" ], "headline-md": [ "Montserrat" ], "headline-xl": [ "Montserrat" ], "display-lg-mobile": [ "Montserrat" ], "headline-lg": [ "Montserrat" ], "body-md": [ "Inter" ], "body-sm": [ "Inter" ], "label-md": [ "Inter" ], "body-lg": [ "Inter" ], "label-sm": [ "Inter" ], "technical-code": [ "Inter" ], "title-md": [ "Montserrat" ] }, "fontSize": { "headline-xl-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-sm": [ "1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" } ], "display-lg": [ "3.5rem", { "lineHeight": "4.25rem", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-md": [ "1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-xl": [ "2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-lg-mobile": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-lg": [ "2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "body-md": [ "1rem", { "lineHeight": "1.5rem", "fontWeight": "400" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" } ], "label-md": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" } ], "label-sm": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.06em", "fontWeight": "700" } ], "technical-code": [ "0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0.04em", "fontWeight": "500" } ], "title-md": [ "1.125rem", { "lineHeight": "1.5rem", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-40 bg-canvas-clean shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-space-lg flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="h-11 w-11 rounded-lg bg-surface-container flex items-center justify-center p-space-xs"><span class="material-symbols-outlined text-graphite-teal-deep text-2xl">anchor</span></div><div><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-graphite-teal-deep tracking-tight font-bold">CTDDCFN</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-graphite-teal-deep font-semibold uppercase">Marinha do Brasil</span></div><p class="font-label-sm text-label-sm text-renewal-green-dark uppercase font-bold tracking-wider">A Prontidão Começa Aqui!</p></div></div></div><div class="hidden md:flex flex-1 max-w-xl mx-space-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-lg">search</span><input class="w-full h-10 pl-10 pr-space-md rounded-full bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-graphite-teal-deep" placeholder="Pesquisar doutrinas, diretrizes, ordens e manuais..." type="text"></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container"><span class="material-symbols-outlined text-renewal-green-dark text-base">verified_user</span><span class="font-technical-code text-technical-code text-on-surface-variant font-semibold">INTRANET SEGURA</span></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right hidden sm:block"><div class="font-label-md text-label-md text-graphite-teal-deep font-bold">1º SG-FN / OPERADOR</div><div class="font-label-sm text-label-sm text-on-surface-variant">Divisão de Doutrina</div></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VXrlbjdFzVtCcnXF7yrvvMWtaqqtMrKL6OzUjd0lqYVSypdAUvvDIeWVGuLTpvaIgYUi4iMAUkr5HFNbur18YHAyeiq_vHImYzbE_amLqxFOz6R7hqZ9W8N7ZhAQQZmwT9WT_pCUq-spXJyw4tDL8Z-Ndc7fKjTp8uI9oDe0LcRjSYIrE5sqoLvxXF8-74Xfd_X-gn9ikW_j97c1b1gFd7UhLxKa9VKjjkFYP17SEezF2V2qthbRDJL1i9eWh4JhVAfosyI7DT0A"></div></div></div><div class="h-12 w-full bg-graphite-teal-deep px-space-lg flex items-center justify-between border-b-2 border-renewal-green"><nav class="flex items-center gap-space-sm overflow-x-auto h-full" data-active-classes="bg-graphite-teal-surface text-pure-white font-semibold"><a class="font-label-md text-label-md text-pure-white/80 hover:text-pure-white px-space-sm py-1.5 rounded transition-colors whitespace-nowrap" data-path="inicio" href="#">Início</a><div class="relative group h-full flex items-center"><a class="font-label-md text-label-md text-pure-white/80 hover:text-pure-white px-space-sm py-1.5 rounded flex items-center gap-1 transition-colors whitespace-nowrap" data-path="departamentos" href="#">Departamentos <span class="material-symbols-outlined text-sm">expand_more</span></a></div><a class="font-label-md text-label-md text-pure-white/80 hover:text-pure-white px-space-sm py-1.5 rounded transition-colors whitespace-nowrap" data-path="sites" href="#">Sites</a><a class="font-label-md text-label-md text-pure-white/80 hover:text-pure-white px-space-sm py-1.5 rounded transition-colors whitespace-nowrap" data-path="sistemas" href="#">Sistemas</a><a class="font-label-md text-label-md text-pure-white/80 hover:text-pure-white px-space-sm py-1.5 rounded transition-colors whitespace-nowrap" data-path="om" href="#">OM</a><a class="font-label-md text-label-md text-pure-white/80 hover:text-pure-white px-space-sm py-1.5 rounded transition-colors whitespace-nowrap" data-path="bono" href="#">BONO</a><a class="font-label-md text-label-md text-pure-white/80 hover:text-pure-white px-space-sm py-1.5 rounded transition-colors whitespace-nowrap" data-path="plano-do-dia" href="#">Plano do Dia</a><a class="font-label-md text-label-md text-pure-white/80 hover:text-pure-white px-space-sm py-1.5 rounded transition-colors whitespace-nowrap" data-path="catalogo" href="#">Catálogo</a><a class="font-label-md text-label-md text-pure-white/80 hover:text-pure-white px-space-sm py-1.5 rounded transition-colors whitespace-nowrap" data-path="pedido-ti" href="#">Pedido de TI</a></nav><div class="flex items-center gap-space-sm"><a class="h-8 px-space-md rounded bg-renewal-green text-graphite-teal-deep font-label-sm text-label-sm font-bold flex items-center gap-1.5 hover:bg-renewal-green-dark hover:text-pure-white transition-all uppercase tracking-wider" data-path="intranet-auth" href="#"><span class="material-symbols-outlined text-sm font-bold">lock</span>INTRANET AUTH</a></div></div></header><aside class="fixed left-0 top-32 bottom-0 w-72 bg-surface-container-lowest z-30 flex flex-col justify-between overflow-y-auto p-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] pb-space-xl"><div class="flex flex-col gap-space-md"><div class="flex flex-col"><div class="font-label-sm text-label-sm text-outline uppercase font-bold tracking-wider px-space-sm mb-space-xs">Institucional</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-deep text-pure-white font-semibold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface px-space-sm py-1.5 rounded flex items-center gap-space-sm transition-colors" data-path="estrutura-organizacional" href="#"><span class="material-symbols-outlined text-lg">account_tree</span>Estrutura</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface px-space-sm py-1.5 rounded flex items-center gap-space-sm transition-colors" data-path="historico" href="#"><span class="material-symbols-outlined text-lg">history_edu</span>Histórico</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface px-space-sm py-1.5 rounded flex items-center gap-space-sm transition-colors" data-path="diretrizes-comando" href="#"><span class="material-symbols-outlined text-lg">assignment</span>Diretrizes de Comando</a></nav></div><div class="flex flex-col"><div class="font-label-sm text-label-sm text-outline uppercase font-bold tracking-wider px-space-sm mb-space-xs">Produtos Doutrinários</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-deep text-pure-white font-semibold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface px-space-sm py-1.5 rounded flex items-center gap-space-sm transition-colors" data-path="manuais-publicacoes" href="#"><span class="material-symbols-outlined text-lg">menu_book</span>Manuais e Publicações</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface px-space-sm py-1.5 rounded flex items-center gap-space-sm transition-colors" data-path="licoes-aprendidas" href="#"><span class="material-symbols-outlined text-lg">psychology</span>Lições Aprendidas</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface px-space-sm py-1.5 rounded flex items-center gap-space-sm transition-colors" data-path="experimentacao-doutrinaria" href="#"><span class="material-symbols-outlined text-lg">science</span>Experimentação</a></nav></div><div class="flex flex-col"><div class="font-label-sm text-label-sm text-outline uppercase font-bold tracking-wider px-space-sm mb-space-xs">Secom</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-deep text-pure-white font-semibold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface px-space-sm py-1.5 rounded flex items-center gap-space-sm transition-colors" data-path="noticias" href="#"><span class="material-symbols-outlined text-lg">newspaper</span>Notícias do Comando</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface px-space-sm py-1.5 rounded flex items-center gap-space-sm transition-colors" data-path="comunicados" href="#"><span class="material-symbols-outlined text-lg">campaign</span>Comunicados Oficiais</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface px-space-sm py-1.5 rounded flex items-center gap-space-sm transition-colors" data-path="galeria-midia" href="#"><span class="material-symbols-outlined text-lg">photo_library</span>Galeria de Mídia</a></nav></div><div class="flex flex-col"><div class="font-label-sm text-label-sm text-outline uppercase font-bold tracking-wider px-space-sm mb-space-xs">Ensino</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-deep text-pure-white font-semibold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface px-space-sm py-1.5 rounded flex items-center justify-between transition-colors" data-path="curriculos" href="#">Currículos <span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-renewal-green/20 text-graphite-teal-deep font-bold">ATIVO</span></a><a class="font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface px-space-sm py-1.5 rounded flex items-center gap-space-sm transition-colors" data-path="solicitacao-vagas" href="#"><span class="material-symbols-outlined text-lg">school</span>Solicitação de Vagas</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface px-space-sm py-1.5 rounded flex items-center gap-space-sm transition-colors" data-path="calendario-instrucao" href="#"><span class="material-symbols-outlined text-lg">calendar_month</span>Calendário de Instrução</a></nav></div><div class="flex flex-col"><div class="font-label-sm text-label-sm text-outline uppercase font-bold tracking-wider px-space-sm mb-space-xs">Navegação / ADM</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-deep text-pure-white font-semibold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface px-space-sm py-1.5 rounded flex items-center gap-space-sm transition-colors" data-path="administracao-geral" href="#"><span class="material-symbols-outlined text-lg">admin_panel_settings</span>Administração Geral</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface px-space-sm py-1.5 rounded flex items-center gap-space-sm transition-colors" data-path="escalas-servico" href="#"><span class="material-symbols-outlined text-lg">event_available</span>Escalas de Serviço</a></nav></div><div class="flex flex-col"><div class="font-label-sm text-label-sm text-outline uppercase font-bold tracking-wider px-space-sm mb-space-xs">Divisão de Informática</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-graphite-teal-deep text-pure-white font-semibold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface px-space-sm py-1.5 rounded flex items-center gap-space-sm transition-colors" data-path="chamados-ti" href="#"><span class="material-symbols-outlined text-lg">support_agent</span>Abertura de Chamados</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface px-space-sm py-1.5 rounded flex items-center gap-space-sm transition-colors" data-path="status-redes" href="#"><span class="material-symbols-outlined text-lg">lan</span>Status dos Servidores</a></nav></div></div><div class="mt-space-lg p-space-md rounded-xl bg-graphite-industrial text-pure-white shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between mb-space-xs"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-renewal-green text-lg">explore</span><span class="font-title-md text-title-md font-bold tracking-wide">Bússola Interna</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-renewal-green text-graphite-teal-deep font-bold">MB</span></div><p class="font-body-sm text-body-sm text-outline-variant mb-space-sm">Localizador tático de normativas e ativos de instrução.</p><div class="relative mb-space-sm"><input class="w-full h-8 pl-8 pr-2 rounded bg-tertiary text-pure-white font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-renewal-green" placeholder="Código ou termo tático..." type="text"><span class="material-symbols-outlined absolute left-2 top-1/2 -translate-y-1/2 text-outline text-sm">search</span></div><div class="flex items-center justify-between text-label-sm font-technical-code"><span class="px-2 py-0.5 rounded bg-surface-container-high/20 text-renewal-green">DEFCON 4</span><span class="text-outline-variant">PRONTIDÃO ALTA</span></div></div></aside><div class="pl-72"><main class="w-full pt-32 min-h-screen bg-canvas-clean"><div class="flex flex-col w-full">
+<div class="w-full px-space-lg py-space-md mb-12">
+<!-- Top Breadcrumb & Status Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-md">
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<a class="hover:text-graphite-teal-deep transition-colors flex items-center gap-1" data-path="inicio" href="#">
+<span class="material-symbols-outlined text-base">home</span>Início
+        </a>
+<span class="text-outline-variant font-normal">/</span>
+<span class="text-on-surface-variant">Ensino</span>
+<span class="text-outline-variant font-normal">/</span>
+<span class="text-graphite-teal-deep font-bold">Currículos dos Cursos</span>
+</nav>
+<div class="flex items-center gap-space-sm">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-technical-code text-technical-code font-bold">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span class="">CICLO LETIVO 2026 HOMOLOGADO</span>
+</div>
+<div class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-technical-code text-technical-code">
+<span class="material-symbols-outlined text-sm text-graphite-teal-deep">shield</span>
+<span class="">PLACAPE MB V.26</span>
+</div>
+</div>
+</div>
+<!-- Main Header Banner (Structural Minimalist Style) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-lg relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-graphite-teal-deep via-graphite-teal-surface to-renewal-green"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-graphite-teal-deep text-pure-white flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-2xl">school</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<h1 class="font-headline-lg text-headline-lg text-graphite-teal-deep font-bold tracking-tight">
+                Currículos dos Cursos
+              </h1>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-bold bg-surface-container-high text-graphite-teal-deep uppercase">
+                135 Matrizes
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+              Acervo oficial consolidado do Corpo de Fuzileiros Navais. Matrizes de ensino, diretrizes programáticas e ementas curriculares homologadas pelo CTDDCFN para o planejamento pedagógico e capacitação técnico-militar.
+            </p>
+</div>
+</div>
+<div class="flex flex-wrap sm:flex-nowrap items-center gap-space-sm shrink-0"><button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-md text-label-md font-semibold transition-all shadow-sm focus:ring-2 focus:ring-renewal-green focus:outline-none" type="button"><span class="material-symbols-outlined text-lg text-renewal-green">picture_as_pdf</span><span class="">Baixar Catálogo Geral (PDF)</span></button><button class="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-graphite-teal-deep border border-border-subtle font-label-md text-label-md font-medium transition-all shadow-sm focus:ring-2 focus:ring-graphite-teal-deep focus:outline-none" type="button"><span class="material-symbols-outlined text-lg text-graphite-teal-deep">print</span><span class="hidden sm:inline">Imprimir Tabela</span></button></div>
+</div>
+<!-- Quick Search and Filter Bar -->
+<div class="mt-space-lg pt-space-md bg-surface-container-low/60 -mx-space-lg -mb-space-lg px-space-lg pb-space-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="relative w-full md:max-w-xl">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-lg">search</span>
+<input autocomplete="off" class="w-full h-11 pl-10 pr-10 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-graphite-teal-deep placeholder:text-outline" id="course-search-input" placeholder="Filtrar por nome do curso ou código (ex: C-FSD-FN, DefNBQR, Artilharia)..." type="text">
+<button class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface" id="clear-search-btn">
+<span class="material-symbols-outlined text-lg">cancel</span>
+</button>
+</div>
+<div class="flex items-center justify-between w-full md:w-auto gap-space-md text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-renewal-green-dark text-base">check_circle</span>
+<span class="font-medium text-graphite-teal-deep" id="filtered-counter-label">Exibindo 26 cursos</span>
+</div>
+<div class="flex items-center gap-1 font-technical-code text-technical-code text-outline">
+<span class="material-symbols-outlined text-sm">cloud_sync</span>
+<span class="">REV. 02/2025</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tactical Tabs Navigation -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xs shadow-sm mb-space-md">
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1" id="category-tabs-container"><button class="tab-button group flex items-center gap-2.5 px-4 py-2.5 rounded-lg text-pure-white bg-graphite-teal-deep font-label-md text-label-md font-semibold border-b-2 border-renewal-green transition-all whitespace-nowrap shadow-sm" data-tab-target="tab-carreira"><span class="material-symbols-outlined text-lg text-renewal-green group-hover:scale-110 transition-transform">military_tech</span><span class="">Carreira</span><span class="tab-badge px-2 py-0.5 rounded-full font-technical-code text-technical-code font-bold bg-graphite-teal-surface text-renewal-green border border-renewal-green/30">26</span></button><button class="tab-button group flex items-center gap-2.5 px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-graphite-teal-deep font-label-md text-label-md font-medium transition-all whitespace-nowrap" data-tab-target="tab-especiais"><span class="material-symbols-outlined text-lg text-outline group-hover:text-graphite-teal-deep group-hover:scale-110 transition-transform">stars</span><span class="">Especiais</span><span class="tab-badge px-2 py-0.5 rounded-full font-technical-code text-technical-code bg-surface-container-high text-on-surface-variant">33</span></button><button class="tab-button group flex items-center gap-2.5 px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-graphite-teal-deep font-label-md text-label-md font-medium transition-all whitespace-nowrap" data-tab-target="tab-expeditos"><span class="material-symbols-outlined text-lg text-outline group-hover:text-graphite-teal-deep group-hover:scale-110 transition-transform">speed</span><span class="">Expeditos</span><span class="tab-badge px-2 py-0.5 rounded-full font-technical-code text-technical-code bg-surface-container-high text-on-surface-variant">10</span></button><button class="tab-button group flex items-center gap-2.5 px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-graphite-teal-deep font-label-md text-label-md font-medium transition-all whitespace-nowrap" data-tab-target="tab-aperfeicoamento"><span class="material-symbols-outlined text-lg text-outline group-hover:text-graphite-teal-deep group-hover:scale-110 transition-transform">psychology</span><span class="">Aperfeiçoamento Avançado</span><span class="tab-badge px-2 py-0.5 rounded-full font-technical-code text-technical-code bg-surface-container-high text-on-surface-variant">8</span></button><button class="tab-button group flex items-center gap-2.5 px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-graphite-teal-deep font-label-md text-label-md font-medium transition-all whitespace-nowrap" data-tab-target="tab-estagios"><span class="material-symbols-outlined text-lg text-outline group-hover:text-graphite-teal-deep group-hover:scale-110 transition-transform">assignment_turned_in</span><span class="">Estágios</span><span class="tab-badge px-2 py-0.5 rounded-full font-technical-code text-technical-code bg-surface-container-high text-on-surface-variant">58</span></button></div>
+</div>
+<!-- Active Search Filter Alert / Notification when filtering -->
+<div class="hidden items-center justify-between bg-surface-container-high px-space-md py-2 rounded-lg mb-space-md text-body-sm font-body-sm text-graphite-teal-deep" id="search-active-pill">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base">filter_list</span>
+<span class="">Filtrando por: <strong class="font-bold" id="current-search-term"></strong> em todas as categorias</span>
+</div>
+<button class="text-renewal-green-dark hover:underline font-bold text-label-sm font-label-sm" id="reset-filter-link">
+        Limpar Filtro
+      </button>
+</div>
+<!-- Tab Panels Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-lg">
+<!-- ========================================== -->
+<!-- TAB 1: CARREIRA (26 Cursos)                -->
+<!-- ========================================== -->
+<section class="tab-content block" id="tab-carreira">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-graphite-teal-deep">workspace_premium</span>
+<span class="font-label-md text-label-md text-graphite-teal-deep font-bold">Cursos de Carreira e Formação</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">(26 Matrizes Cadastradas)</span>
+</div>
+<span class="text-label-sm font-label-sm font-technical-code text-outline">MODALIDADE: PRESENCIAL / EAD</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left course-table">
+<thead>
+<tr class="bg-graphite-teal-deep text-pure-white font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 w-16 text-center">Nº</th>
+<th class="py-3 px-4 w-44">Código / Sigla</th>
+<th class="py-3 px-4">Nome do Curso</th>
+<th class="py-3 px-4 w-36 text-center">Vigência</th>
+<th class="py-3 px-4 w-32 text-right">Arquivo</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high text-body-sm font-body-sm">
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">01</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-FSD-FN</td>
+<td class="py-3 px-4 text-on-surface font-medium">Currículo de Formação de Soldados Fuzileiros Navais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">02</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-ApA-CFN</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento Avançado de Oficiais do CFN</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025/26</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">03</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-ApA-CFN-SP</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento Avançado de Oficiais do Corpo de Fuzileiros Navais Semi-presencial</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">04</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Ap-GAnfE</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento de Guerra Anfíbia e Expedicionária</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">05</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Ap-GAnfE-EAD</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento de Guerra Anfíbia e Expedicionária a Distância</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">06</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Ap-AT</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento em Artilharia</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">07</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Ap-BD</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento em Blindados</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">08</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Ap-CN</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento em Comunicações Navais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">09</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Ap-CT</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento em Corneta e Tambor</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">10</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Ap-EP</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento em Educação Física</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">11</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Ap-ET</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento em Eletrônica</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">12</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Ap-EF</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento em Enfermagem</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">13</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Ap-EG</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento em Engenharia</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">14</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Ap-ES</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento em Escrita</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">15</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Ap-IF</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento em Infantaria</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">16</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Ap-MO</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento em Motores e Máquinas</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">17</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Ap-MU</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento em Música</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">18</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Espc-RV-SV-VN</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Especialização de Aviação</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">19</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Espc-EF</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Especialização em Enfermagem</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">20</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">CFO / EAO</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Formação de Oficiais (CFO) e Estágio de Aplicação de Oficiais (EAO)</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">21</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-FSG-MU-SP</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Formação de Sargento Músico</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">22</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-HabSG-SP</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Habilitação para Promoção a Sargento</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">23</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-HabSO-FN-EAD</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Habilitação para Promoção a Suboficial Fuzileiro Naval a Distância</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">24</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Geral de Especialização (C-Esp)</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">25</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">Est-HabSG</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Habilitação a Sargento</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">26</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">EstHab-SG-FN-EAD</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Habilitação a Sargento Fuzileiro Naval a Distância</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-sm">download</span>Download
+                  </a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- TAB 2: ESPECIAIS (33 Cursos)               -->
+<!-- ========================================== -->
+<section class="tab-content hidden" id="tab-especiais">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-graphite-teal-deep">stars</span>
+<span class="font-label-md text-label-md text-graphite-teal-deep font-bold">Cursos Especiais de Qualificação Tática e Técnica</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">(33 Matrizes Cadastradas)</span>
+</div>
+<span class="text-label-sm font-label-sm font-technical-code text-outline">MODALIDADE: OPERACIONAL ESPECÍFICO</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left course-table">
+<thead>
+<tr class="bg-graphite-teal-deep text-pure-white font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 w-16 text-center">Nº</th>
+<th class="py-3 px-4 w-44">Código / Sigla</th>
+<th class="py-3 px-4">Nome do Curso</th>
+<th class="py-3 px-4 w-36 text-center">Vigência</th>
+<th class="py-3 px-4 w-32 text-right">Arquivo</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high text-body-sm font-body-sm">
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">01</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-AdestFaro</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Adestradores de Cães de Faro</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">02</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-AuxVet</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Auxiliar Veterinário</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">03</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-ComFCLAnf</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Comandante de Fração de Carro Lagarta Anfíbio</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">04</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-ComAnf</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Comandos Anfíbios</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">05</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-ConTran</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Controlador de Trânsito</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">06</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-DAAe</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Defesa Antiaérea</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">07</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-DefNBQR</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Defesa Nuclear, Biológica, Química e Radiológica</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">08</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-DPQD</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Dobragem de Paraquedas</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">09</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-EngCmb-Of</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Engenharia de Combate para Oficiais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">10</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-GE-FN</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Guerra Eletrônica de Fuzileiros Navais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">11</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-HabSO-FN-EAD</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Habilitação Promoção a SubOficial Fuzileiro Naval a Distância</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">12</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-LogOf</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Logística para Oficiais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">13</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-MntVtr IIC</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Manutenção de 2º e 3º Escalões da Viatura Blindada Especial Sobre Rodas 8X8 Piranha IIIC</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">14</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-MntCLAnf</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Manutenção de Carro Lagarta Anfíbio</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">15</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-MnTEVN</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Manutenção dos Equipamentos de Visão Noturna</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">16</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-MntRep-LG</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Manutenção e Reparo do Obus 105MM LIGHT GUN L118</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">17</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-MntVO</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Manutenção Orgânica de Viaturas</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">18</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-MecAL</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Mecânico de Armamento Leve</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">19</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-MecAP</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Mecânico de Armamento Pesado</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">20</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-MotcMil</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Motociclista Militar</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">21</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-NECONREF</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Negociação em Conflitos com Tomada de Reféns</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">22</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-OfCom</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Oficial de Comunicações</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">23</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-OpCC</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Operação de Carro de Combate</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">24</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-OpCLAnf</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Operações de Carro Lagarta Anfíbio</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">25</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-Op-ASTROS</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Operações do Sistema ASTROS</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">26</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-OpRibMA</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Operações Ribeirinhas para Marinhas Amigas</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">27</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-SOMOR</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Preparação para Suboficial-Mor</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">28</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-SALZ</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Salto Livre</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">29</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-SAI-PR</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Segurança de Instalações para Praças</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">30</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-SegProtAut</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Segurança e Proteção de Autoridades</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">31</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-DstSQB</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial para Destacamento de Segurança em Embaixadas do Brasil</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">32</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-AdestCaes</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial de Adestramento de Cães de Guerra</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">33</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Esp-Av-DefNBQR</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Especial Avançado de Defesa Nuclear, Biológica, Química e Radiológica</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- TAB 3: EXPEDITOS (10 Cursos)               -->
+<!-- ========================================== -->
+<section class="tab-content hidden" id="tab-expeditos">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-graphite-teal-deep">speed</span>
+<span class="font-label-md text-label-md text-graphite-teal-deep font-bold">Cursos Expeditos de Pronta Resposta</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">(10 Matrizes Cadastradas)</span>
+</div>
+<span class="text-label-sm font-label-sm font-technical-code text-outline">DURAÇÃO COMPACTA / ALTA PRONTIDÃO</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left course-table">
+<thead>
+<tr class="bg-graphite-teal-deep text-pure-white font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 w-16 text-center">Nº</th>
+<th class="py-3 px-4 w-44">Código / Sigla</th>
+<th class="py-3 px-4">Nome do Curso</th>
+<th class="py-3 px-4 w-36 text-center">Vigência</th>
+<th class="py-3 px-4 w-32 text-right">Arquivo</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high text-body-sm font-body-sm">
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">01</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Exp-EmbCar</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Expedito de Embarque e Carregamento</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">02</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Exp-MntSisGE</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Expedito de Manutenção do Sisema de Guerra Eletrônica</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">03</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Exp-OpAnt</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Expedito de Operações no Pantanal</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">04</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Exp-OpRib</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Expedito de Operações Ribeirinhas</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">05</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Exp-ReMIM-PR</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Expedito de Reparo e Manutenção de Instrumentos Musicais para Praças</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">06</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Exp-SoPFN</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Expedito de Saúde nas Operações de Fuzileiros Navais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">07</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Exp-TE-OF-PR</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Expedito de Técnica de Ensino para Oficiais e Praças</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">08</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Exp-TFM-OF-PR</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Expedito de Treinamento Físico Militar para Oficiais e Praças</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">09</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Exp-NEBrasil</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Expedito de Preparação para Viagem de Instrução no Navio-Escola Brasil</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">10</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-Exp-SoPFN</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso Expedito de Saúde nas Operações de Fuzileiros Navais (Avançado)</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- TAB 4: APERFEIÇOAMENTO AVANÇADO (8 Cursos) -->
+<!-- ========================================== -->
+<section class="tab-content hidden" id="tab-aperfeicoamento">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-graphite-teal-deep">psychology</span>
+<span class="font-label-md text-label-md text-graphite-teal-deep font-bold">Cursos de Aperfeiçoamento Avançado para Praças (C-ApA)</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">(8 Matrizes Cadastradas)</span>
+</div>
+<span class="text-label-sm font-label-sm font-technical-code text-outline">EAD HOMOLOGADO / AMBIENTE VIRTUAL</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left course-table">
+<thead>
+<tr class="bg-graphite-teal-deep text-pure-white font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 w-16 text-center">Nº</th>
+<th class="py-3 px-4 w-52">Código / Sigla</th>
+<th class="py-3 px-4">Nome do Curso</th>
+<th class="py-3 px-4 w-36 text-center">Vigência</th>
+<th class="py-3 px-4 w-32 text-right">Arquivo</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high text-body-sm font-body-sm">
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">01</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-ApA-AdmMatGCV-Pr-FN-EAD</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento Avançado em administração do material de FN e gestão de ciclo de vida para praças FN à distância</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">02</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-ApA-AdmPesGes T-Pr-FN-EAD</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento Avançado em administração de pessoal e gestão de talentos para praças FN à distância</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">03</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-ApA-BSCIH-Pr-EAD</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento Avançado de gestão em saúde para praças à distância</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">04</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-ApA-CEmpApF-Pr-FN-EAD</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento Avançado em Coordenação e Emprego do Apoio de Fogo para Praças FN a Distância</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">05</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-ApA-CmdoCTGE-Pr-FN-EAD</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento Avançado em Comando e Controle e Guerra Eletrônica para Praças FN a Distância</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">06</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-ApA-GMLid-Pr-FN-EAD</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento Avançado em Guerra de Manobra e Liderança para Praças FN a Distância</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">07</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-ApA-OpAnf-Pr-FN-EAD</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento Avançado em Operações Anfíbias para Praças FN à distância</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">08</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">C-ApA-OpPazHum-Pr-FN-EAD</td>
+<td class="py-3 px-4 text-on-surface font-medium">Curso de Aperfeiçoamento Avançado em Operações de Paz e Humanitárias para Praças FN à distância</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- TAB 5: ESTÁGIOS (58 Estágios)              -->
+<!-- ========================================== -->
+<section class="tab-content hidden" id="tab-estagios">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-graphite-teal-deep">assignment_turned_in</span>
+<span class="font-label-md text-label-md text-graphite-teal-deep font-bold">Estágios de Qualificação Técnica e Preparação Operacional</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">(58 Matrizes Cadastradas)</span>
+</div>
+<span class="text-label-sm font-label-sm font-technical-code text-outline">CAPACITAÇÃO DE FRAÇÃO &amp; INDIVIDUAL</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left course-table">
+<thead>
+<tr class="bg-graphite-teal-deep text-pure-white font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 w-16 text-center">Nº</th>
+<th class="py-3 px-4 w-48">Código / Sigla</th>
+<th class="py-3 px-4">Nome do Estágio</th>
+<th class="py-3 px-4 w-36 text-center">Vigência</th>
+<th class="py-3 px-4 w-32 text-right">Arquivo</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high text-body-sm font-body-sm">
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">01</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-AssCiv</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Assuntos Civis</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">02</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-OpMvTNESAS</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Atualização Militar para Candidatos ao Quadro Suplementar de Cabos do Corpo de Fuzileiros Navais (QSBCBCFN)</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">03</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-AtuCTCFN</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Atualização para Corneteiros do Corpo de Fuzileiros Navais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">04</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">EstHab-SG-FN-EAD</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Habilitação a Sargento Fuzileiro Naval a Distância</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">05</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-IA-FN</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Instrutores de Aprendizes-FN</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">06</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-IA-FN-AV</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Instrutores de Aprendizes-FN (Módulo Complementar)</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">07</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-OpMvtNESAS</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Operação de Manutenção de 1º Escalão da VtrTne ½ Ton 4x4 Ssangyong Actyon Sports</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">08</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-OpPazNaval</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Operações de Paz de Caráter Naval</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">09</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTEsp-OpEapEng</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Operador de Equipamentos de Engenharia</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">10</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-PrepFutlmediatosFN</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Preparação de Futuros Imediatos de OM do Corpo de Fuzileiros Navais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">11</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-Prep-AdmRH-EAD</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Preparação para Administração de Recursos Humanos de Fuzileiros Navais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">12</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-Prep-AdmRH</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Preparação para Administração de Recursos Humanos de Fuzileiros Navais (Presencial)</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">13</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-PrepFutCOMFN</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Preparação para Futuros Comandantes de OM do Corpo de Fuzileiros Navais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">14</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-PrepFutCOMFN-SP</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Preparação para Futuros Comandantes de OM do Corpo de Fuzileiros Navais Semipresencial</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">15</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-Prep-HCVA</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Preparação para Habilitação de Condutores de Veículos Automotores</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">16</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-Preplnst-CA</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Preparação para Instrutoria do Corpo de Alunos</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">17</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-Q-B-PCIF</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Básica em Prevenção e Combate a Incêndios Florestais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">18</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-Qualif-Instr-E-Qlnst-PLid</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação de Instrutores de Pista de Liderança</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">19</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTEAD</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação de Tutores em Ensino a Distância</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">20</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">EQ-Caçador-OpEsp</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação em Caçador de Operações Especiais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">21</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">EQ-EP-FN</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação em Educação Física para Fuzileiros Navais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">22</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-Q-RO</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação em Regência Orquestral</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">23</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">EQ-TEC-PREP-FIS</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica de Preparo Físico para Cursos de Operações Especiais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">24</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTE-GAnf</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica em Guerra Anfíbia</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">25</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTE-OpPazFem</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica em Operações de Paz para Mulheres</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">26</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTE-OpHum</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica em Operações Humanitárias</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">27</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-COVID-19</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial de Atuação Contra a Proliferação do COVID-19</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">28</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-AuxCLAnf</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial de Auxiliar de Carro Lagarta Anfíbio</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">29</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-DefNBQR</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial de Defesa Nuclear, Biológica, Química e Radiológica</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">30</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-MSL</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial de Mestre de Salto Livre</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">31</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-OpEsp</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial de Operações Especiais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">32</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-OpPsc-Of</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial de Operações Psicológicas para Oficiais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">33</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-OpPscPr</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial de Operações Psicológicas para Praças</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">34</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-PrepInst-CIASC</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial de Preparação de Instrutores do CIASC</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">35</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-PlTatSub-Frações</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial de Preparação de Instrutores em Tática de Subunidades e Frações</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">36</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-PMC</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial de Preparação para Mudança de Categoria</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">37</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-Art-OF</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial em Artilharia de Campanha para Oficiais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">38</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-AtivPol</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial em Atividade de Polícia</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">39</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-EngComb-OF</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial em Engenharia de Combate para Oficiais</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">40</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-EPMil</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial em Ética Profissional Militar</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">41</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-Lid</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial em Liderança</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">42</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-Caat</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial em Operações na Caatinga</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">43</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-OpCerr</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial em Operações no Cerrado</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">44</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-PelAC</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial em Pelotão Anticarro</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">45</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-PelMtrP</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial em Pelotão de Metralhadora Pesada</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">46</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-PelMrt81mm</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial em Pelotão de Morteiro 81mm</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">47</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-PelPetr</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial em Pelotão de Petrechos</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">48</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-CondCães</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial para Condutores de Cães de Guerra</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">49</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-MoMIL</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial para Motorista Militar de Viatura Operativa Leve</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">50</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-MoMIP</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial para Motorista Militar de Viatura Operativa Pesada</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">51</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-PrepContOpPaz</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio Preparatório de Contingentes de Tropa para Operações de Paz</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">52</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-Prep-PME</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio Preparatório de Português para Militares Estrangeiros</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-surface-container-high text-on-surface-variant">2025</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">53</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-Prep-PROVITA</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio Preparatório para Agentes de Proteção às Vítimas e Testemunhas Ameaçadas de Violência</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">54</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-Prep-DstSEB</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio Preparatório para Destacamento de Segurança em Embaixadas do Brasil</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">55</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-Prep-SvPol-MB</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio Preparatório para o Serviço de Polícia para Militares Femininas da Marinha do Brasil</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">56</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-EQRSPNBQR</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial de Equipes de Resposta Nuclear, Biológica, Química e Radiológica</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">57</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-OpSARP-0/1</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial de Operador de SARP CAT 0 e 1</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+<tr class="hover:bg-surface-container-low/80 transition-colors bg-canvas-clean/40">
+<td class="py-3 px-4 text-center font-technical-code font-bold text-outline">58</td>
+<td class="py-3 px-4 font-technical-code font-semibold text-graphite-teal-deep">E-QTesp-GpProtSegLit</td>
+<td class="py-3 px-4 text-on-surface font-medium">Estágio de Qualificação Técnica Especial para Grupos de Proteção e Segurança Litorânea</td>
+<td class="py-3 px-4 text-center"><span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-semibold bg-secondary-container text-on-secondary-container">2026</span></td>
+<td class="py-3 px-4 text-right"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-graphite-teal-deep hover:bg-graphite-teal-surface text-pure-white font-label-sm text-label-sm font-semibold transition-all" href="#"><span class="material-symbols-outlined text-sm">download</span>Download</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Empty State for Search Filter -->
+<div class="hidden p-space-xl text-center flex-col items-center justify-center" id="courses-empty-state">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-space-sm text-outline">
+<span class="material-symbols-outlined text-3xl">search_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-graphite-teal-deep font-bold mb-1">Nenhum curso ou estágio localizado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md mb-space-md">
+          Não encontramos resultados correspondentes ao termo digitado. Tente pesquisar por código da OM ou termo genérico.
+        </p>
+<button class="px-space-md py-2 rounded bg-graphite-teal-deep text-pure-white font-label-md text-label-md" id="clear-search-button-empty">
+          Limpar Pesquisa
+        </button>
+</div>
+</div>
+<!-- Institutional Pedagogical Guidance Card (Bottom Notice) -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm border-l-4 border-renewal-green-dark">
+<div class="flex items-start gap-space-md">
+<div class="p-2 rounded-lg bg-surface-container-lowest text-graphite-teal-deep shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-2xl text-graphite-teal-deep">info</span>
+</div>
+<div class="space-y-1">
+<h4 class="font-title-md text-title-md font-bold text-graphite-teal-deep">
+            Orientações aos Corpos Discentes e Docentes
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Os currículos disponibilizados possuem validade estrita conforme o <strong>Plano de Cursos e Estágios do CFN (PLACAPE)</strong> em vigor. Para solicitação de 2ª via de certificados acadêmicos, aproveitamento de estudos militares ou esclarecimentos pedagógicos formais, contate a <strong>Divisão de Ensino do CTDDCFN</strong> através da abertura de chamado no sistema <strong>SISCRECIM</strong> ou pelo ramal tático RITM <strong>8110-4322 / 8110-4399</strong>.
+          </p>
+<div class="pt-2 flex flex-wrap gap-x-space-md gap-y-1 text-technical-code font-technical-code text-on-surface-variant">
+<span class="">CHAMADOS PEDAGÓGICOS: <strong class="text-graphite-teal-deep">SISCRECIM / SEÇÃO DE ENSINO</strong></span>
+<span class="">•</span>
+<span class="">HOMOLOGAÇÃO: <strong class="text-graphite-teal-deep">PORTARIA Nº 42/CTDDCFN/2025</strong></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initCurriculumApp() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+    const searchInput = document.getElementById('course-search-input');
+    const clearSearchBtn = document.getElementById('clear-search-btn');
+    const searchActivePill = document.getElementById('search-active-pill');
+    const currentSearchTerm = document.getElementById('current-search-term');
+    const resetFilterLink = document.getElementById('reset-filter-link');
+    const emptyState = document.getElementById('courses-empty-state');
+    const clearSearchEmpty = document.getElementById('clear-search-button-empty');
+    const counterLabel = document.getElementById('filtered-counter-label');
+
+    const tabCounts = {
+      'tab-carreira': 26,
+      'tab-especiais': 33,
+      'tab-expeditos': 10,
+      'tab-aperfeicoamento': 8,
+      'tab-estagios': 58
+    };
+
+    let activeTabId = 'tab-carreira';
+
+    function setActiveTab(targetTabId) {
+      activeTabId = targetTabId;
+
+      tabButtons.forEach(btn => {
+        const isCurrent = btn.getAttribute('data-tab-target') === targetTabId;
+        const badge = btn.querySelector('.tab-badge');
+        const icon = btn.querySelector('.material-symbols-outlined');
+
+        if (isCurrent) {
+          btn.className = 'tab-button group flex items-center gap-2.5 px-4 py-2.5 rounded-lg text-pure-white bg-graphite-teal-deep font-label-md text-label-md font-semibold transition-all whitespace-nowrap shadow-sm';
+          if (badge) {
+            badge.className = 'tab-badge px-2 py-0.5 rounded-full font-technical-code text-technical-code bg-graphite-teal-surface text-pure-white';
+          }
+          if (icon) {
+            icon.classList.remove('text-outline');
+            icon.classList.add('text-renewal-green');
+          }
+        } else {
+          btn.className = 'tab-button group flex items-center gap-2.5 px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md font-medium transition-all whitespace-nowrap';
+          if (badge) {
+            badge.className = 'tab-badge px-2 py-0.5 rounded-full font-technical-code text-technical-code bg-surface-container-high text-on-surface-variant';
+          }
+          if (icon) {
+            icon.classList.remove('text-renewal-green');
+            icon.classList.add('text-outline');
+          }
+        }
+      });
+
+      // Filter rows or toggle tab views
+      const term = (searchInput ? searchInput.value.trim().toLowerCase() : '');
+      if (term.length > 0) {
+        applySearchFilter(term);
+      } else {
+        tabContents.forEach(content => {
+          if (content.id === targetTabId) {
+            content.classList.remove('hidden');
+            content.classList.add('block');
+          } else {
+            content.classList.add('hidden');
+            content.classList.remove('block');
+          }
+        });
+        if (counterLabel) {
+          counterLabel.textContent = `Exibindo ${tabCounts[targetTabId]} itens`;
+        }
+        if (emptyState) emptyState.classList.add('hidden');
+      }
+    }
+
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const target = button.getAttribute('data-tab-target');
+        setActiveTab(target);
+      });
+    });
+
+    function applySearchFilter(term) {
+      if (!term) {
+        if (clearSearchBtn) clearSearchBtn.classList.add('hidden');
+        if (searchActivePill) searchActivePill.classList.add('hidden');
+        
+        tabContents.forEach(content => {
+          const rows = content.querySelectorAll('tbody tr');
+          rows.forEach(r => r.style.display = '');
+          if (content.id === activeTabId) {
+            content.classList.remove('hidden');
+            content.classList.add('block');
+          } else {
+            content.classList.add('hidden');
+            content.classList.remove('block');
+          }
+        });
+
+        if (emptyState) emptyState.classList.add('hidden');
+        if (counterLabel) {
+          counterLabel.textContent = `Exibindo ${tabCounts[activeTabId]} itens`;
+        }
+        return;
+      }
+
+      if (clearSearchBtn) clearSearchBtn.classList.remove('hidden');
+      if (searchActivePill) {
+        searchActivePill.classList.remove('hidden');
+        searchActivePill.classList.add('flex');
+        if (currentSearchTerm) currentSearchTerm.textContent = `"${term}"`;
+      }
+
+      let totalMatchesAcrossAll = 0;
+      let activeTabMatches = 0;
+
+      tabContents.forEach(content => {
+        const rows = content.querySelectorAll('tbody tr');
+        let sectionMatches = 0;
+
+        rows.forEach(row => {
+          const text = row.innerText.toLowerCase();
+          if (text.includes(term)) {
+            row.style.display = '';
+            sectionMatches++;
+            totalMatchesAcrossAll++;
+            if (content.id === activeTabId) {
+              activeTabMatches++;
+            }
+          } else {
+            row.style.display = 'none';
+          }
+        });
+
+        // Show section if it's current active tab or has matches
+        if (content.id === activeTabId) {
+          content.classList.remove('hidden');
+          content.classList.add('block');
+        } else {
+          content.classList.add('hidden');
+          content.classList.remove('block');
+        }
+      });
+
+      if (counterLabel) {
+        counterLabel.textContent = `Encontrados ${activeTabMatches} itens nesta aba (${totalMatchesAcrossAll} no total)`;
+      }
+
+      if (emptyState) {
+        if (activeTabMatches === 0) {
+          emptyState.classList.remove('hidden');
+          emptyState.classList.add('flex');
+        } else {
+          emptyState.classList.add('hidden');
+          emptyState.classList.remove('flex');
+        }
+      }
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        applySearchFilter(e.target.value.trim().toLowerCase());
+      });
+    }
+
+    function clearSearch() {
+      if (searchInput) {
+        searchInput.value = '';
+        searchInput.focus();
+      }
+      applySearchFilter('');
+    }
+
+    if (clearSearchBtn) clearSearchBtn.addEventListener('click', clearSearch);
+    if (resetFilterLink) resetFilterLink.addEventListener('click', clearSearch);
+    if (clearSearchEmpty) clearSearchEmpty.addEventListener('click', clearSearch);
+
+  })();
+</script></main></div>
+
+<footer class="w-full bg-graphite-teal-deep text-pure-white pt-space-xl pb-0 relative z-30 border-t-2 border-renewal-green"><div class="w-full max-w-7xl mx-auto px-space-lg"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg pb-space-lg"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm mb-space-xs"><div class="h-10 w-10 rounded-lg bg-surface-container-high/20 flex items-center justify-center"><span class="material-symbols-outlined text-renewal-green text-2xl">anchor</span></div><div><span class="font-headline-sm text-headline-sm text-pure-white font-bold block leading-none">CTDDCFN</span><span class="font-label-sm text-label-sm text-outline-variant">Comando do Treinamento e Doutrina</span></div></div><p class="font-body-sm text-body-sm text-outline-variant leading-relaxed">Comando do Treinamento e do Desenvolvimento Doutrinário do Corpo de Fuzileiros Navais.</p><p class="font-body-sm text-body-sm text-renewal-green font-semibold mt-space-xs">"A Prontidão Começa Aqui!"</p></div><div class="flex flex-col gap-space-xs"><div class="font-title-md text-title-md text-pure-white font-bold mb-space-xs border-b border-outline/30 pb-1.5 flex items-center gap-1.5"><span class="material-symbols-outlined text-renewal-green text-base">location_on</span><span class="">Localização &amp; Sede</span></div><p class="font-body-sm text-body-sm text-outline-variant leading-relaxed">Complexo Naval da Ilha do Governador (CNIG)<br>Estrada das Canárias, s/nº<br>Galeão - Rio de Janeiro - RJ<br>CEP: 21941-480</p></div><div class="flex flex-col gap-space-xs"><div class="font-title-md text-title-md text-pure-white font-bold mb-space-xs border-b border-outline/30 pb-1.5 flex items-center gap-1.5"><span class="material-symbols-outlined text-renewal-green text-base">contact_phone</span><span class="">Comunicações Oficiais</span></div><p class="font-body-sm text-body-sm text-outline-variant">Telefone: (21) 3386-4000</p><p class="font-body-sm text-body-sm text-outline-variant">VoIP Naval: 8120-4000</p><p class="font-body-sm text-body-sm text-outline-variant">E-mail: ctddcfn.faleconosco@marinha.mil.br</p><p class="font-body-sm text-body-sm text-outline-variant">Rádio / Freq. Tática: Ch 16 / MB-OPS</p></div><div class="flex flex-col gap-space-xs"><div class="font-title-md text-title-md text-pure-white font-bold mb-space-xs border-b border-outline/30 pb-1.5 flex items-center gap-1.5"><span class="material-symbols-outlined text-renewal-green text-base">link</span><span class="">Acesso Rápido</span></div><ul class="flex flex-col gap-1.5 text-outline-variant font-body-sm text-body-sm"><li class=""><a class="hover:text-renewal-green transition-colors flex items-center gap-1" data-path="intranet-mb" href="#"><span class="material-symbols-outlined text-sm text-renewal-green">arrow_right</span>Portal MB Intranet</a></li><li class=""><a class="hover:text-renewal-green transition-colors flex items-center gap-1" data-path="bono-central" href="#"><span class="material-symbols-outlined text-sm text-renewal-green">arrow_right</span>Boletim de Ordens e Notícias</a></li><li class=""><a class="hover:text-renewal-green transition-colors flex items-center gap-1" data-path="portal-comavex" href="#"><span class="material-symbols-outlined text-sm text-renewal-green">arrow_right</span>Comando da Força de Fuzileiros da Esquadra</a></li><li class=""><a class="hover:text-renewal-green transition-colors flex items-center gap-1" data-path="seguranca-informacao" href="#"><span class="material-symbols-outlined text-sm text-renewal-green">arrow_right</span>Política de Segurança da Informação</a></li></ul></div></div></div><div class="w-full bg-tertiary py-3 px-space-lg flex flex-col sm:flex-row items-center justify-between text-outline-variant font-technical-code text-technical-code border-t border-outline/20"><div class="flex items-center gap-space-sm max-w-7xl mx-auto w-full justify-between flex-wrap gap-y-2"><span class="">© 2025 Comando do Treinamento e do Desenvolvimento Doutrinário do CFN.</span><div class="flex items-center gap-space-md"><span class="flex items-center gap-1.5 text-renewal-green font-semibold"><span class="material-symbols-outlined text-sm">shield</span>SISTEMA OPERACIONAL SEGURO</span><span class="px-2.5 py-0.5 rounded bg-surface-container-high/20 text-pure-white font-bold tracking-wide">CLASSIFICAÇÃO: RESERVADO</span></div></div></div></footer><div id="snapdom-sandbox" data-snapdom-sandbox="true" aria-hidden="true" style="position: absolute; left: -9999px; top: -9999px; width: 0px; height: 0px; overflow: hidden;"></div></body></html>
